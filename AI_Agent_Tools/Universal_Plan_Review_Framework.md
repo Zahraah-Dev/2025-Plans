@@ -1,11 +1,44 @@
-# Universal Plan Review Framework
-## General Instructions for Any Plan Review
+# Universal Plan Review Framework | إطار مراجعة الخطط الشامل
+## General Instructions for Any Plan Review | تعليمات عامة لمراجعة أي خطة
 
-> **A comprehensive framework for reviewing, analyzing, and improving any type of plan or documentation**
+> **A comprehensive framework for reviewing, analyzing, and improving any type of plan or documentation**  
+> **إطار عمل شامل لمراجعة وتحليل وتحسين أي نوع من الخطط أو الوثائق**
+
+**Target Application**: زهراء (Zahraah) - Women's Fashion E-commerce App  
+**Quality Level**: Enterprise-grade, Production-ready  
+**Scope**: All project documentation and implementation plans
 
 ---
 
-## 🎯 **Universal Review Principles**
+## 🚀 **Quick Command Reference | مرجع الأوامر السريع**
+
+### **1. Basic Review Commands | أوامر المراجعة الأساسية**
+```bash
+# Review a single file
+@filename.md review this document following the universal framework
+
+# Review a folder
+@foldername review this folder and all its contents systematically
+
+# Review with specific focus
+@filename.md review this document focusing on [architecture/security/performance/quality]
+```
+
+### **2. Enhancement Commands | أوامر التحسين**
+```bash
+# Improve existing content
+@filename.md improve this document and add missing elements
+
+# Enhance with specific expertise
+@filename.md enhance this document with Flutter e-commerce expertise
+
+# Add missing sections
+@filename.md add missing sections and improve organization
+```
+
+---
+
+## 🎯 **Universal Review Principles | مبادئ المراجعة الشاملة**
 
 ### **1. Content Analysis Framework**
 - **Completeness**: Does the plan cover all essential aspects?
@@ -388,6 +421,14 @@
 - **Version Control**: Track changes and maintain history
 - **Documentation**: Document processes and standards
 
+## 🔗 **Navigation | التنقل**
+
+[🏠 Home | الرئيسية](../README.md) | [📋 Content Management Guide | دليل إدارة المحتوى](AI_Agent_Content_Management_Guide.md) | [🔧 Refactoring Memo | مذكرة إعادة الهيكلة](REFACTORING_MEMO.md)
+
 ---
 
 **This universal framework can be applied to any type of plan, documentation, or project to ensure high quality, organization, and usability.**
+
+**Last Updated | آخر تحديث**: January 2025  
+**Version | الإصدار**: 2.0 - Enhanced Framework  
+**Next Review | المراجعة القادمة**: February 2025
