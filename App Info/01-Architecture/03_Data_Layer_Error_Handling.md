@@ -194,4 +194,16 @@ Implement robust data layer with comprehensive error handling, secure data manag
 [Next: Domain Layer | التالي: طبقة المجال →](04_Domain_Layer.md)
 [🏠 Home | الرئيسية](../../index.html)
 
+### **Quick Navigation | التنقل السريع**
+- [Detailed Implementation Guides | أدلة التنفيذ التفصيلية](#-detailed-implementation-guides--أدلة-التنفيذ-التفصيلية)
+- [Best Practices | أفضل الممارسات](#-best-practices--أفضل-الممارسات)
+- [References | المراجع](#-references--المراجع)
+
+### **Related Files | الملفات ذات الصلة**
+- [Data Layer Overview | نظرة عامة على طبقة البيانات](03-Data-Layer/03_Data_Layer_Overview.md)
+- [Result/Failure Patterns | أنماط النتيجة/الفشل](03-Data-Layer-Error-Handling/03_Result_Failure_Patterns.md)
+- [Data Sources Implementation | تنفيذ مصادر البيانات](03-Data-Layer-Error-Handling/03_Data_Sources_Implementation.md)
+- [Testing Data Layer | اختبار طبقة البيانات](03-Data-Layer-Error-Handling/03_Testing_Data_Layer.md)
+- [Troubleshooting Guide | دليل استكشاف الأخطاء](03-Data-Layer-Error-Handling/03_Troubleshooting_Guide.md)
+
 ---

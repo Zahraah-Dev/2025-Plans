@@ -169,8 +169,20 @@ External Services (API/Database)
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: State Management & DI | السابق: إدارة الحالة وحقن التبعية](02_State_Management_DI.md)
-[Next: Error Handling Patterns | التالي: أنماط معالجة الأخطاء →](03_Error_Handling_Patterns.md)
+[← Previous: State Management & DI | السابق: إدارة الحالة وحقن التبعية](../02_State_Management_DI.md)
+[Next: Error Handling Patterns | التالي: أنماط معالجة الأخطاء →](../03_Data_Layer_Error_Handling.md)
 [🏠 Home | الرئيسية](../../../index.html)
+
+### **Quick Navigation | التنقل السريع**
+- [Data Layer Architecture | معمارية طبقة البيانات](#-data-layer-architecture--معمارية-طبقة-البيانات)
+- [Data Flow | تدفق البيانات](#-data-flow--تدفق-البيانات)
+- [Related Files | الملفات ذات الصلة](#-related-files--الملفات-ذات-الصلة)
+
+### **Related Files | الملفات ذات الصلة**
+- [Data Layer Error Handling | معالجة أخطاء طبقة البيانات](../03_Data_Layer_Error_Handling.md)
+- [Result/Failure Patterns | أنماط النتيجة/الفشل](../03-Data-Layer-Error-Handling/03_Result_Failure_Patterns.md)
+- [Data Sources Implementation | تنفيذ مصادر البيانات](../03-Data-Layer-Error-Handling/03_Data_Sources_Implementation.md)
+- [Testing Data Layer | اختبار طبقة البيانات](../03-Data-Layer-Error-Handling/03_Testing_Data_Layer.md)
+- [Troubleshooting Guide | دليل استكشاف الأخطاء](../03-Data-Layer-Error-Handling/03_Troubleshooting_Guide.md)
 
 ---

@@ -135,10 +135,28 @@ For deep linking and accessibility features, see:
 
 ---
 
+**Last Updated | آخر تحديث**: January 2025  
+**Version | الإصدار**: 2.0 - Enhanced Presentation Layer  
+**Status | الحالة**: ✅ Production Ready
+
+---
+
 ## 🔗 **Navigation | التنقل**
 
 [← Previous: Domain Layer | السابق: طبقة المجال](04_Domain_Layer.md)
 [Next: Design System | التالي: نظام التصميم →](06_Design_System.md)
 [🏠 Home | الرئيسية](../../index.html)
+
+### **Quick Navigation | التنقل السريع**
+- [Presentation Layer Overview | نظرة عامة على طبقة العرض](#presentation-layer-overview--نظرة-عامة-على-طبقة-العرض)
+- [State Management & UI | إدارة الحالة والواجهة](#state-management--ui--إدارة-الحالة-والواجهة)
+- [Navigation & Routing | التنقل والتوجيه](#navigation--routing--التنقل-والتوجيه)
+- [Deep Linking & Accessibility | الروابط العميقة وإمكانية الوصول](#deep-linking--accessibility--الروابط-العميقة-وإمكانية-الوصول)
+
+### **Related Files | الملفات ذات الصلة**
+- [Presentation Layer Overview | نظرة عامة على طبقة العرض](05-Presentation-Layer/05_Presentation_Layer_Overview.md)
+- [State Management & UI | إدارة الحالة والواجهة](05-Presentation-Layer/05_State_Management_UI.md)
+- [Navigation & Routing | التنقل والتوجيه](05-Presentation-Layer/05_Navigation_Routing.md)
+- [Deep Linking & Accessibility | الروابط العميقة وإمكانية الوصول](05-Presentation-Layer/05_Deep_Linking_Accessibility.md)
 
 ---

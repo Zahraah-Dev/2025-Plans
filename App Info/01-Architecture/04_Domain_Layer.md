@@ -154,10 +154,28 @@ For repository interface definitions and contracts, see:
 
 ---
 
+**Last Updated | آخر تحديث**: January 2025  
+**Version | الإصدار**: 2.0 - Enhanced Domain Layer  
+**Status | الحالة**: ✅ Production Ready
+
+---
+
 ## 🔗 **Navigation | التنقل**
 
 [← Previous: Data Layer Error Handling | السابق: معالجة أخطاء طبقة البيانات](03_Data_Layer_Error_Handling.md)
 [Next: Presentation Layer | التالي: طبقة العرض →](05_Presentation_Layer.md)
 [🏠 Home | الرئيسية](../../index.html)
+
+### **Quick Navigation | التنقل السريع**
+- [Domain Layer Overview | نظرة عامة على طبقة المجال](#domain-layer-overview--نظرة-عامة-على-طبقة-المجال)
+- [Entities & Models | الكيانات والنماذج](#entities--models--الكيانات-والنماذج)
+- [Use Cases | حالات الاستخدام](#use-cases--حالات-الاستخدام)
+- [Repository Interfaces | واجهات المستودعات](#repository-interfaces--واجهات-المستودعات)
+
+### **Related Files | الملفات ذات الصلة**
+- [Domain Layer Overview | نظرة عامة على طبقة المجال](04-Domain-Layer/04_Domain_Layer_Overview.md)
+- [Entities & Models | الكيانات والنماذج](04-Domain-Layer/04_Entities_Models.md)
+- [Repository Interfaces | واجهات المستودعات](04-Domain-Layer/04_Repository_Interfaces.md)
+- [Use Cases Templates | قوالب حالات الاستخدام](04-Domain-Layer/04_Use_Cases_Templates.md)
 
 ---

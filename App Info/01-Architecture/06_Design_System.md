@@ -126,10 +126,28 @@ For RTL support and accessibility features, see:
 
 ---
 
+**Last Updated | آخر تحديث**: January 2025  
+**Version | الإصدار**: 2.0 - Enhanced Design System  
+**Status | الحالة**: ✅ Production Ready
+
+---
+
 ## 🔗 **Navigation | التنقل**
 
 [← Previous: Presentation Layer | السابق: طبقة العرض](05_Presentation_Layer.md)
 [Next: Project Setup & Configuration | التالي: إعداد المشروع والتكوين →](../02-Implementation/07_Project_Setup_Config.md)
 [🏠 Home | الرئيسية](../../index.html)
+
+### **Quick Navigation | التنقل السريع**
+- [Design System Overview | نظرة عامة على نظام التصميم](#design-system-overview--نظرة-عامة-على-نظام-التصميم)
+- [Color & Typography | الألوان والطباعة](#color--typography--الألوان-والطباعة)
+- [Components | المكونات](#components--المكونات)
+- [RTL & Accessibility | النص من اليمين لليسار وإمكانية الوصول](#rtl--accessibility--النص-من-اليمين-ليسار-وإمكانية-الوصول)
+
+### **Related Files | الملفات ذات الصلة**
+- [Design System Overview | نظرة عامة على نظام التصميم](06-Design-System/06_Design_System_Overview.md)
+- [Color & Typography | الألوان والطباعة](06-Design-System/06_Color_Typography.md)
+- [Components | المكونات](06-Design-System/06_Components.md)
+- [RTL & Accessibility | النص من اليمين لليسار وإمكانية الوصول](06-Design-System/06_RTL_Accessibility.md)
 
 ---
