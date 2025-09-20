@@ -34,8 +34,8 @@ cd "/Users/ZahraahIT/Documents/Zahraah/2025 Plans"
 ### **3. Connect Local Repository to GitHub**
 
 ```bash
-# Add remote origin (replace YOUR_USERNAME with your GitHub username)
-git remote add origin https://github.com/YOUR_USERNAME/2025-plans.git
+# Add remote origin (replace zahraah-dev with your GitHub username)
+git remote add origin https://github.com/zahraah-dev/2025-plans.git
 
 # Push to GitHub
 git push -u origin main
@@ -53,7 +53,7 @@ git push -u origin main
 
 ### **5. Verify Deployment**
 
-- Your site will be available at: `https://YOUR_USERNAME.github.io/2025-plans`
+- Your site will be available at: `https://zahraah-dev.github.io/2025-plans`
 - GitHub Actions will automatically deploy on every push
 - Check the **Actions** tab for deployment status
 
@@ -75,7 +75,7 @@ git commit -m "Initial commit: Flutter e-commerce development plans"
 git branch -M main
 
 # Add remote origin
-git remote add origin https://github.com/YOUR_USERNAME/2025-plans.git
+git remote add origin https://github.com/zahraah-dev/2025-plans.git
 
 # Push to GitHub
 git push -u origin main
@@ -112,7 +112,7 @@ Your GitHub repository will include:
 ## 🎨 **GitHub Pages Features**
 
 ### **Live Documentation**
-- **Home Page**: `https://YOUR_USERNAME.github.io/2025-plans`
+- **Home Page**: `https://zahraah-dev.github.io/2025-plans`
 - **Bilingual Support**: Arabic and English
 - **Responsive Design**: Works on all devices
 - **Professional Layout**: Enterprise-grade presentation
@@ -208,7 +208,7 @@ After setup, you should have:
 # Remove existing remote
 git remote remove origin
 # Add new remote
-git remote add origin https://github.com/YOUR_USERNAME/2025-plans.git
+git remote add origin https://github.com/zahraah-dev/2025-plans.git
 ```
 
 **2. GitHub Pages Not Working**

@@ -15,7 +15,7 @@ Follow the content management guidelines in:
 
 ## Project Structure
 ```
-/2025 Plans/
+/2025-Plans/
 ├── App Info/                    # Flutter development guides (30 files)
 ├── AI_Agent_Specialization_Prompt.md
 ├── How_to_Use_AI_Agent_Specialization.md

@@ -28,7 +28,7 @@ This repository contains a comprehensive Flutter e-commerce development project 
 
 ### **📁 Project Structure**
 ```
-2025 Plans/
+2025-Plans/
 ├── App Info/                    # Flutter development guides (30 files)
 │   ├── 00-Templates/           # Master templates system
 │   ├── 01-Architecture/        # Core patterns & principles

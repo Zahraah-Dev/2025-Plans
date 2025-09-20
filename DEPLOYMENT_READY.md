@@ -40,8 +40,8 @@ git branch -M main
 
 ### **3. Connect to GitHub**
 ```bash
-# Replace YOUR_USERNAME with your GitHub username
-git remote add origin https://github.com/YOUR_USERNAME/2025-plans.git
+# Replace zahraah-dev with your GitHub username
+git remote add origin https://github.com/zahraah-dev/2025-plans.git
 git push -u origin main
 ```
 
@@ -54,7 +54,7 @@ git push -u origin main
 
 ### **5. Access Your Site**
 Your documentation will be live at:
-**`https://YOUR_USERNAME.github.io/2025-plans`**
+**`https://zahraah-dev.github.io/2025-plans`**
 
 ## 🌟 **What You'll Get**
 
@@ -136,7 +136,7 @@ git push origin main
 **Repository Already Exists**
 ```bash
 git remote remove origin
-git remote add origin https://github.com/YOUR_USERNAME/2025-plans.git
+git remote add origin https://github.com/zahraah-dev/2025-plans.git
 ```
 
 **GitHub Pages Not Working**
