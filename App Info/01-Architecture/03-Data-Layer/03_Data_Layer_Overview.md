@@ -30,7 +30,7 @@ Implement robust data layer with comprehensive error handling, secure data manag
 
 ## ✅ **Success Criteria | معايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../../00-Templates/06_Success_Criteria_Template.md) for standard criteria.
+> **Reference**: See [Success Criteria Template](../../../../00-Templates/06_Success_Criteria_Template.md) for standard criteria.
 
 ### **Data Layer Specific Criteria:**
 - [ ] All data operations use Result pattern
@@ -42,7 +42,7 @@ Implement robust data layer with comprehensive error handling, secure data manag
 
 ## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
 
-> **Reference**: See [Common Pitfalls Template](../../../00-Templates/05_Common_Pitfalls_Template.md) for standard pitfalls.
+> **Reference**: See [Common Pitfalls Template](../../../../00-Templates/05_Common_Pitfalls_Template.md) for standard pitfalls.
 
 ### **Data Layer Specific Pitfalls:**
 - **Avoid**: Throwing exceptions to UI layer
@@ -108,7 +108,7 @@ External Services (API/Database)
 
 ## 🚨 **Risk Assessment | تقييم المخاطر**
 
-> **Reference**: See [Risk Assessment Template](../../../00-Templates/01_Risk_Assessment_Template.md) for standard risk categories.
+> **Reference**: See [Risk Assessment Template](../../../../00-Templates/01_Risk_Assessment_Template.md) for standard risk categories.
 
 ### **Data Layer Specific Risks:**
 | Risk | Impact | Probability | Mitigation Strategy |
@@ -120,7 +120,7 @@ External Services (API/Database)
 
 ## 📊 **Implementation Priority | أولوية التنفيذ**
 
-> **Reference**: See [Implementation Priority Template](../../../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
+> **Reference**: See [Implementation Priority Template](../../../../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
 
 ### **Data Layer Specific Priorities:**
 - **Phase 1: Foundation (Must Have)**
@@ -142,7 +142,7 @@ External Services (API/Database)
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
-> **Reference**: See [Quality Gates Template](../../../00-Templates/03_Quality_Gates_Template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../../../../00-Templates/03_Quality_Gates_Template.md) for standard quality criteria.
 
 ### **Data Layer Specific Quality Gates:**
 - [ ] All data operations use Result pattern
@@ -155,7 +155,7 @@ External Services (API/Database)
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Success Metrics Template](../../../00-Templates/04_Success_Metrics_Template.md) for standard metrics.
+> **Reference**: See [Success Metrics Template](../../../../00-Templates/04_Success_Metrics_Template.md) for standard metrics.
 
 ### **Data Layer Specific Metrics:**
 - **Error Handling**: 100% of operations use Result pattern
