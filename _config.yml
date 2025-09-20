@@ -1,19 +1,20 @@
-# Jekyll configuration for GitHub Pages
+# GitHub Pages Jekyll Configuration
 title: "2025 Plans - Flutter E-commerce Development"
 description: "Comprehensive Flutter e-commerce development plans and guides"
 baseurl: "/2025-Plans"
 url: "https://zahraah-dev.github.io"
 
-# Build settings
+# Build settings for GitHub Pages
 markdown: kramdown
 highlighter: rouge
 theme: minima
 
-# Plugins
+# GitHub Pages plugins (built-in)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-relative-links
 
 # Exclude files from processing
 exclude:
@@ -23,29 +24,6 @@ exclude:
   - .github/workflows/
   - *.sh
   - temp_*
-
-# Include files
-include:
-  - _pages
-
-# Collections
-collections:
-  docs:
-    output: true
-    permalink: /:collection/:name/
-
-# Default settings
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "docs"
-    values:
-      layout: "default"
 
 # Site settings
 lang: ar
@@ -57,7 +35,3 @@ email: "dev@zahraah.com"
 
 # Social links
 github_username: zahraah-dev
-
-# Build settings
-sass:
-  style: compressed
