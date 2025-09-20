@@ -5,23 +5,24 @@ This is a comprehensive Flutter e-commerce development project with 30+ implemen
 
 ## AI Agent Specialization
 When working on this project, always use the AI agent specialization defined in:
-- `AI_Agent_Specialization_Prompt.md` - Core specialization for technical planning
-- `How_to_Use_AI_Agent_Specialization.md` - Usage instructions and commands
+- `AI_Agent_Tools/AI_Agent_Specialization_Prompt.md` - Core specialization for technical planning
+- `AI_Agent_Tools/How_to_Use_AI_Agent_Specialization.md` - Usage instructions and commands
 
 ## Content Management Rules
 Follow the content management guidelines in:
-- `AI_Agent_Content_Management_Guide.md` - For handling duplications and organization
-- `Universal_Plan_Review_Framework.md` - For reviewing and improving any plan
+- `AI_Agent_Tools/AI_Agent_Content_Management_Guide.md` - For handling duplications and organization
+- `AI_Agent_Tools/Universal_Plan_Review_Framework.md` - For reviewing and improving any plan
 
 ## Project Structure
 ```
 /2025-Plans/
 ├── App Info/                    # Flutter development guides (30 files)
-├── AI_Agent_Specialization_Prompt.md
-├── How_to_Use_AI_Agent_Specialization.md
-├── AI_Agent_Content_Management_Guide.md
-├── Universal_Plan_Review_Framework.md
-├── Universal_Review_Enhancement_Guide.md
+├── AI_Agent_Tools/              # AI agent specialization and content management tools
+│   ├── AI_Agent_Specialization_Prompt.md
+│   ├── How_to_Use_AI_Agent_Specialization.md
+│   ├── AI_Agent_Content_Management_Guide.md
+│   ├── Universal_Plan_Review_Framework.md
+│   └── Universal_Review_Enhancement_Guide.md
 ├── Analytics/                   # Google Analytics documentation
 ├── Database/                    # Database design documentation
 ├── Firebase/                    # Firebase configuration
@@ -37,7 +38,7 @@ Follow the content management guidelines in:
 
 ## AI Agent Behavior
 When working on this project:
-1. **Always reference the specialization prompt** from `AI_Agent_Specialization_Prompt.md`
+1. **Always reference the specialization prompt** from `AI_Agent_Tools/AI_Agent_Specialization_Prompt.md`
 2. **Use the content management guide** for duplication and organization issues
 3. **Apply the universal review framework** for plan improvements
 4. **Apply refactoring rules** from `REFACTORING_MEMO.md` for file size management
@@ -100,8 +101,8 @@ Every documentation page must include consistent navigation elements:
 
 ## Review Process
 When reviewing or improving content:
-1. Use `Universal_Plan_Review_Framework.md` for comprehensive analysis
-2. Apply `AI_Agent_Content_Management_Guide.md` for organization issues
+1. Use `AI_Agent_Tools/Universal_Plan_Review_Framework.md` for comprehensive analysis
+2. Apply `AI_Agent_Tools/AI_Agent_Content_Management_Guide.md` for organization issues
 3. Apply `REFACTORING_MEMO.md` for file size and structure optimization
 4. Verify navigation standards are implemented on every page
 5. Follow the 6-phase process: Assessment, Analysis, Organization, Resolution, Enhancement, QA
