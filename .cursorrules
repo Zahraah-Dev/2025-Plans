@@ -1,0 +1,115 @@
+# Cursor Project Rules for 2025 Plans - Flutter E-commerce Development
+
+## Project Overview
+This is a comprehensive Flutter e-commerce development project with 30+ implementation guides and specialized AI tools for technical planning and content management.
+
+## AI Agent Specialization
+When working on this project, always use the AI agent specialization defined in:
+- `AI_Agent_Specialization_Prompt.md` - Core specialization for technical planning
+- `How_to_Use_AI_Agent_Specialization.md` - Usage instructions and commands
+
+## Content Management Rules
+Follow the content management guidelines in:
+- `AI_Agent_Content_Management_Guide.md` - For handling duplications and organization
+- `Universal_Plan_Review_Framework.md` - For reviewing and improving any plan
+
+## Project Structure
+```
+/2025 Plans/
+├── App Info/                    # Flutter development guides (30 files)
+├── AI_Agent_Specialization_Prompt.md
+├── How_to_Use_AI_Agent_Specialization.md
+├── AI_Agent_Content_Management_Guide.md
+├── Universal_Plan_Review_Framework.md
+├── Universal_Review_Enhancement_Guide.md
+├── Analytics/                   # Google Analytics documentation
+├── Database/                    # Database design documentation
+├── Firebase/                    # Firebase configuration
+└── APIs/                       # API documentation
+```
+
+## Quality Standards
+- **Bilingual Support**: All content in Arabic(high priority), English(Moderate usage, especially technical terms and code), and Arabic | English for titles
+- **Enterprise-Grade**: Production-ready quality standards
+- **Clean Architecture**: Follow Flutter best practices
+- **E-commerce Focus**: Specialized for women's fashion e-commerce
+- **RTL Support**: Right-to-left layout for Arabic markets
+
+## AI Agent Behavior
+When working on this project:
+1. **Always reference the specialization prompt** from `AI_Agent_Specialization_Prompt.md`
+2. **Use the content management guide** for duplication and organization issues
+3. **Apply the universal review framework** for plan improvements
+4. **Apply refactoring rules** from `REFACTORING_MEMO.md` for file size management
+5. **Ensure navigation standards** are met on every page
+6. **Maintain bilingual format** (Arabic/English) throughout
+7. **Follow Flutter best practices** and Clean Architecture principles
+
+## Content Management
+- **No Duplication**: Use template references instead of duplicating content
+- **Proper Organization**: Files in correct folders based on content purpose
+- **Template System**: Create master templates for shared content
+- **Quality Gates**: Ensure all content meets enterprise standards
+
+## File Refactoring Rules
+Follow the universal refactoring guidelines in:
+- `REFACTORING_MEMO.md` - Universal refactoring rules for all folders
+
+### **File Size Thresholds:**
+- **Green Zone**: 200-400 lines (optimal)
+- **Yellow Zone**: 400-500 lines (monitor)
+- **Red Zone**: 500+ lines (must refactor)
+
+### **Refactoring Triggers:**
+- File > 500 lines: Automatic refactoring required
+- File > 400 lines: Consider refactoring if content is diverse
+- Multiple related topics: Split into focused files
+- Heavy code examples: Extract to separate files
+
+### **Refactoring Actions:**
+1. **Split large files** into focused sub-files
+2. **Create sub-folders** when files > 500 lines
+3. **Extract detailed content** to separate guides
+4. **Create quick references** for complex topics
+5. **Maintain consistent naming** conventions
+
+## Navigation Standards
+Every documentation page must include consistent navigation elements:
+
+### **Required Navigation Elements:**
+- **Previous Page Button**: Link to previous file in sequence
+- **Next Page Button**: Link to next file in sequence  
+- **Home Button**: Link back to main index
+- **Breadcrumb Navigation**: Show current location in folder structure
+
+### **Navigation Button Format:**
+```markdown
+## 🔗 **Navigation | التنقل**
+
+[← Previous: [Previous File Name] | السابق: [اسم الملف السابق]]([previous-file-link])
+[Next: [Next File Name] | التالي: [اسم الملف التالي] →]([next-file-link])
+[🏠 Home | الرئيسية]([home-link])
+```
+
+### **Navigation Rules:**
+- **First file in folder**: Only Next and Home buttons
+- **Last file in folder**: Only Previous and Home buttons
+- **Middle files**: All three buttons (Previous, Next, Home)
+- **Consistent placement**: Always at the bottom of each file
+- **Bilingual labels**: Arabic and English for all navigation elements
+
+## Review Process
+When reviewing or improving content:
+1. Use `Universal_Plan_Review_Framework.md` for comprehensive analysis
+2. Apply `AI_Agent_Content_Management_Guide.md` for organization issues
+3. Apply `REFACTORING_MEMO.md` for file size and structure optimization
+4. Verify navigation standards are implemented on every page
+5. Follow the 6-phase process: Assessment, Analysis, Organization, Resolution, Enhancement, QA
+6. Ensure 100% completeness, accuracy, and usability
+
+## Success Criteria
+- **Technical Excellence**: Clean, maintainable, and scalable code
+- **Content Quality**: Comprehensive, accurate, and actionable documentation
+- **Organization**: Logical structure with easy navigation
+- **Consistency**: Uniform formatting and professional presentation
+- **Usability**: Immediately actionable guidance for development teams
