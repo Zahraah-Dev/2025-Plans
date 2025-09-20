@@ -15,6 +15,7 @@ This folder contains specialized tools and frameworks for AI agent behavior, con
 - **`AI_Agent_Content_Management_Guide.md`** - Guidelines for handling content duplications and organization
 - **`Universal_Plan_Review_Framework.md`** - Comprehensive framework for reviewing and improving development plans
 - **`Universal_Review_Enhancement_Guide.md`** - Advanced enhancement strategies for plan optimization
+- **`REFACTORING_MEMO.md`** - Universal refactoring rules for file size and structure management
 
 ## Purpose | الغرض
 

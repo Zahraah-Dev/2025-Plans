@@ -22,7 +22,9 @@ Follow the content management guidelines in:
 │   ├── How_to_Use_AI_Agent_Specialization.md
 │   ├── AI_Agent_Content_Management_Guide.md
 │   ├── Universal_Plan_Review_Framework.md
-│   └── Universal_Review_Enhancement_Guide.md
+│   ├── Universal_Review_Enhancement_Guide.md
+│   ├── REFACTORING_MEMO.md
+│   └── README.md
 ├── Analytics/                   # Google Analytics documentation
 ├── Database/                    # Database design documentation
 ├── Firebase/                    # Firebase configuration
@@ -41,7 +43,7 @@ When working on this project:
 1. **Always reference the specialization prompt** from `AI_Agent_Tools/AI_Agent_Specialization_Prompt.md`
 2. **Use the content management guide** for duplication and organization issues
 3. **Apply the universal review framework** for plan improvements
-4. **Apply refactoring rules** from `REFACTORING_MEMO.md` for file size management
+4. **Apply refactoring rules** from `AI_Agent_Tools/REFACTORING_MEMO.md` for file size management
 5. **Ensure navigation standards** are met on every page
 6. **Maintain bilingual format** (Arabic/English) throughout
 7. **Follow Flutter best practices** and Clean Architecture principles
@@ -54,7 +56,7 @@ When working on this project:
 
 ## File Refactoring Rules
 Follow the universal refactoring guidelines in:
-- `REFACTORING_MEMO.md` - Universal refactoring rules for all folders
+- `AI_Agent_Tools/REFACTORING_MEMO.md` - Universal refactoring rules for all folders
 
 ### **File Size Thresholds:**
 - **Green Zone**: 200-400 lines (optimal)
@@ -103,7 +105,7 @@ Every documentation page must include consistent navigation elements:
 When reviewing or improving content:
 1. Use `AI_Agent_Tools/Universal_Plan_Review_Framework.md` for comprehensive analysis
 2. Apply `AI_Agent_Tools/AI_Agent_Content_Management_Guide.md` for organization issues
-3. Apply `REFACTORING_MEMO.md` for file size and structure optimization
+3. Apply `AI_Agent_Tools/REFACTORING_MEMO.md` for file size and structure optimization
 4. Verify navigation standards are implemented on every page
 5. Follow the 6-phase process: Assessment, Analysis, Organization, Resolution, Enhancement, QA
 6. Ensure 100% completeness, accuracy, and usability
