@@ -179,8 +179,14 @@ class EcommerceAnalytics {
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Security & Privacy | السابق: الأمان والخصوصية](13_Security_Privacy.md)
-[Next: Release Management | التالي: إدارة الإصدارات →](15_Release_Management.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[← Previous: Security & Privacy](13_Security_Privacy.md)
+**السابق: الأمان والخصوصية**
+[Next: Release Management →](15_Release_Management.md)
+**التالي: إدارة الإصدارات**
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ---

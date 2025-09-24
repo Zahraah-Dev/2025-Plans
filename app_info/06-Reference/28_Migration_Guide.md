@@ -621,8 +621,14 @@ flutter build ios --release
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Troubleshooting | السابق: دليل حل المشاكل](27_Troubleshooting.md)
-[Next: Checklists Reference | التالي: مرجع القوائم المرجعية →](29_Checklists_Reference.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[← Previous: Troubleshooting](27_Troubleshooting.md)
+**السابق: دليل حل المشاكل**
+[Next: Checklists Reference →](29_Checklists_Reference.md)
+**التالي: مرجع القوائم المرجعية**
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ---

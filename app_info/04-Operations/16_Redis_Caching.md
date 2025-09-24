@@ -197,8 +197,14 @@ Implement Redis caching system for high-performance data storage and retrieval i
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Release Management | السابق: إدارة الإصدارات](../03-Quality/15_Release_Management.md)
-[Next: Error Catalog | التالي: كتالوج الأخطاء →](17_Error_Catalog.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[← Previous: Release Management](../03-Quality/15_Release_Management.md)
+**السابق: إدارة الإصدارات**
+[Next: Error Catalog →](17_Error_Catalog.md)
+**التالي: كتالوج الأخطاء**
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ---

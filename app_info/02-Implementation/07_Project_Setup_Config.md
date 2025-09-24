@@ -458,8 +458,13 @@ echo "Build completed successfully!"
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Design System | السابق: نظام التصميم](../01-Architecture/06_Design_System.md)
+[← Previous: Design System](../01-Architecture/06_Design_System.md)
+**السابق: نظام التصميم**
 [](/2025-Plans/app_info/02-Implementation/08_Testing_Strategy/)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ---

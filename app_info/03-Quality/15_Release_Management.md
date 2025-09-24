@@ -172,8 +172,14 @@ version: 1.2.3+456
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Monitoring & Analytics | السابق: المراقبة والتحليلات](14_Monitoring_Analytics.md)
-[Next: Redis Caching | التالي: إدارة التخزين المؤقت →](../04-Operations/16_Redis_Caching.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[← Previous: Monitoring & Analytics](14_Monitoring_Analytics.md)
+**السابق: المراقبة والتحليلات**
+[Next: Redis Caching →](../04-Operations/16_Redis_Caching.md)
+**التالي: إدارة التخزين المؤقت**
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ---

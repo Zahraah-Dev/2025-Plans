@@ -201,8 +201,14 @@ Implement comprehensive business analytics and monitoring system for data-driven
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Notifications & Deep Links | السابق: الإشعارات والروابط العميقة](19_Notifications_DeepLinks.md)
-[Next: Feature Flags | التالي: نظام Feature Flags →](../05-Advanced/21_Feature_Flags.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[← Previous: Notifications & Deep Links](19_Notifications_DeepLinks.md)
+**السابق: الإشعارات والروابط العميقة**
+[Next: Feature Flags →](../05-Advanced/21_Feature_Flags.md)
+**التالي: نظام Feature Flags**
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ---

@@ -346,7 +346,11 @@ class AddToCartUseCase {
 
 [](/2025-Plans/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
 [](/2025-Plans/app_info/01-Architecture/05_Presentation_Layer/)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ### **Quick Navigation | التنقل السريع**
 - [Domain Layer Architecture | معمارية طبقة المجال](#-domain-layer-architecture--معمارية-طبقة-المجال)

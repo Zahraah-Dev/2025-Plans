@@ -204,8 +204,14 @@ Implement comprehensive notification system and deep linking functionality for F
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Performance Monitoring | السابق: مراقبة الأداء](18_Performance_Monitoring.md)
-[Next: Business Analytics | التالي: التحليلات التجارية →](20_Business_Analytics.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[← Previous: Performance Monitoring](18_Performance_Monitoring.md)
+**السابق: مراقبة الأداء**
+[Next: Business Analytics →](20_Business_Analytics.md)
+**التالي: التحليلات التجارية**
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ---

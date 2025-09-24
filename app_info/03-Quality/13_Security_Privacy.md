@@ -190,8 +190,14 @@ class ApiClient {
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Performance Optimization | السابق: تحسين الأداء](12_Performance_Optimization.md)
-[Next: Monitoring & Analytics | التالي: المراقبة والتحليلات →](14_Monitoring_Analytics.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[← Previous: Performance Optimization](12_Performance_Optimization.md)
+**السابق: تحسين الأداء**
+[Next: Monitoring & Analytics →](14_Monitoring_Analytics.md)
+**التالي: المراقبة والتحليلات**
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ---

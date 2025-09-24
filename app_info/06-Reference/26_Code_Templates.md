@@ -373,8 +373,14 @@ class DioClient {
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Migration Guide | السابق: دليل الهجرة](28_Migration_Guide.md)
-[Next: Troubleshooting | التالي: حل المشاكل →](27_Troubleshooting.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[← Previous: Migration Guide](28_Migration_Guide.md)
+**السابق: دليل الهجرة**
+[Next: Troubleshooting →](27_Troubleshooting.md)
+**التالي: حل المشاكل**
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ---

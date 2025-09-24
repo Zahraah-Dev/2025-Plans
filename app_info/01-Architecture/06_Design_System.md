@@ -364,8 +364,13 @@ class AccessibleButton extends StatelessWidget {
 ## 🔗 **Navigation | التنقل**
 
 [](/2025-Plans/app_info/01-Architecture/05_Presentation_Layer/)
-[Next: Project Setup & Configuration | التالي: إعداد المشروع والتكوين →](../02-Implementation/07_Project_Setup_Config.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[Next: Project Setup & Configuration →](../02-Implementation/07_Project_Setup_Config.md)
+**التالي: إعداد المشروع والتكوين**
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ### **Quick Navigation | التنقل السريع**
 - [Design System Architecture | معمارية نظام التصميم](#-design-system-architecture--معمارية-نظام-التصميم)

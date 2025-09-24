@@ -391,7 +391,11 @@ jobs:
 
 [](/2025-Plans/app_info/02-Implementation/07_Project_Setup_Config/)
 [](/2025-Plans/app_info/02-Implementation/09_Code_Quality_Standards/)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ### **Related Files | الملفات ذات الصلة**
 - [Code Quality Standards | معايير جودة الكود](/2025-Plans/app_info/02-Implementation/09_Code_Quality_Standards/)

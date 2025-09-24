@@ -915,8 +915,14 @@ flutter doctor
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Migration Guide | السابق: دليل الترحيل](28_Migration_Guide.md)
-[Next: Glossary & Resources | التالي: المسرد والموارد →](30_Glossary_Resources.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[← Previous: Migration Guide](28_Migration_Guide.md)
+**السابق: دليل الترحيل**
+[Next: Glossary & Resources →](30_Glossary_Resources.md)
+**التالي: المسرد والموارد**
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ---

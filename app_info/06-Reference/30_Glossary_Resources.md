@@ -379,7 +379,12 @@ Provide comprehensive glossary of technical terms, definitions, and useful resou
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Checklists Reference | السابق: قوائم المراجعة والمرجع السريع](29_Checklists_Reference.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[← Previous: Checklists Reference](29_Checklists_Reference.md)
+**السابق: قوائم المراجعة والمرجع السريع**
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ---

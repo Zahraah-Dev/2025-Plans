@@ -587,8 +587,14 @@ flutter build ios --release
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Code Templates | السابق: قوالب الكود](26_Code_Templates.md)
-[Next: Migration Guide | التالي: دليل الترحيل →](28_Migration_Guide.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[← Previous: Code Templates](26_Code_Templates.md)
+**السابق: قوالب الكود**
+[Next: Migration Guide →](28_Migration_Guide.md)
+**التالي: دليل الترحيل**
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ---

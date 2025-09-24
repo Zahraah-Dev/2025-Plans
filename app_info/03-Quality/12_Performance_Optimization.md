@@ -236,8 +236,14 @@ ListView.builder(
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: CI/CD Pipeline | السابق: خط أنابيب CI/CD](11_CI_CD_Pipeline.md)
-[Next: Security & Privacy | التالي: الأمان والخصوصية →](13_Security_Privacy.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[← Previous: CI/CD Pipeline](11_CI_CD_Pipeline.md)
+**السابق: خط أنابيب CI/CD**
+[Next: Security & Privacy →](13_Security_Privacy.md)
+**التالي: الأمان والخصوصية**
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ---

@@ -197,8 +197,14 @@ Create comprehensive error catalog with unified error mapping, user-friendly mes
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Redis Caching | السابق: إدارة التخزين المؤقت](16_Redis_Caching.md)
-[Next: Performance Monitoring | التالي: مراقبة الأداء →](18_Performance_Monitoring.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[← Previous: Redis Caching](16_Redis_Caching.md)
+**السابق: إدارة التخزين المؤقت**
+[Next: Performance Monitoring →](18_Performance_Monitoring.md)
+**التالي: مراقبة الأداء**
+[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**|[🏠 Home](/2025-Plans/)
+**الرئيسية**
 
 ---
