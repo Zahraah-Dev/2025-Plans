@@ -206,6 +206,6 @@ Implement comprehensive performance monitoring with detailed budgets and metrics
 
 [← Previous: Error Catalog | السابق: كتالوج الأخطاء](17_Error_Catalog.md)
 [Next: Notifications & Deep Links | التالي: الإشعارات والروابط العميقة →](19_Notifications_DeepLinks.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
 
 ---

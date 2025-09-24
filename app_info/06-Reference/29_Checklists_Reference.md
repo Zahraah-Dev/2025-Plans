@@ -917,6 +917,6 @@ flutter doctor
 
 [← Previous: Migration Guide | السابق: دليل الترحيل](28_Migration_Guide.md)
 [Next: Glossary & Resources | التالي: المسرد والموارد →](30_Glossary_Resources.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
 
 ---

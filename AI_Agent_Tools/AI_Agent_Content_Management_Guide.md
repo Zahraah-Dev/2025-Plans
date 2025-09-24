@@ -364,7 +364,7 @@ Please provide a comprehensive solution with step-by-step implementation plan.
 
 [← Previous: [Previous File Name] | السابق: [اسم الملف السابق]]([previous-file-link])
 [Next: [Next File Name] | التالي: [اسم الملف التالي] →]([next-file-link])
-[🏠 Home | الرئيسية](/2025-Plans/)| الرئيسية]([home-link])
+[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)| الرئيسية]([home-link])
 
 ### **Quick Navigation | التنقل السريع**
 - [Section 1 | القسم الأول](#section-1)

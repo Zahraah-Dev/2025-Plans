@@ -203,6 +203,6 @@ Implement comprehensive monitoring and alerting system for proactive issue detec
 
 [← Previous: Advanced Error Management | السابق: إدارة الأخطاء المتقدمة](22_Advanced_Error_Management.md)
 [Next: Configuration Management | التالي: إدارة التكوين →](24_Configuration_Management.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
 
 ---

@@ -292,6 +292,6 @@ git commit -m "test: add unit tests for cart service"
 
 [](/2025-Plans/app_info/02-Implementation/09_Code_Quality_Standards/)
 [](/2025-Plans/app_info/03-Quality/11_CI_CD_Pipeline/)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
 
 ---

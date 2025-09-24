@@ -345,7 +345,7 @@ class RTLProductCard extends StatelessWidget {
 
 [](/2025-Plans/app_info/01-Architecture/04_Domain_Layer/)
 [](/2025-Plans/app_info/01-Architecture/06_Design_System/)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
 
 ### **Quick Navigation | التنقل السريع**
 - [Presentation Layer Architecture | معمارية طبقة العرض](#-presentation-layer-architecture--معمارية-طبقة-العرض)

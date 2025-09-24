@@ -410,7 +410,7 @@ void main() {
 
 [← Previous: Architecture Overview | السابق: نظرة عامة على المعمارية](/2025-Plans/app_info/01-Architecture/01_Architecture_Overview/)
 [Next: Data Layer Error Handling | التالي: معالجة أخطاء طبقة البيانات →](/2025-Plans/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
-[🏠 Home | الرئيسية](/2025-Plans/)| الرئيسية](/2025-Plans/)
+[🏠 Home | الرئيسية](/2025-Plans/)
 
 ### **Quick Navigation | التنقل السريع**
 - [State Management | إدارة الحالة](#state-management--إدارة-الحالة)

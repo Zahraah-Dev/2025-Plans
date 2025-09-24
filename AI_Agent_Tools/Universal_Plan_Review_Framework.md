@@ -423,7 +423,7 @@
 
 ## 🔗 **Navigation | التنقل**
 
-[🏠 Home | الرئيسية](/2025-Plans/)| الرئيسية](../README.md) | [📋 Content Management Guide | دليل إدارة المحتوى](AI_Agent_Content_Management_Guide.md) | [🔧 Refactoring Memo | مذكرة إعادة الهيكلة](REFACTORING_MEMO.md)
+[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)| الرئيسية](../README.md) | [📋 Content Management Guide | دليل إدارة المحتوى](AI_Agent_Content_Management_Guide.md) | [🔧 Refactoring Memo | مذكرة إعادة الهيكلة](REFACTORING_MEMO.md)
 
 ---
 

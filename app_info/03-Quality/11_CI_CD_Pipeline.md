@@ -390,6 +390,6 @@ jobs:
 
 [← Previous: Git Workflow | السابق: سير عمل Git](../02-Implementation/10_Git_Workflow.md)
 [Next: Performance Optimization | التالي: تحسين الأداء →](12_Performance_Optimization.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
 
 ---

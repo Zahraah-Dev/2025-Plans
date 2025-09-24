@@ -359,7 +359,7 @@ class NetworkInfoImpl implements NetworkInfo {
 
 [](/2025-Plans/app_info/01-Architecture/02_State_Management_DI/)
 [](/2025-Plans/app_info/01-Architecture/04_Domain_Layer/)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
 
 ### **Quick Navigation | التنقل السريع**
 - [Detailed Implementation Guides | أدلة التنفيذ التفصيلية](#-detailed-implementation-guides--أدلة-التنفيذ-التفصيلية)

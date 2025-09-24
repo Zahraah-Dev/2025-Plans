@@ -207,6 +207,6 @@ Implement Feature Flags system for flexible feature deployment, A/B testing, and
 
 [← Previous: Business Analytics | السابق: التحليلات التجارية](../04-Operations/20_Business_Analytics.md)
 [Next: Advanced Error Management | التالي: إدارة الأخطاء المتقدمة →](22_Advanced_Error_Management.md)
-[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
+[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
 
 ---
