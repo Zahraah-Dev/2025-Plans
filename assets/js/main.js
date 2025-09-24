@@ -4,35 +4,70 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize the documentation site
     initializeDocumentation();
 
-    // Add fonts-loaded class when fonts are ready
+    // Add font-loading class initially
+    document.body.classList.add('font-loading');
+
+    // Enhanced font loading detection with error handling
     if (document.fonts && document.fonts.ready) {
         document.fonts.ready.then(function () {
+            document.body.classList.remove('font-loading');
+            document.body.classList.add('fonts-loaded');
+        }).catch(function(error) {
+            console.warn('Font loading failed, using fallbacks:', error);
+            document.body.classList.remove('font-loading');
             document.body.classList.add('fonts-loaded');
         });
     } else {
         // Fallback for browsers without font loading API
         setTimeout(function () {
+            document.body.classList.remove('font-loading');
             document.body.classList.add('fonts-loaded');
-        }, 1000);
+        }, 2000);
+    }
+
+    // Additional font detection with IBM Plex specific checks
+    if (document.fonts && document.fonts.check) {
+        const checkFonts = () => {
+            try {
+                const ibmPlexLoaded = document.fonts.check('16px IBM Plex Sans') || 
+                                    document.fonts.check('16px "IBM Plex Sans"');
+                const ibmPlexArabicLoaded = document.fonts.check('16px IBM Plex Sans Arabic') || 
+                                          document.fonts.check('16px "IBM Plex Sans Arabic"');
+                
+                if (ibmPlexLoaded || ibmPlexArabicLoaded) {
+                    document.body.classList.remove('font-loading');
+                    document.body.classList.add('fonts-loaded');
+                } else {
+                    setTimeout(checkFonts, 500);
+                }
+            } catch (error) {
+                console.warn('Font check failed, using fallbacks:', error);
+                document.body.classList.remove('font-loading');
+                document.body.classList.add('fonts-loaded');
+            }
+        };
+        
+        // Start checking after a short delay
+        setTimeout(checkFonts, 100);
     }
 });
 
 function initializeDocumentation() {
     // Add smooth scrolling for anchor links
     addSmoothScrolling();
-    
+
     // Add copy code functionality
     addCopyCodeButtons();
-    
+
     // Add table of contents generation
     generateTableOfContents();
-    
+
     // Add search functionality
     initializeSearch();
-    
+
     // Add mobile menu toggle
     initializeMobileMenu();
-    
+
     // Add theme toggle functionality
     initializeThemeToggle();
 }
@@ -203,22 +238,22 @@ function addScrollSpy() {
 function initializeThemeToggle() {
     const themeToggle = document.getElementById('theme-toggle');
     if (!themeToggle) return;
-    
+
     // Get saved theme or default to system preference
     const savedTheme = localStorage.getItem('theme');
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
-    
+
     // Apply initial theme
     applyTheme(initialTheme);
-    
+
     // Listen for system theme changes
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
         if (!localStorage.getItem('theme')) {
             applyTheme(e.matches ? 'dark' : 'light');
         }
     });
-    
+
     // Toggle theme on button click
     themeToggle.addEventListener('click', () => {
         const currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
@@ -231,7 +266,7 @@ function initializeThemeToggle() {
 function applyTheme(theme) {
     const themeToggle = document.getElementById('theme-toggle');
     if (!themeToggle) return;
-    
+
     if (theme === 'dark') {
         document.body.classList.add('dark-theme');
         themeToggle.textContent = '☀️';
