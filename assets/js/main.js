@@ -3,6 +3,18 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize the documentation site
     initializeDocumentation();
+    
+    // Add fonts-loaded class when fonts are ready
+    if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(function() {
+            document.body.classList.add('fonts-loaded');
+        });
+    } else {
+        // Fallback for browsers without font loading API
+        setTimeout(function() {
+            document.body.classList.add('fonts-loaded');
+        }, 1000);
+    }
 });
 
 function initializeDocumentation() {
@@ -79,10 +91,7 @@ function generateTableOfContents() {
     // Clear existing TOC
     tocNav.innerHTML = '';
 
-    let currentLevel = 0;
-    let currentList = tocNav;
-    const listStack = [tocNav];
-
+    // Simple approach - create a flat list first, then we can enhance later
     headings.forEach((heading, index) => {
         const level = parseInt(heading.tagName.substring(1));
         const id = `heading-${index}`;
@@ -91,6 +100,10 @@ function generateTableOfContents() {
         // Create list item
         const li = document.createElement('li');
         li.className = `toc-${heading.tagName.toLowerCase()}`;
+        
+        // Add indentation based on level
+        const indent = (level - 2) * 20; // h2 = 0, h3 = 20px, h4 = 40px, etc.
+        li.style.paddingLeft = `${indent}px`;
 
         // Create link
         const a = document.createElement('a');
@@ -110,26 +123,7 @@ function generateTableOfContents() {
         });
 
         li.appendChild(a);
-
-        // Handle nesting
-        if (level > currentLevel) {
-            // Create new nested list
-            const newList = document.createElement('ul');
-            newList.className = 'toc-nested';
-            li.appendChild(newList);
-            listStack.push(newList);
-            currentList = newList;
-            currentLevel = level;
-        } else if (level < currentLevel) {
-            // Go back up the stack
-            while (level < currentLevel && listStack.length > 1) {
-                listStack.pop();
-                currentList = listStack[listStack.length - 1];
-                currentLevel--;
-            }
-        }
-
-        currentList.appendChild(li);
+        tocNav.appendChild(li);
     });
 
     // Add scroll spy functionality

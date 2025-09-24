@@ -12,7 +12,8 @@
     --success-color: #10b981;
     --warning-color: #f59e0b;
     --error-color: #ef4444;
-    --font-family: 'IBM Plex Sans', 'Noto Sans Arabic', 'IBM Plex Sans Arabic Fallback', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    --font-arabic: 'Arial Unicode MS', 'Tahoma', 'Arial', sans-serif;
 }
 
 * {
@@ -34,20 +35,21 @@ body {
 
 /* Font loading optimization */
 .fonts-loaded {
-    font-family: 'IBM Plex Sans', 'Noto Sans Arabic', 'IBM Plex Sans Arabic Fallback', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    --font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    --font-arabic: 'Noto Sans Arabic', 'IBM Plex Sans', 'Arial Unicode MS', 'Tahoma', 'Arial', sans-serif;
 }
 
 /* Arabic text optimization */
 [dir="rtl"],
 .arabic {
-    font-family: 'Noto Sans Arabic', 'IBM Plex Sans Arabic Fallback', 'IBM Plex Sans', 'Arial Unicode MS', Arial, sans-serif;
+    font-family: var(--font-arabic);
     direction: rtl;
     text-align: right;
 }
 
 /* Bilingual content styling */
 .bilingual {
-    font-family: 'IBM Plex Sans', 'Noto Sans Arabic', 'IBM Plex Sans Arabic Fallback', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-family: var(--font-family);
 }
 
 .english {
