@@ -34,7 +34,7 @@ I have a Flutter e-commerce project with comprehensive documentation. Please rev
 
 Focus on: Clean Architecture implementation, Flutter best practices, and e-commerce domain expertise.
 
-File to review: App Info/01-Architecture/01_Architecture_Overview.md
+File to review: app_info/01-Architecture/01_Architecture_Overview.md
 ```
 
 ### **Example 2: Create New Implementation Guides**
@@ -66,7 +66,7 @@ Review my Master Implementation Guide and enhance it with:
 4. Additional architecture decision records
 5. Enhanced monitoring and analytics planning
 
-Current file: App Info/00-Master_Implementation_Guide.md
+Current file: app_info/00-Master_Implementation_Guide.md
 ```
 
 ---
@@ -141,9 +141,9 @@ Focus areas: Architecture, State Management, Testing, Performance, Security
 ```
 
 **Files to review:**
-- `App Info/01-Architecture/` (6 files)
-- `App Info/02-Implementation/` (4 files)
-- `App Info/03-Quality/` (5 files)
+- `app_info/01-Architecture/` (6 files)
+- `app_info/02-Implementation/` (4 files)
+- `app_info/03-Quality/` (5 files)
 
 ### **2. Create Missing Documentation**
 

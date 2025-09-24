@@ -37,7 +37,7 @@ Follow the content management guidelines in:
 ## 🏗️ **Project Structure | هيكل المشروع**
 ```
 /2025-Plans/
-├── App Info/                    # Flutter development guides (30 files)
+├── app_info/                    # Flutter development guides (30 files)
 │   ├── 00-Master_Implementation_Guide.md
 │   ├── 01-Architecture/         # Clean Architecture patterns
 │   ├── 02-Implementation/       # Step-by-step guides

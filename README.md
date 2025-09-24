@@ -31,7 +31,7 @@ This repository contains a comprehensive Flutter e-commerce development project 
 ### **📁 Project Structure**
 ```
 2025-Plans/
-├── App Info/                    # Flutter development guides (30 files)
+├── app_info/                    # Flutter development guides (30 files)
 │   ├── 00-Templates/           # Master templates system
 │   ├── 01-Architecture/        # Core patterns & principles
 │   ├── 02-Implementation/      # Step-by-step implementation guides
@@ -68,7 +68,7 @@ This repository contains a comprehensive Flutter e-commerce development project 
 - **Local View**: Open `index.html` in your browser
 
 ### **2. Use Templates**
-Navigate to `App Info/00-Templates/` for master templates:
+Navigate to `app_info/00-Templates/` for master templates:
 - Risk Assessment Template
 - Quality Gates Template
 - Common Pitfalls Template
@@ -79,7 +79,7 @@ Navigate to `App Info/00-Templates/` for master templates:
 - Comprehensive Metrics Template
 
 ### **3. Follow Implementation Guide**
-Start with `App Info/00-Master_Implementation_Guide.md` for complete setup instructions.
+Start with `app_info/00-Master_Implementation_Guide.md` for complete setup instructions.
 
 ## 📚 **Documentation Sections**
 

@@ -44,7 +44,7 @@ The AI agent should recognize these patterns as **duplications**:
 
 #### **Step 1: Create Master Templates**
 ```markdown
-# Create: /App Info/00-Templates/
+# Create: /app_info/00-Templates/
 ├── 00_Master_Template.md          # Base template for all files
 ├── 01_Risk_Assessment_Template.md # Reusable risk assessment
 ├── 02_Success_Criteria_Template.md # Reusable success criteria
@@ -89,7 +89,7 @@ The AI agent should recognize these patterns as **duplications**:
 
 #### **Corrected Structure:**
 ```
-/App Info/
+/app_info/
 ├── 01-Architecture/           # Core patterns & principles
 ├── 02-Implementation/         # Step-by-step implementation
 ├── 03-Quality/               # Testing, performance, security
