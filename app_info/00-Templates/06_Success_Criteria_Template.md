@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Success Criteria Template"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/06-success-criteria-template/
+---
+
 # Success Criteria Template
 ## قالب معايير النجاح
 

@@ -1,3 +1,10 @@
+---
+layout: default
+title: "8. استراتيجية الاختبار"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/08-testing-strategy/
+---
+
 # 8. استراتيجية الاختبار
 ## 8. Testing Strategy
 

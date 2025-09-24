@@ -1,3 +1,10 @@
+---
+layout: default
+title: "14. File-Specific Priority Template | قالب الأولويات المحددة للملف"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/14-file-specific-priority-template/
+---
+
 # 14. File-Specific Priority Template | قالب الأولويات المحددة للملف
 
 ## 🎯 **Template Overview | نظرة عامة على القالب**

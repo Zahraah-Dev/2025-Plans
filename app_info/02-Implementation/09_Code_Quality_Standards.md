@@ -1,3 +1,10 @@
+---
+layout: default
+title: "9. جودة الكود والمعايير"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/09-code-quality-standards/
+---
+
 # 9. جودة الكود والمعايير
 ## 9. Code Quality & Standards
 

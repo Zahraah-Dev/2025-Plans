@@ -1,3 +1,10 @@
+---
+layout: default
+title: "13. Generic Priority Framework | إطار الأولويات العام"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/13-generic-priority-framework/
+---
+
 # 13. Generic Priority Framework | إطار الأولويات العام
 
 ## 🎯 **Priority Framework Overview | نظرة عامة على إطار الأولويات**

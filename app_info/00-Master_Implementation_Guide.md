@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Master Implementation Guide | دليل التنفيذ الرئيسي"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/00-master-implementation-guide/
+---
+
 # Master Implementation Guide | دليل التنفيذ الرئيسي
 
 > **Comprehensive Flutter E-commerce App Development Roadmap**  

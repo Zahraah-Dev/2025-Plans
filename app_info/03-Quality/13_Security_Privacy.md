@@ -1,3 +1,10 @@
+---
+layout: default
+title: "13. الأمان والخصوصية"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/13-security-privacy/
+---
+
 # 13. الأمان والخصوصية
 ## 🎯 **Objective | الهدف**
 Implement Security & Privacy for robust, maintainable Flutter e-commerce application.

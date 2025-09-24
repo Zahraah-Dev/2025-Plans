@@ -1,3 +1,10 @@
+---
+layout: default
+title: "2. إدارة الحالة وحقن الاعتماديات"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/02-state-management-di/
+---
+
 # 2. إدارة الحالة وحقن الاعتماديات
 ## 2. State Management & Dependency Injection
 

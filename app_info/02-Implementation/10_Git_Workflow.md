@@ -1,3 +1,10 @@
+---
+layout: default
+title: "10. سير عمل Git والفروع"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/10-git-workflow/
+---
+
 # 10. سير عمل Git والفروع
 ## 10. Git Workflow & Branching
 

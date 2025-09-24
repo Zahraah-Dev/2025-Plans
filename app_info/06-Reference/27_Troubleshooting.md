@@ -1,3 +1,10 @@
+---
+layout: default
+title: "27. دليل حل المشاكل"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/27-troubleshooting/
+---
+
 # 27. دليل حل المشاكل
 ## 27. Troubleshooting
 

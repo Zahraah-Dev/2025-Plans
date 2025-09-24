@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Quality Gates Template"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/03-quality-gates-template/
+---
+
 # Quality Gates Template
 ## قالب بوابات الجودة
 

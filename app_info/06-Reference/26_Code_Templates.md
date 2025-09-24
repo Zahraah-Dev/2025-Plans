@@ -1,3 +1,10 @@
+---
+layout: default
+title: "26. قوالب الكود والأدوات"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/26-code-templates/
+---
+
 # 26. قوالب الكود والأدوات
 ## 26. Code Templates & Tools
 

@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Troubleshooting Template"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/07-troubleshooting-template/
+---
+
 # Troubleshooting Template
 ## قالب استكشاف الأخطاء وإصلاحها
 

@@ -1,3 +1,10 @@
+---
+layout: default
+title: "3. طبقة البيانات ومعالجة الأخطاء"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/03-data-layer-error-handling/
+---
+
 # 3. طبقة البيانات ومعالجة الأخطاء
 ## 3. Data Layer & Error Handling
 

@@ -1,3 +1,10 @@
+---
+layout: default
+title: "18. مراقبة الأداء والميزانيات"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/18-performance-monitoring/
+---
+
 # 18. مراقبة الأداء والميزانيات
 ## 18. Performance Monitoring
 

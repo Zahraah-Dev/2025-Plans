@@ -1,3 +1,10 @@
+---
+layout: default
+title: "14. المراقبة والتحليلات"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/14-monitoring-analytics/
+---
+
 # 14. المراقبة والتحليلات
 ## 🎯 **Objective | الهدف**
 Implement Monitoring & Analytics for robust, maintainable Flutter e-commerce application.

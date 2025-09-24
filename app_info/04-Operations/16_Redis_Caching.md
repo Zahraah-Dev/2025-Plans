@@ -1,3 +1,10 @@
+---
+layout: default
+title: "16. إدارة التخزين المؤقت (Redis Caching)"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/16-redis-caching/
+---
+
 # 16. إدارة التخزين المؤقت (Redis Caching)
 ## 16. Redis Caching
 

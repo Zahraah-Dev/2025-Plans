@@ -1,3 +1,10 @@
+---
+layout: default
+title: "6. نظام التصميم والثيمات"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/06-design-system/
+---
+
 # 6. نظام التصميم والثيمات
 ## 6. Design System & Theming
 

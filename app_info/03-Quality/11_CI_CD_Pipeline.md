@@ -1,3 +1,10 @@
+---
+layout: default
+title: "11. خط أنابيب CI/CD"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/11-ci-cd-pipeline/
+---
+
 # 11. خط أنابيب CI/CD
 ## 11. CI/CD Pipeline
 

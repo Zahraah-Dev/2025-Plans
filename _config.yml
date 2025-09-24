@@ -25,6 +25,7 @@ collections:
     output: true
     permalink: /:collection/:name/
     sort_by: title
+    title: "App Info"
 
 # Defaults
 defaults:

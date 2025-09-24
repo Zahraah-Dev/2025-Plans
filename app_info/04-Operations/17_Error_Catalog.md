@@ -1,3 +1,10 @@
+---
+layout: default
+title: "17. كتالوج الأخطاء الشامل"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/17-error-catalog/
+---
+
 # 17. كتالوج الأخطاء الشامل
 ## 17. Error Catalog
 

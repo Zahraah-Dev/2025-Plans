@@ -1,3 +1,10 @@
+---
+layout: default
+title: "23. المراقبة والتنبيهات المتقدمة"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/23-monitoring-alerting/
+---
+
 # 23. المراقبة والتنبيهات المتقدمة
 ## 23. Monitoring & Alerting
 

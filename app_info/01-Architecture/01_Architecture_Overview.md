@@ -1,3 +1,10 @@
+---
+layout: default
+title: "1. نظرة عامة على المعمارية النظيفة | Clean Architecture Overview"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/01-architecture-overview/
+---
+
 # 1. نظرة عامة على المعمارية النظيفة | Clean Architecture Overview
 ## Enterprise-Grade Flutter E-commerce Architecture | معمارية Flutter للتجارة الإلكترونية على مستوى المؤسسة
 

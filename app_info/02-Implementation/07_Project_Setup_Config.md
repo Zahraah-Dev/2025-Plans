@@ -1,3 +1,10 @@
+---
+layout: default
+title: "7. إعداد المشروع والتكوين"
+description: "Flutter e-commerce development guide"
+permalink: /app_info/07-project-setup-config/
+---
+
 # 7. إعداد المشروع والتكوين
 ## 7. Project Setup & Configuration
 
