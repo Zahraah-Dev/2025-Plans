@@ -10,7 +10,7 @@ description: "Comprehensive Flutter e-commerce development project with 30+ impl
 
 > **Comprehensive Flutter e-commerce development project with 30+ implementation guides and specialized AI tools for technical planning and content management.**
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-blue?style=for-the-badge&logo=github)](https://zahraahit.github.io/2025-Plans)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-blue?style=for-the-badge&logo=github)](https://zahraah-dev.github.io/2025-Plans)
 [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
 [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -70,7 +70,7 @@ This repository contains a comprehensive Flutter e-commerce development project 
 ## 🚀 **Quick Start**
 
 ### **1. View Documentation**
-- **Live Site**: [https://zahraahit.github.io/2025-Plans](https://zahraahit.github.io/2025-Plans)
+- **Live Site**: [https://zahraah-dev.github.io/2025-Plans](https://zahraah-dev.github.io/2025-Plans)
 - **Local View**: Open `index.html` in your browser
 
 ### **2. Use Templates**
@@ -176,9 +176,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 **Support**
 
-- **Documentation**: [Live Site](https://zahraahit.github.io/2025-Plans)
-- **Issues**: [GitHub Issues](https://github.com/zahraahit/2025-Plans/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/zahraahit/2025-Plans/discussions)
+- **Documentation**: [Live Site](https://zahraah-dev.github.io/2025-Plans)
+- **Issues**: [GitHub Issues](https://github.com/Zahraah-Dev/2025-Plans/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Zahraah-Dev/2025-Plans/discussions)
 
 ---
 
