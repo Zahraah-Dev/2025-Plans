@@ -2,7 +2,7 @@
 layout: default
 title: "19. إدارة الإشعارات والروابط العميقة"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/04-operations/19-notifications-deeplinks/
+permalink: /app_info/04-Operations/19-notifications-deeplinks/
 ---
 
 # 19. إدارة الإشعارات والروابط العميقة

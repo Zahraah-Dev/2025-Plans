@@ -2,7 +2,7 @@
 layout: default
 title: "10. سير عمل Git والفروع"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/02-implementation/10-git-workflow/
+permalink: /app_info/02-Implementation/10-git-workflow/
 ---
 
 # 10. سير عمل Git والفروع

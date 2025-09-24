@@ -2,7 +2,7 @@
 layout: default
 title: "2. إدارة الحالة وحقن الاعتماديات"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/01-architecture/02-state-management-di/
+permalink: /app_info/01-Architecture/02-state-management-di/
 ---
 
 # 2. إدارة الحالة وحقن الاعتماديات

@@ -2,7 +2,7 @@
 layout: default
 title: "Advanced Features"
 description: "Advanced features, optimizations, and enterprise-level capabilities"
-permalink: /app_info/05-advanced/
+permalink: /app_info/05-Advanced/
 ---
 
 # Advanced Features | الميزات المتقدمة

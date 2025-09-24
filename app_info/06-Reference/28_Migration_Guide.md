@@ -2,7 +2,7 @@
 layout: default
 title: "28. دليل الترحيل"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/06-reference/28-migration-guide/
+permalink: /app_info/06-Reference/28-migration-guide/
 ---
 
 # 28. دليل الترحيل

@@ -2,7 +2,7 @@
 layout: default
 title: "30. مسرد المصطلحات والموارد"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/06-reference/30-glossary-resources/
+permalink: /app_info/06-Reference/30-glossary-resources/
 ---
 
 # 30. مسرد المصطلحات والموارد

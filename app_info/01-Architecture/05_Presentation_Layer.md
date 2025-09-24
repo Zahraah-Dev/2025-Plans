@@ -2,7 +2,7 @@
 layout: default
 title: "5. طبقة العرض"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/01-architecture/05-presentation-layer/
+permalink: /app_info/01-Architecture/05-presentation-layer/
 ---
 
 # 5. طبقة العرض

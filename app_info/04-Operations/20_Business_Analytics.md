@@ -2,7 +2,7 @@
 layout: default
 title: "20. مراقبة وتحليل الأعمال"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/04-operations/20-business-analytics/
+permalink: /app_info/04-Operations/20-business-analytics/
 ---
 
 # 20. مراقبة وتحليل الأعمال

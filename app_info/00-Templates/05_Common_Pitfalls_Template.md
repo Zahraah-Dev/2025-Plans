@@ -2,7 +2,7 @@
 layout: default
 title: "Common Pitfalls Template"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/00-templates/05-common-pitfalls-template/
+permalink: /app_info/00-Templates/05-common-pitfalls-template/
 ---
 
 # Common Pitfalls Template

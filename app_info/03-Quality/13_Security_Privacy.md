@@ -2,7 +2,7 @@
 layout: default
 title: "13. الأمان والخصوصية"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/03-quality/13-security-privacy/
+permalink: /app_info/03-Quality/13-security-privacy/
 ---
 
 # 13. الأمان والخصوصية

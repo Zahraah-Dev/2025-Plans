@@ -2,7 +2,7 @@
 layout: default
 title: "Implementation & Development"
 description: "Step-by-step implementation guides for Flutter e-commerce development"
-permalink: /app_info/02-implementation/
+permalink: /app_info/02-Implementation/
 ---
 
 # Implementation & Development | التنفيذ والتطوير

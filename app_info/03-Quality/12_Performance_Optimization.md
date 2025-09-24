@@ -2,7 +2,7 @@
 layout: default
 title: "12. تحسين الأداء"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/03-quality/12-performance-optimization/
+permalink: /app_info/03-Quality/12-performance-optimization/
 ---
 
 # 12. تحسين الأداء

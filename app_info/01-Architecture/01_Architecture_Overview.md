@@ -2,7 +2,7 @@
 layout: default
 title: "1. نظرة عامة على المعمارية النظيفة | Clean Architecture Overview"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/01-architecture/01-architecture-overview/
+permalink: /app_info/01-Architecture/01-architecture-overview/
 ---
 
 # 1. نظرة عامة على المعمارية النظيفة | Clean Architecture Overview

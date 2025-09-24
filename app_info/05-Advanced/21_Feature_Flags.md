@@ -2,7 +2,7 @@
 layout: default
 title: "21. نظام Feature Flags"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/05-advanced/21-feature-flags/
+permalink: /app_info/05-Advanced/21-feature-flags/
 ---
 
 # 21. نظام Feature Flags

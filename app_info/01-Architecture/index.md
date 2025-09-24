@@ -2,7 +2,7 @@
 layout: default
 title: "Architecture & Core Patterns"
 description: "Core patterns and principles for Flutter e-commerce architecture"
-permalink: /app_info/01-architecture/
+permalink: /app_info/01-Architecture/
 ---
 
 # Architecture & Core Patterns | المعمارية والأنماط الأساسية

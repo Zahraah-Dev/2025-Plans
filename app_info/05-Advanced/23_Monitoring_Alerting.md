@@ -2,7 +2,7 @@
 layout: default
 title: "23. المراقبة والتنبيهات المتقدمة"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/05-advanced/23-monitoring-alerting/
+permalink: /app_info/05-Advanced/23-monitoring-alerting/
 ---
 
 # 23. المراقبة والتنبيهات المتقدمة

@@ -2,7 +2,7 @@
 layout: default
 title: "29. قوائم المراجعة والمرجع السريع"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/06-reference/29-checklists-reference/
+permalink: /app_info/06-Reference/29-checklists-reference/
 ---
 
 # 29. قوائم المراجعة والمرجع السريع

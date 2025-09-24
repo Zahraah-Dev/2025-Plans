@@ -2,7 +2,7 @@
 layout: default
 title: "Operations & Deployment"
 description: "CI/CD, monitoring, deployment, and operational guides"
-permalink: /app_info/04-operations/
+permalink: /app_info/04-Operations/
 ---
 
 # Operations & Deployment | العمليات والنشر

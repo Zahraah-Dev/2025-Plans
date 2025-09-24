@@ -2,7 +2,7 @@
 layout: default
 title: "Reference & Templates"
 description: "Quick reference materials, templates, and troubleshooting guides"
-permalink: /app_info/06-reference/
+permalink: /app_info/06-Reference/
 ---
 
 # Reference & Templates | المراجع والقوالب

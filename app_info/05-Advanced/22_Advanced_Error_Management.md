@@ -2,7 +2,7 @@
 layout: default
 title: "22. إدارة الأخطاء المتقدمة"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/05-advanced/22-advanced-error-management/
+permalink: /app_info/05-Advanced/22-advanced-error-management/
 ---
 
 # 22. إدارة الأخطاء المتقدمة

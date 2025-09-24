@@ -2,7 +2,7 @@
 layout: default
 title: "Master Templates System"
 description: "8 master templates for consistent documentation and duplication elimination"
-permalink: /app_info/00-templates/
+permalink: /app_info/00-Templates/
 ---
 
 # Master Templates System | نظام القوالب الرئيسية

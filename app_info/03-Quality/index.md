@@ -2,7 +2,7 @@
 layout: default
 title: "Quality & Performance"
 description: "Testing, performance, security, and quality assurance guides"
-permalink: /app_info/03-quality/
+permalink: /app_info/03-Quality/
 ---
 
 # Quality & Performance | الجودة والأداء

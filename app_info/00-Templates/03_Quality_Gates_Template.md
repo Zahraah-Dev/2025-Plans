@@ -2,7 +2,7 @@
 layout: default
 title: "Quality Gates Template"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/00-templates/03-quality-gates-template/
+permalink: /app_info/00-Templates/03-quality-gates-template/
 ---
 
 # Quality Gates Template

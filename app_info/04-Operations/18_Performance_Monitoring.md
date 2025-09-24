@@ -2,7 +2,7 @@
 layout: default
 title: "18. مراقبة الأداء والميزانيات"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/04-operations/18-performance-monitoring/
+permalink: /app_info/04-Operations/18-performance-monitoring/
 ---
 
 # 18. مراقبة الأداء والميزانيات
