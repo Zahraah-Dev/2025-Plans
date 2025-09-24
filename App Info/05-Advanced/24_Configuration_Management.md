@@ -65,12 +65,13 @@ Implement advanced configuration management system for environment-specific sett
 > **Reference**: See [Implementation Priority Template](../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
 
 ### **Configuration Management Specific Priorities:**
-- **Phase 1: Foundation (Must Have)**
-  - [ ] Set up configuration management system
-  - [ ] Implement environment-specific configurations
-  - [ ] Add basic secrets management
-  - [ ] Create configuration validation
-- **Phase 2: Enhancement (Should Have)**
+### **Phase 1: Foundation (Must Have)**
+- [ ] Set up configuration management system
+- [ ] Implement environment-specific configurations
+- [ ] Add basic secrets management
+- [ ] Create configuration validation
+
+### **Phase 2: Enhancement (Should Have)**
 - [ ] Add dynamic configuration updates
 - [ ] Implement advanced secrets management
 - [ ] Create configuration dashboards

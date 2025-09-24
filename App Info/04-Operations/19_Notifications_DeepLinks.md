@@ -73,12 +73,13 @@ Implement comprehensive notification system and deep linking functionality for F
 > **Reference**: See [Implementation Priority Template](../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
 
 ### **Notifications & Deep Links Specific Priorities:**
-- **Phase 1: Foundation (Must Have)**
-  - [ ] Set up push notification service
-  - [ ] Implement basic deep linking
-  - [ ] Create notification templates
-  - [ ] Add deep link routing
-- **Phase 2: Enhancement (Should Have)**
+### **Phase 1: Foundation (Must Have)**
+- [ ] Set up push notification service
+- [ ] Implement basic deep linking
+- [ ] Create notification templates
+- [ ] Add deep link routing
+
+### **Phase 2: Enhancement (Should Have)**
 - [ ] Add notification scheduling
 - [ ] Implement advanced deep linking
 - [ ] Add notification analytics

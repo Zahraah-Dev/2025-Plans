@@ -26,7 +26,6 @@ When working on this project, always use the AI agent specialization defined in:
 Follow the content management guidelines in:
 - `AI_Agent_Tools/AI_Agent_Content_Management_Guide.md` - For handling duplications and organization
 - `AI_Agent_Tools/Universal_Plan_Review_Framework.md` - For reviewing and improving any plan
-- `AI_Agent_Tools/REFACTORING_MEMO.md` - For file size and structure optimization
 
 ### **Content Quality Standards | معايير جودة المحتوى**
 - **No Duplication**: Use template references instead of duplicating content
@@ -51,7 +50,6 @@ Follow the content management guidelines in:
 │   ├── How_to_Use_AI_Agent_Specialization.md
 │   ├── AI_Agent_Content_Management_Guide.md
 │   ├── Universal_Plan_Review_Framework.md
-│   ├── REFACTORING_MEMO.md
 │   └── README.md
 ├── Analytics/                   # Google Analytics documentation
 ├── Database/                    # Database design documentation
@@ -80,7 +78,6 @@ When working on this project, follow this priority order:
 ### **Secondary Actions | الإجراءات الثانوية**
 5. **Use content management guide** for duplication and organization issues
 6. **Apply universal review framework** for plan improvements
-7. **Apply refactoring rules** from `AI_Agent_Tools/REFACTORING_MEMO.md` for file size management
 8. **Ensure navigation standards** are met on every page
 9. **Follow e-commerce domain** specific guidelines and patterns
 
@@ -92,7 +89,6 @@ When working on this project, follow this priority order:
 
 ## 🔧 **File Refactoring Rules | قواعد إعادة هيكلة الملفات**
 Follow the universal refactoring guidelines in:
-- `AI_Agent_Tools/REFACTORING_MEMO.md` - Universal refactoring rules for all folders
 
 ### **File Size Thresholds | حدود حجم الملفات:**
 - **🟢 Green Zone**: 200-400 lines (optimal) - Keep as is
@@ -159,7 +155,6 @@ When reviewing or improving content, follow this systematic approach:
 
 ### **Phase 2: Organization | التنظيم**
 4. Apply `AI_Agent_Tools/AI_Agent_Content_Management_Guide.md` for organization issues
-5. Apply `AI_Agent_Tools/REFACTORING_MEMO.md` for file size and structure optimization
 6. Verify navigation standards are implemented on every page
 
 ### **Phase 3: Enhancement | التحسين**

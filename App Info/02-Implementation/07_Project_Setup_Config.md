@@ -56,21 +56,338 @@ Set up complete Flutter e-commerce project with proper configuration, dependenci
 
 ## 📚 **Detailed Implementation | التنفيذ التفصيلي**
 
-### **🚀 Project Setup Overview**
-For comprehensive project setup and structure, see:
-- [Project Setup Overview | نظرة عامة على إعداد المشروع](07-Project-Setup/07_Project_Setup_Overview.md)
+### **🚀 Project Setup Overview | نظرة عامة على إعداد المشروع**
 
-### **⚙️ Configuration Management**
-For environment configuration and secrets management, see:
-- [Configuration Management | إدارة التكوين](07-Project-Setup/07_Configuration_Management.md)
+#### **1. إنشاء المشروع | Project Creation**
+```bash
+# إنشاء مشروع Flutter جديد
+flutter create zahraah_app
 
-### **📦 Dependencies & Tools**
-For dependency management and development tools, see:
-- [Dependencies & Tools | التبعيات والأدوات](07-Project-Setup/07_Dependencies_Tools.md)
+# الانتقال لمجلد المشروع
+cd zahraah_app
 
-### **🚀 CI/CD Setup**
-For CI/CD pipeline and deployment automation, see:
-- [CI/CD Setup | إعداد CI/CD](07-Project-Setup/07_CI_CD_Setup.md)
+# إضافة التبعيات المطلوبة
+flutter pub add riverpod
+flutter pub add go_router
+flutter pub add dio
+flutter pub add hive
+flutter pub add freezed
+flutter pub add json_annotation
+flutter pub add build_runner
+flutter pub add mocktail
+flutter pub add golden_toolkit
+```
+
+#### **2. هيكل المشروع | Project Structure**
+```
+/lib
+  /core
+    /app
+      /router
+        app_router.dart
+      /theme
+        app_theme.dart
+      /l10n
+        app_localizations.dart
+      /di
+        injection.dart
+      /errors
+        failures.dart
+        exceptions.dart
+      /utils
+        constants.dart
+        extensions.dart
+    /domain
+      /entities
+        product.dart
+        cart_item.dart
+      /repositories
+        catalog_repository.dart
+        cart_repository.dart
+    /data
+      /datasources
+        /remote
+          catalog_remote_datasource.dart
+        /local
+          catalog_local_datasource.dart
+      /repositories
+        catalog_repository_impl.dart
+      /models
+        product_model.dart
+  /features
+    /catalog
+      /presentation
+        /pages
+          catalog_page.dart
+        /widgets
+          product_card.dart
+        catalog_controller.dart
+      /domain
+        /usecases
+          get_product_list.dart
+      /data
+        catalog_repository_impl.dart
+    /cart
+      /presentation
+        /pages
+          cart_page.dart
+        /widgets
+          cart_item_widget.dart
+        cart_controller.dart
+      /domain
+        /usecases
+          add_to_cart.dart
+          remove_from_cart.dart
+      /data
+        cart_repository_impl.dart
+  /shared
+    /widgets
+      loading_widget.dart
+      error_widget.dart
+```
+
+### **⚙️ Configuration Management | إدارة التكوين**
+
+#### **Environment Configuration | تكوين البيئات**
+```dart
+class AppConfig {
+  static const String baseUrl = String.fromEnvironment(
+    'BASE_URL',
+    defaultValue: 'https://api.zahraah.com',
+  );
+  
+  static const String apiKey = String.fromEnvironment(
+    'API_KEY',
+    defaultValue: 'dev_api_key',
+  );
+  
+  static const bool enableLogging = bool.fromEnvironment(
+    'ENABLE_LOGGING',
+    defaultValue: true,
+  );
+  
+  static const bool enableCrashlytics = bool.fromEnvironment(
+    'ENABLE_CRASHLYTICS',
+    defaultValue: false,
+  );
+  
+  static const String environment = String.fromEnvironment(
+    'ENVIRONMENT',
+    defaultValue: 'development',
+  );
+  
+  static bool get isProduction => environment == 'production';
+  static bool get isDevelopment => environment == 'development';
+  static bool get isStaging => environment == 'staging';
+}
+```
+
+#### **Build Flavors | نكهات البناء**
+```yaml
+# android/app/build.gradle
+android {
+    flavorDimensions "environment"
+    productFlavors {
+        development {
+            dimension "environment"
+            applicationIdSuffix ".dev"
+            versionNameSuffix "-dev"
+            resValue "string", "app_name", "Zahraah Dev"
+        }
+        staging {
+            dimension "environment"
+            applicationIdSuffix ".staging"
+            versionNameSuffix "-staging"
+            resValue "string", "app_name", "Zahraah Staging"
+        }
+        production {
+            dimension "environment"
+            resValue "string", "app_name", "Zahraah"
+        }
+    }
+}
+```
+
+#### **Secrets Management | إدارة الأسرار**
+```dart
+class SecureConfig {
+  static const String _baseUrlKey = 'base_url';
+  static const String _apiKeyKey = 'api_key';
+  
+  static Future<void> storeConfig({
+    required String baseUrl,
+    required String apiKey,
+  }) async {
+    final storage = FlutterSecureStorage();
+    await storage.write(key: _baseUrlKey, value: baseUrl);
+    await storage.write(key: _apiKeyKey, value: apiKey);
+  }
+  
+  static Future<Map<String, String?>> getConfig() async {
+    final storage = FlutterSecureStorage();
+    return {
+      'baseUrl': await storage.read(key: _baseUrlKey),
+      'apiKey': await storage.read(key: _apiKeyKey),
+    };
+  }
+}
+```
+
+### **📦 Dependencies & Tools | التبعيات والأدوات**
+
+#### **Core Dependencies | التبعيات الأساسية**
+```yaml
+# pubspec.yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # Navigation
+  go_router: ^12.1.3
+  
+  # Networking
+  dio: ^5.4.0
+  retrofit: ^4.0.3
+  
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Code Generation
+  freezed: ^2.4.6
+  json_annotation: ^4.8.1
+  
+  # UI Components
+  flutter_screenutil: ^5.9.0
+  cached_network_image: ^3.3.0
+  
+  # Utilities
+  intl: ^0.18.1
+  shared_preferences: ^2.2.2
+  flutter_secure_storage: ^9.0.0
+```
+
+#### **Development Dependencies | تبعيات التطوير**
+```yaml
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Code Generation
+  build_runner: ^2.4.7
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+  riverpod_generator: ^2.3.9
+  
+  # Testing
+  mocktail: ^1.0.1
+  golden_toolkit: ^0.15.0
+  integration_test:
+    sdk: flutter
+  
+  # Code Quality
+  flutter_lints: ^3.0.1
+  very_good_analysis: ^5.1.0
+  
+  # Documentation
+  dartdoc: ^6.2.1
+```
+
+### **🚀 CI/CD Setup | إعداد CI/CD**
+
+#### **GitHub Actions Workflow | سير عمل GitHub Actions**
+```yaml
+# .github/workflows/ci.yml
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.16.0'
+      
+      - name: Install dependencies
+        run: flutter pub get
+      
+      - name: Run tests
+        run: flutter test
+      
+      - name: Run integration tests
+        run: flutter test integration_test/
+      
+      - name: Generate code coverage
+        run: flutter test --coverage
+      
+      - name: Upload coverage
+        uses: codecov/codecov-action@v3
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.16.0'
+      
+      - name: Install dependencies
+        run: flutter pub get
+      
+      - name: Build APK
+        run: flutter build apk --release
+      
+      - name: Build iOS
+        run: flutter build ios --release --no-codesign
+      
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: build/
+```
+
+#### **Build Scripts | سكريبتات البناء**
+```bash
+#!/bin/bash
+# scripts/build.sh
+
+set -e
+
+echo "Building Flutter app..."
+
+# Clean previous builds
+flutter clean
+
+# Get dependencies
+flutter pub get
+
+# Generate code
+flutter packages pub run build_runner build --delete-conflicting-outputs
+
+# Run tests
+flutter test
+
+# Build for Android
+flutter build apk --release
+
+# Build for iOS
+flutter build ios --release --no-codesign
+
+echo "Build completed successfully!"
+```
 
 ---
 
@@ -91,12 +408,13 @@ For CI/CD pipeline and deployment automation, see:
 > **Reference**: See [Implementation Priority Template](../../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
 
 ### **Project Setup Specific Priorities:**
-- **Phase 1: Foundation (Must Have)**
-  - [ ] Basic project structure
-  - [ ] Environment configuration
-  - [ ] Core dependencies
-  - [ ] Basic CI/CD
-- **Phase 2: Enhancement (Should Have)**
+### **Phase 1: Foundation (Must Have)**
+- [ ] Basic project structure
+- [ ] Environment configuration
+- [ ] Core dependencies
+- [ ] Basic CI/CD
+
+### **Phase 2: Enhancement (Should Have)**
 - [ ] Advanced configuration
 - [ ] Development tools
 - [ ] Testing pipeline

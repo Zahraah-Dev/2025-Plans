@@ -33,18 +33,19 @@ Implement clean domain layer with business logic, use cases, and entities follow
   - Implement domain services
 - **Result**: Clean, testable domain layer with clear business logic
 
-## ✅ **Success Criteria | معايير النجاح**
+## ✅ **Quality Standards & Success Criteria | معايير الجودة ومعايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../00-Templates/06_Success_Criteria_Template.md) for standard criteria.
+> **Reference**: See [Quality Standards | معايير الجودة](Quality_Standards.md) for comprehensive quality requirements.
 
-### **Domain Layer Specific Criteria:**
+> **Reference**: See [Success Criteria | معايير النجاح](Success_Criteria.md) for detailed success metrics and validation criteria.
 
-- [ ] All business logic in domain layer
-- [ ] Use cases properly implemented
-- [ ] Entities use freezed + json_serializable
-- [ ] Repository interfaces defined
-- [ ] Business validation rules in place
-- [ ] Domain layer fully testable
+### **Domain Layer Specific Requirements:**
+- **Business Logic**: All business logic in domain layer
+- **Use Cases**: Use cases properly implemented
+- **Entities**: Entities use freezed + json_serializable
+- **Interfaces**: Repository interfaces defined
+- **Validation**: Business validation rules in place
+- **Testability**: Domain layer fully testable
 
 ## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
 
@@ -60,32 +61,6 @@ Implement clean domain layer with business logic, use cases, and entities follow
 - **Avoid**: No use case abstraction
 
 ---
-
-## 📚 **Detailed Implementation | التنفيذ التفصيلي**
-
-### **🏗️ Domain Layer Overview**
-
-For comprehensive domain layer architecture and principles, see:
-
-- [Domain Layer Overview | نظرة عامة على طبقة المجال](04-Domain-Layer/04_Domain_Layer_Overview.md)
-
-### **🎯 Use Cases Templates**
-
-For business use case templates and examples, see:
-
-- [Use Cases Templates | قوالب حالات الاستخدام](04-Domain-Layer/04_Use_Cases_Templates.md)
-
-### **🏗️ Entities & Models**
-
-For domain entity definitions and models, see:
-
-- [Entities &amp; Models | الكيانات والنماذج](04-Domain-Layer/04_Entities_Models.md)
-
-### **🏪 Repository Interfaces**
-
-For repository interface definitions and contracts, see:
-
-- [Repository Interfaces | واجهات المستودعات](04-Domain-Layer/04_Repository_Interfaces.md)
 
 ---
 
@@ -107,20 +82,19 @@ For repository interface definitions and contracts, see:
 > **Reference**: See [Implementation Priority Template](../../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
 
 ### **Domain Layer Specific Priorities:**
-- **Phase 1: Foundation (Must Have)**
-  - [ ] Core entities definition
-  - [ ] Basic use cases implementation
-  - [ ] Repository interfaces definition
-  - [ ] Basic validation rules
-- **Phase 2: Enhancement (Should Have)**
+### **Phase 1: Foundation (Must Have)**
+- [ ] Core entities definition
+- [ ] Basic use cases implementation
+- [ ] Repository interfaces definition
+- [ ] Basic validation rules
 
+### **Phase 2: Enhancement (Should Have)**
 - [ ] Complex use cases
 - [ ] Domain services
 - [ ] Business rules validation
 - [ ] Domain events
 
 ### **Phase 3: Optimization (Could Have)**
-
 - [ ] Advanced domain patterns
 - [ ] Complex business workflows
 - [ ] Domain event handling
@@ -154,6 +128,212 @@ For repository interface definitions and contracts, see:
 
 ---
 
+## 🏗️ **Domain Layer Architecture | معمارية طبقة المجال**
+
+### **1. Layer Structure | هيكل الطبقة**
+```
+lib/domain/
+├── entities/           # Business entities
+│   ├── product.dart
+│   ├── cart_item.dart
+│   └── user.dart
+├── repositories/       # Repository interfaces
+│   ├── catalog_repository.dart
+│   ├── cart_repository.dart
+│   └── user_repository.dart
+├── usecases/          # Business use cases
+│   ├── catalog/
+│   ├── cart/
+│   └── user/
+└── services/          # Domain services
+    ├── validation_service.dart
+    └── business_rules_service.dart
+```
+
+### **2. Domain Principles | مبادئ المجال**
+- **Entities**: Core business objects with identity
+- **Use Cases**: Business operations and workflows
+- **Repositories**: Data access abstractions
+- **Services**: Complex business logic
+- **Value Objects**: Immutable objects without identity
+
+## 🎯 **Domain-Driven Design | التصميم الموجه للمجال**
+
+### **1. Bounded Contexts | السياقات المحددة**
+- **Catalog Context**: Product management and search
+- **Cart Context**: Shopping cart operations
+- **Order Context**: Order processing and management
+- **User Context**: User authentication and profile
+
+### **2. Domain Events | أحداث المجال**
+```dart
+abstract class DomainEvent {
+  final DateTime occurredOn;
+  const DomainEvent(this.occurredOn);
+}
+
+class ProductAddedToCart extends DomainEvent {
+  final String productId;
+  final int quantity;
+  
+  ProductAddedToCart(this.productId, this.quantity) : super(DateTime.now());
+}
+```
+
+## 🎯 **Entities & Models | الكيانات والنماذج**
+
+### **1. Domain Entity | كيان المجال**
+```dart
+@freezed
+class Product with _$Product {
+  const factory Product({
+    required String id,
+    required String title,
+    required double price,
+    String? description,
+    @Default([]) List<String> categories,
+    @Default(0) int stock,
+    @Default(false) bool isAvailable,
+    DateTime? createdAt,
+    DateTime? updatedAt,
+  }) = _Product;
+  
+  // Business rules
+  bool get isInStock => stock > 0 && isAvailable;
+  
+  String get displayPrice => '${price.toStringAsFixed(2)} SAR';
+}
+```
+
+### **2. Value Object | كائن القيمة**
+```dart
+@freezed
+class Money with _$Money {
+  const factory Money({
+    required double amount,
+    required String currency,
+  }) = _Money;
+  
+  Money operator +(Money other) {
+    if (currency != other.currency) {
+      throw ArgumentError('Cannot add different currencies');
+    }
+    return Money(amount: amount + other.amount, currency: currency);
+  }
+  
+  String get displayValue => '${amount.toStringAsFixed(2)} $currency';
+}
+```
+
+## 🔧 **Repository Interfaces | واجهات المستودعات**
+
+### **1. Catalog Repository | مستودع الكتالوج**
+```dart
+abstract class CatalogRepository {
+  Future<Result<List<Product>>> getProducts({
+    String? category,
+    int page = 1,
+    int limit = 20,
+    String? sortBy,
+    String? sortOrder,
+  });
+  
+  Future<Result<Product>> getProduct(String id);
+  
+  Future<Result<List<Product>>> searchProducts(String query);
+  
+  Future<Result<List<String>>> getCategories();
+}
+```
+
+### **2. Cart Repository | مستودع سلة التسوق**
+```dart
+abstract class CartRepository {
+  Future<Result<List<CartItem>>> getCartItems();
+  
+  Future<Result<void>> addToCart(String productId, int quantity);
+  
+  Future<Result<void>> updateQuantity(String productId, int quantity);
+  
+  Future<Result<void>> removeFromCart(String productId);
+  
+  Future<Result<void>> clearCart();
+}
+```
+
+## 🎯 **Use Cases Templates | قوالب حالات الاستخدام**
+
+### **1. Get Products Use Case | حالة استخدام جلب المنتجات**
+```dart
+class GetProductsUseCase {
+  final CatalogRepository _repository;
+  
+  GetProductsUseCase({required CatalogRepository repository}) 
+      : _repository = repository;
+  
+  Future<Result<List<Product>>> execute({
+    String? category,
+    int page = 1,
+    int limit = 20,
+    String? sortBy,
+    String? sortOrder,
+  }) async {
+    // Business validation
+    if (page < 1) {
+      return Result.err(AppFailure.validation('Page must be greater than 0'));
+    }
+    
+    if (limit < 1 || limit > 100) {
+      return Result.err(AppFailure.validation('Limit must be between 1 and 100'));
+    }
+    
+    return await _repository.getProducts(
+      category: category,
+      page: page,
+      limit: limit,
+      sortBy: sortBy,
+      sortOrder: sortOrder,
+    );
+  }
+}
+```
+
+### **2. Add to Cart Use Case | حالة استخدام الإضافة للسلة**
+```dart
+class AddToCartUseCase {
+  final CartRepository _cartRepository;
+  final CatalogRepository _catalogRepository;
+  
+  AddToCartUseCase({
+    required CartRepository cartRepository,
+    required CatalogRepository catalogRepository,
+  }) : _cartRepository = cartRepository,
+       _catalogRepository = catalogRepository;
+  
+  Future<Result<void>> execute(String productId, int quantity) async {
+    // Validate product exists and is available
+    final productResult = await _catalogRepository.getProduct(productId);
+    
+    return productResult.fold(
+      (failure) => Result.err(failure),
+      (product) async {
+        if (!product.isInStock) {
+          return Result.err(AppFailure.validation('Product is out of stock'));
+        }
+        
+        if (quantity > product.stock) {
+          return Result.err(AppFailure.validation('Quantity exceeds available stock'));
+        }
+        
+        return await _cartRepository.addToCart(productId, quantity);
+      },
+    );
+  }
+}
+```
+
+---
+
 **Last Updated | آخر تحديث**: January 2025  
 **Version | الإصدار**: 2.0 - Enhanced Domain Layer  
 **Status | الحالة**: ✅ Production Ready
@@ -167,15 +347,22 @@ For repository interface definitions and contracts, see:
 [🏠 Home | الرئيسية](../../index.html)
 
 ### **Quick Navigation | التنقل السريع**
-- [Domain Layer Overview | نظرة عامة على طبقة المجال](#domain-layer-overview--نظرة-عامة-على-طبقة-المجال)
-- [Entities & Models | الكيانات والنماذج](#entities--models--الكيانات-والنماذج)
-- [Use Cases | حالات الاستخدام](#use-cases--حالات-الاستخدام)
-- [Repository Interfaces | واجهات المستودعات](#repository-interfaces--واجهات-المستودعات)
+- [Domain Layer Architecture | معمارية طبقة المجال](#-domain-layer-architecture--معمارية-طبقة-المجال)
+- [Domain-Driven Design | التصميم الموجه للمجال](#-domain-driven-design--التصميم-الموجه-للمجال)
+- [Entities & Models | الكيانات والنماذج](#-entities--models--الكيانات-والنماذج)
+- [Repository Interfaces | واجهات المستودعات](#-repository-interfaces--واجهات-المستودعات)
+- [Use Cases Templates | قوالب حالات الاستخدام](#-use-cases-templates--قوالب-حالات-الاستخدام)
 
 ### **Related Files | الملفات ذات الصلة**
-- [Domain Layer Overview | نظرة عامة على طبقة المجال](04-Domain-Layer/04_Domain_Layer_Overview.md)
-- [Entities & Models | الكيانات والنماذج](04-Domain-Layer/04_Entities_Models.md)
-- [Repository Interfaces | واجهات المستودعات](04-Domain-Layer/04_Repository_Interfaces.md)
-- [Use Cases Templates | قوالب حالات الاستخدام](04-Domain-Layer/04_Use_Cases_Templates.md)
+- [Data Layer Error Handling | معالجة أخطاء طبقة البيانات](03_Data_Layer_Error_Handling.md)
+- [Presentation Layer | طبقة العرض](05_Presentation_Layer.md)
+- [Architecture Overview | نظرة عامة على المعمارية](01_Architecture_Overview.md)
+
+### **Shared Architecture Resources | موارد المعمارية المشتركة**
+- [Quality Standards | معايير الجودة](Quality_Standards.md)
+- [Testing Strategy | استراتيجية الاختبار](Testing_Strategy.md)
+- [Troubleshooting Guide | دليل استكشاف الأخطاء](Troubleshooting_Guide.md)
+- [Best Practices | أفضل الممارسات](Best_Practices.md)
+- [Success Criteria | معايير النجاح](Success_Criteria.md)
 
 ---

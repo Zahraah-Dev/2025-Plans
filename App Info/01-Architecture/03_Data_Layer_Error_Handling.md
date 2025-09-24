@@ -28,134 +28,276 @@ Implement robust data layer with comprehensive error handling, secure data manag
   - Add proper logging and monitoring
 - **Result**: Reliable data layer with excellent error handling and user experience
 
-## ✅ **Success Criteria | معايير النجاح**
+## ✅ **Quality Standards & Success Criteria | معايير الجودة ومعايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../../00-Templates/06_Success_Criteria_Template.md) for standard criteria.
+> **Reference**: See [Quality Standards | معايير الجودة](Quality_Standards.md) for comprehensive quality requirements.
 
-### **Data Layer Specific Criteria:**
-- [ ] All data operations use Result pattern
-- [ ] No exceptions thrown to UI layer
-- [ ] User-friendly error messages displayed
-- [ ] Proper error logging and monitoring
-- [ ] Retry logic implemented for network failures
-- [ ] Error recovery mechanisms in place
+> **Reference**: See [Success Criteria | معايير النجاح](Success_Criteria.md) for detailed success metrics and validation criteria.
 
-## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
-
-> **Reference**: See [Common Pitfalls Template](../../../00-Templates/05_Common_Pitfalls_Template.md) for standard pitfalls.
-
-### **Data Layer Specific Pitfalls:**
-- **Avoid**: Throwing exceptions to UI layer
-- **Avoid**: Generic error messages without context
-- **Avoid**: No retry logic for network failures
-- **Avoid**: Missing error logging and monitoring
-- **Avoid**: Inconsistent error handling patterns
-- **Avoid**: No error recovery mechanisms
+### **Data Layer & Error Handling Specific Requirements:**
+- **Result Pattern**: All data operations use Result pattern
+- **Error Safety**: No exceptions thrown to UI layer
+- **User Experience**: User-friendly error messages displayed
+- **Monitoring**: Proper error logging and monitoring
+- **Resilience**: Retry logic implemented for network failures
+- **Recovery**: Error recovery mechanisms in place
 
 ---
 
 
 
-## 🚨 **Risk Assessment | تقييم المخاطر**
+## 🔄 **Result/Failure Pattern Implementation | تنفيذ نمط النتيجة/الفشل**
 
-> **Reference**: See [Risk Assessment Template](../../../00-Templates/01_Risk_Assessment_Template.md) for standard risk categories.
+### **1. Result Type | نوع النتيجة**
+```dart
+@freezed
+class Result<T> with _$Result<T> {
+  const factory Result.ok(T data) = Ok<T>;
+  const factory Result.err(AppFailure failure) = Err<T>;
+  
+  bool get isSuccess => this is Ok<T>;
+  bool get isError => this is Err<T>;
+  
+  T? get data => isSuccess ? (this as Ok<T>).data : null;
+  AppFailure? get failure => isError ? (this as Err<T>).failure : null;
+}
+```
 
-### **Data Layer & Error Handling Specific Risks:**
-| Risk | Impact | Probability | Mitigation Strategy |
-|------|--------|-------------|-------------------|
-| **Data Inconsistency** | High | Medium | Transaction management, data validation, conflict resolution |
-| **Network Failures** | High | High | Retry mechanisms, offline support, graceful degradation |
-| **Security Vulnerabilities** | High | Medium | Input validation, secure storage, encryption |
-| **Performance Issues** | Medium | High | Caching strategies, data pagination, query optimization |
-| **Error Propagation** | High | Medium | Result pattern, proper error handling, user-friendly messages |
-| **Data Corruption** | High | Low | Data validation, backup strategies, integrity checks |
+### **2. AppFailure Sealed Class | فئة AppFailure المختومة**
+```dart
+@freezed
+class AppFailure with _$AppFailure {
+  const factory AppFailure.network() = NetworkFailure;
+  const factory AppFailure.server(String message) = ServerFailure;
+  const factory AppFailure.cache() = CacheFailure;
+  const factory AppFailure.validation(String message) = ValidationFailure;
+  const factory AppFailure.unauthorized() = UnauthorizedFailure;
+  const factory AppFailure.forbidden() = ForbiddenFailure;
+  const factory AppFailure.notFound() = NotFoundFailure;
+  const factory AppFailure.timeout() = TimeoutFailure;
+  const factory AppFailure.unknown(String message) = UnknownFailure;
+  
+  String get message {
+    return when(
+      network: () => 'اتصالك بالإنترنت غير متوفر',
+      server: (msg) => msg,
+      cache: () => 'خطأ في التخزين المؤقت',
+      validation: (msg) => msg,
+      unauthorized: () => 'يرجى تسجيل الدخول',
+      forbidden: () => 'لا تملكين إذن تنفيذ هذا الإجراء',
+      notFound: () => 'المحتوى غير موجود',
+      timeout: () => 'انتهت مهلة الطلب',
+      unknown: (msg) => msg,
+    );
+  }
+}
+```
 
-## 📊 **Implementation Priority | أولوية التنفيذ**
+### **3. Usage Examples | أمثلة الاستخدام**
+```dart
+// Repository method returning Result
+Future<Result<List<Product>>> getProducts() async {
+  try {
+    final products = await _dataSource.getProducts();
+    return Result.ok(products);
+  } catch (e) {
+    return Result.err(AppFailure.server(e.toString()));
+  }
+}
 
-> **Reference**: See [Implementation Priority Template](../../../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
+// UI layer handling Result
+final result = await repository.getProducts();
+result.when(
+  ok: (products) => _displayProducts(products),
+  err: (failure) => _showError(failure.message),
+);
+```
 
-### **Data Layer & Error Handling Specific Priorities:**
-- **Phase 1: Foundation (Must Have)**
-  - [ ] Result pattern implementation
-  - [ ] Repository pattern with error handling
-  - [ ] Network client configuration (Dio)
-  - [ ] Local storage setup (Hive)
-- **Phase 2: Enhancement (Should Have)**
-- [ ] Comprehensive error types and mapping
-- [ ] Caching strategy implementation
-- [ ] Offline support and sync
-- [ ] Data validation and sanitization
+## 🗄️ **Repository Pattern Implementation | تنفيذ نمط المستودع**
 
-### **Phase 3: Optimization (Could Have)**
-- [ ] Advanced caching strategies
-- [ ] Performance monitoring and optimization
-- [ ] Data migration and versioning
-- [ ] Advanced error recovery mechanisms
+### **1. Abstract Repository | المستودع المجرد**
+```dart
+abstract class CatalogRepository {
+  Future<Result<List<Product>>> getProducts({
+    String? category,
+    int page = 1,
+    int limit = 20,
+    String? sortBy,
+    String? sortOrder,
+  });
+  
+  Future<Result<Product>> getProduct(String id);
+  
+  Future<Result<List<Product>>> searchProducts(String query);
+  
+  Future<Result<List<String>>> getCategories();
+  
+  Future<Result<void>> addToWishlist(String productId);
+  
+  Future<Result<void>> removeFromWishlist(String productId);
+}
+```
 
-## 📋 **Architecture Decision Record (ADR)**
-
-### **ADR-001: Clean Architecture Pattern**
-- **Status**: Accepted
-- **Date**: 2025-01-27
-- **Context**: Need for maintainable, testable architecture
-- **Decision**: Implement Clean Architecture with 4 layers
-- **Consequences**: 
-  - ✅ Better testability
-  - ✅ Clear separation of concerns
-  - ⚠️ More initial setup complexity
-  - ⚠️ Learning curve for team
-
-## 🚪 **Quality Gates | بوابات الجودة**
-
-> **Reference**: See [Quality Gates Template](../../../00-Templates/03_Quality_Gates_Template.md) for standard quality criteria.
-
-### **Data Layer & Error Handling Specific Quality Gates:**
-- [ ] All data operations use Result pattern
-- [ ] No exceptions thrown to UI layer
-- [ ] User-friendly error messages displayed
-- [ ] Proper error logging and monitoring
-- [ ] Retry logic implemented for network failures
-- [ ] Data validation and sanitization working
-- [ ] Offline support and sync functioning
-
-## 📈 **Success Metrics | مؤشرات النجاح**
-
-> **Reference**: See [Success Metrics Template](../../../00-Templates/04_Success_Metrics_Template.md) for standard metrics.
-
-### **Data Layer & Error Handling Specific Metrics:**
-- **Error Handling**: 100% of operations use Result pattern
-- **Data Consistency**: Zero data corruption incidents
-- **Network Resilience**: 95%+ success rate with retry logic
-- **User Experience**: Clear, actionable error messages
-- **Performance**: <500ms average data operation time
-- **Security**: Zero data breaches or security incidents
-
-
-## 📚 **Detailed Implementation Guides | أدلة التنفيذ التفصيلية**
-
-### **🔗 Focused Implementation Files:**
-
-1. **[Result/Failure Patterns | أنماط النتيجة/الفشل](03-Data-Layer-Error-Handling/03_Result_Failure_Patterns.md)**
-   - Result<T> pattern implementation
-   - AppFailure sealed class with bilingual messages
-   - Repository pattern with error handling
-
-2. **[Data Sources Implementation | تنفيذ مصادر البيانات](03-Data-Layer-Error-Handling/03_Data_Sources_Implementation.md)**
-   - Remote and local data sources
-   - Network connectivity and Dio configuration
-   - Immutable models with Freezed
-
-3. **[Testing Data Layer | اختبار طبقة البيانات](03-Data-Layer-Error-Handling/03_Testing_Data_Layer.md)**
-   - Comprehensive testing strategies
-   - Repository and data source testing
-   - Error handling scenario tests
-
-4. **[Troubleshooting Guide | دليل استكشاف الأخطاء](03-Data-Layer-Error-Handling/03_Troubleshooting_Guide.md)**
-   - Common issues and solutions
-   - Debugging strategies and logging
-   - Performance optimization techniques
+### **2. Repository Implementation | تنفيذ المستودع**
+```dart
+class CatalogRepositoryImpl implements CatalogRepository {
+  final CatalogRemoteDataSource _remoteDataSource;
+  final CatalogLocalDataSource _localDataSource;
+  final NetworkInfo _networkInfo;
+  
+  CatalogRepositoryImpl({
+    required CatalogRemoteDataSource remoteDataSource,
+    required CatalogLocalDataSource localDataSource,
+    required NetworkInfo networkInfo,
+  }) : _remoteDataSource = remoteDataSource,
+       _localDataSource = localDataSource,
+       _networkInfo = networkInfo;
+  
+  @override
+  Future<Result<List<Product>>> getProducts({
+    String? category,
+    int page = 1,
+    int limit = 20,
+    String? sortBy,
+    String? sortOrder,
+  }) async {
+    if (await _networkInfo.isConnected) {
+      try {
+        final result = await _remoteDataSource.getProducts(
+          category: category,
+          page: page,
+          limit: limit,
+          sortBy: sortBy,
+          sortOrder: sortOrder,
+        );
+        
+        // Cache the result
+        await _localDataSource.cacheProducts(result);
+        
+        return Result.ok(result);
+      } catch (e) {
+        return Result.err(AppFailure.server(e.toString()));
+      }
+    } else {
+      try {
+        final cachedProducts = await _localDataSource.getCachedProducts();
+        return Result.ok(cachedProducts);
+      } catch (e) {
+        return Result.err(AppFailure.cache());
+      }
+    }
+  }
+}
+```
 
 ---
+
+## 🏗️ **Data Sources Implementation | تنفيذ مصادر البيانات**
+
+### **1. Remote Data Source | مصدر البيانات البعيد**
+```dart
+abstract class CatalogRemoteDataSource {
+  Future<List<Product>> getProducts({
+    String? category,
+    int page = 1,
+    int limit = 20,
+    String? sortBy,
+    String? sortOrder,
+  });
+  
+  Future<Product> getProduct(String id);
+  
+  Future<List<Product>> searchProducts(String query);
+}
+
+class CatalogRemoteDataSourceImpl implements CatalogRemoteDataSource {
+  final Dio _dio;
+  
+  CatalogRemoteDataSourceImpl({required Dio dio}) : _dio = dio;
+  
+  @override
+  Future<List<Product>> getProducts({
+    String? category,
+    int page = 1,
+    int limit = 20,
+    String? sortBy,
+    String? sortOrder,
+  }) async {
+    final response = await _dio.get('/products', queryParameters: {
+      if (category != null) 'category': category,
+      'page': page,
+      'limit': limit,
+      if (sortBy != null) 'sort_by': sortBy,
+      if (sortOrder != null) 'sort_order': sortOrder,
+    });
+    
+    if (response.statusCode == 200) {
+      final List<dynamic> data = response.data['data'];
+      return data.map((json) => Product.fromJson(json)).toList();
+    } else {
+      throw ServerException('Failed to load products');
+    }
+  }
+}
+```
+
+### **2. Local Data Source | مصدر البيانات المحلي**
+```dart
+abstract class CatalogLocalDataSource {
+  Future<List<Product>> getCachedProducts();
+  Future<Product> getCachedProduct(String id);
+  Future<void> cacheProducts(List<Product> products);
+  Future<void> cacheProduct(Product product);
+  Future<void> clearCache();
+}
+
+class CatalogLocalDataSourceImpl implements CatalogLocalDataSource {
+  final HiveInterface _hive;
+  static const String _productsBox = 'products';
+  static const String _cacheKey = 'cached_products';
+  
+  CatalogLocalDataSourceImpl({required HiveInterface hive}) : _hive = hive;
+  
+  @override
+  Future<List<Product>> getCachedProducts() async {
+    final box = await _hive.openBox(_productsBox);
+    final cachedData = box.get(_cacheKey);
+    
+    if (cachedData != null) {
+      final List<dynamic> data = cachedData;
+      return data.map((json) => Product.fromJson(json)).toList();
+    } else {
+      throw CacheException('No cached products found');
+    }
+  }
+  
+  @override
+  Future<void> cacheProducts(List<Product> products) async {
+    final box = await _hive.openBox(_productsBox);
+    final jsonData = products.map((product) => product.toJson()).toList();
+    await box.put(_cacheKey, jsonData);
+  }
+}
+```
+
+### **3. Network & Connectivity | الشبكة والاتصال**
+```dart
+abstract class NetworkInfo {
+  Future<bool> get isConnected;
+}
+
+class NetworkInfoImpl implements NetworkInfo {
+  final Connectivity _connectivity;
+  
+  NetworkInfoImpl({required Connectivity connectivity}) : _connectivity = connectivity;
+  
+  @override
+  Future<bool> get isConnected async {
+    final connectivityResult = await _connectivity.checkConnectivity();
+    return connectivityResult != ConnectivityResult.none;
+  }
+}
+```
 
 ## 📊 **Best Practices | أفضل الممارسات**
 
@@ -200,10 +342,15 @@ Implement robust data layer with comprehensive error handling, secure data manag
 - [References | المراجع](#-references--المراجع)
 
 ### **Related Files | الملفات ذات الصلة**
-- [Data Layer Overview | نظرة عامة على طبقة البيانات](03-Data-Layer/03_Data_Layer_Overview.md)
-- [Result/Failure Patterns | أنماط النتيجة/الفشل](03-Data-Layer-Error-Handling/03_Result_Failure_Patterns.md)
-- [Data Sources Implementation | تنفيذ مصادر البيانات](03-Data-Layer-Error-Handling/03_Data_Sources_Implementation.md)
-- [Testing Data Layer | اختبار طبقة البيانات](03-Data-Layer-Error-Handling/03_Testing_Data_Layer.md)
-- [Troubleshooting Guide | دليل استكشاف الأخطاء](03-Data-Layer-Error-Handling/03_Troubleshooting_Guide.md)
+- [State Management & DI | إدارة الحالة وحقن التبعية](02_State_Management_DI.md)
+- [Domain Layer | طبقة المجال](04_Domain_Layer.md)
+- [Architecture Overview | نظرة عامة على المعمارية](01_Architecture_Overview.md)
+
+### **Shared Architecture Resources | موارد المعمارية المشتركة**
+- [Quality Standards | معايير الجودة](Quality_Standards.md)
+- [Testing Strategy | استراتيجية الاختبار](Testing_Strategy.md)
+- [Troubleshooting Guide | دليل استكشاف الأخطاء](Troubleshooting_Guide.md)
+- [Best Practices | أفضل الممارسات](Best_Practices.md)
+- [Success Criteria | معايير النجاح](Success_Criteria.md)
 
 ---

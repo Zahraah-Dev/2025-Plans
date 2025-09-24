@@ -73,12 +73,13 @@ Implement comprehensive performance monitoring with detailed budgets and metrics
 > **Reference**: See [Implementation Priority Template](../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
 
 ### **Performance Monitoring Specific Priorities:**
-- **Phase 1: Foundation (Must Have)**
-  - [ ] Set up performance monitoring tools
-  - [ ] Define core performance budgets
-  - [ ] Implement basic performance tracking
-  - [ ] Add performance alerts
-- **Phase 2: Enhancement (Should Have)**
+### **Phase 1: Foundation (Must Have)**
+- [ ] Set up performance monitoring tools
+- [ ] Define core performance budgets
+- [ ] Implement basic performance tracking
+- [ ] Add performance alerts
+
+### **Phase 2: Enhancement (Should Have)**
 - [ ] Add advanced performance metrics
 - [ ] Create performance dashboards
 - [ ] Implement performance optimization

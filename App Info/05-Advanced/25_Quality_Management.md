@@ -65,12 +65,13 @@ Implement comprehensive quality management system with automated testing, qualit
 > **Reference**: See [Implementation Priority Template](../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
 
 ### **Quality Management Specific Priorities:**
-- **Phase 1: Foundation (Must Have)**
-  - [ ] Set up testing framework
-  - [ ] Implement basic quality gates
-  - [ ] Add quality reporting
-  - [ ] Create quality metrics
-- **Phase 2: Enhancement (Should Have)**
+### **Phase 1: Foundation (Must Have)**
+- [ ] Set up testing framework
+- [ ] Implement basic quality gates
+- [ ] Add quality reporting
+- [ ] Create quality metrics
+
+### **Phase 2: Enhancement (Should Have)**
 - [ ] Add advanced testing features
 - [ ] Implement quality dashboards
 - [ ] Add continuous improvement processes

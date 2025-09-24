@@ -73,12 +73,13 @@ Create comprehensive error catalog with unified error mapping, user-friendly mes
 > **Reference**: See [Implementation Priority Template](../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
 
 ### **Error Catalog Specific Priorities:**
-- **Phase 1: Foundation (Must Have)**
-  - [ ] Create error mapping table
-  - [ ] Implement error code standardization
-  - [ ] Add basic error message translation
-  - [ ] Create error handling utilities
-- **Phase 2: Enhancement (Should Have)**
+### **Phase 1: Foundation (Must Have)**
+- [ ] Create error mapping table
+- [ ] Implement error code standardization
+- [ ] Add basic error message translation
+- [ ] Create error handling utilities
+
+### **Phase 2: Enhancement (Should Have)**
 - [ ] Add comprehensive error recovery strategies
 - [ ] Implement error logging and monitoring
 - [ ] Add error analytics and reporting

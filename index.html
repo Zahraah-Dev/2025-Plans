@@ -73,6 +73,12 @@
             margin-bottom: 30px;
         }
 
+        @media (max-width: 1400px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
         @media (max-width: 1200px) {
             .grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -187,20 +193,10 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1>خطط 2025 - تطوير Flutter للتجارة الإلكترونية</h1>
-        <p>خطط مشاريع شاملة وأدلة لبناء تطبيقات Flutter احترافية للتجارة الإلكترونية</p>
-    </div>
-
-    <div class="status">
-        <strong>✅ الحالة: مكتمل 100% وجاهز للإنتاج - محسن ومحدث</strong><br>
-        يحتوي هذا الدليل على 30 ملفًا شاملًا مع نظام قوالب متقدم، إزالة التكرار، وهيكل احترافي محسن مع إرشادات تنفيذ
-        كاملة.
-    </div>
 
     <div class="main-readme">
+        <h3>خطط مشاريع شاملة وأدلة لبناء تطبيقات Flutter احترافية للتجارة الإلكترونية</h3>
         <h3>📖 ابدأ هنا - الوثائق الرئيسية</h3>
-        <p>انقر أدناه لفتح ملف README الرئيسي مع امتداد Chrome الخاص بك لعرض markdown جميل!</p>
         <a href="App Info/README.md" class="btn">فتح README الرئيسي</a>
         <a href="App Info/00-Master_Implementation_Guide.md" class="btn">دليل التنفيذ الرئيسي</a>
         <a href="App Info/00-Templates/" class="btn">نظام القوالب المتقدم</a>
@@ -332,15 +328,15 @@
         </div>
     </div>
 
-    <div class="grid">
+    <div class="grid" style="grid-template-columns: repeat(4, 1fr);">
         <div class="card">
             <div class="card-header">
                 <div class="bilingual">
                     <h3>🎯 التحسينات الجديدة</h3>
                     <h3 class="english">Latest Improvements</h3>
                 </div>
-                <p>نظام القوالب وإزالة التكرار</p>
-                <p class="english">Template system & duplication elimination</p>
+                <p>نظام القوالب وإزالة التكرار مع هيكل مسطح</p>
+                <p class="english">Template system, duplication elimination & flat structure</p>
             </div>
             <ul>
                 <li><a href="App Info/00-Templates/">📋 نظام القوالب المتقدم | Advanced Template System</a></li>
@@ -358,6 +354,35 @@
                         Criteria Template</a></li>
                 <li><a href="App Info/00-Templates/07_Troubleshooting_Template.md">🔧 قالب استكشاف الأخطاء |
                         Troubleshooting Template</a></li>
+                <li><a href="App Info/00-Templates/08_Standard_Page_Structure_Template.md">📄 قالب هيكل الصفحة القياسي |
+                        Standard Page Structure Template</a></li>
+                <li><a href="App Info/00-Templates/09_Quick_Page_Creation_Guide.md">⚡ دليل إنشاء الصفحات السريع | Quick
+                        Page Creation Guide</a></li>
+                <li><a href="App Info/00-Templates/10_Example_Page_Usage.md">📝 مثال على استخدام الصفحة | Example Page
+                        Usage</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="bilingual">
+                    <h3>🤖 أدوات وكيل الذكاء الاصطناعي</h3>
+                    <h3 class="english">AI Agent Tools</h3>
+                </div>
+                <p>أدوات متخصصة لسلوك وكيل الذكاء الاصطناعي</p>
+                <p class="english">Specialized tools for AI agent behavior</p>
+            </div>
+            <ul>
+                <li><a href="AI_Agent_Tools/README.md">📖 دليل أدوات وكيل الذكاء الاصطناعي | AI Agent Tools Guide</a>
+                </li>
+                <li><a href="AI_Agent_Tools/AI_Agent_Specialization_Prompt.md">🎯 تخصص وكيل الذكاء الاصطناعي | AI Agent
+                        Specialization</a></li>
+                <li><a href="AI_Agent_Tools/How_to_Use_AI_Agent_Specialization.md">⚡ كيفية استخدام التخصص | How to Use
+                        Specialization</a></li>
+                <li><a href="AI_Agent_Tools/AI_Agent_Content_Management_Guide.md">📋 دليل إدارة المحتوى | Content
+                        Management Guide</a></li>
+                <li><a href="AI_Agent_Tools/Universal_Plan_Review_Framework.md">🔍 إطار مراجعة الخطط الشامل | Universal
+                        Review Framework</a></li>
             </ul>
         </div>
 
@@ -397,25 +422,30 @@
             <ul>
                 <li><strong>30 دليل Flutter | 30 Flutter Guides</strong> - وثائق تطوير كاملة | Complete development
                     documentation</li>
-                <li><strong>نظام قوالب متقدم | Advanced Template System</strong> - 7 قوالب رئيسية لإزالة التكرار | 7
+                <li><strong>نظام قوالب متقدم | Advanced Template System</strong> - 10 قوالب رئيسية لإزالة التكرار | 10
                     master templates for duplication elimination</li>
+                <li><strong>هيكل مسطح نظيف | Clean Flat Structure</strong> - تنظيم مسطح بدون مجلدات فرعية | Flat
+                    organization without subfolders</li>
                 <li><strong>هيكل احترافي محسن | Enhanced Professional Structure</strong> - تنظيم على مستوى المؤسسات مع
                     قوالب | Enterprise-grade organization with templates</li>
                 <li><strong>دعم ثنائي اللغة | Bilingual Support</strong> - العربية والإنجليزية في كل مكان | Arabic &
                     English throughout</li>
                 <li><strong>جاهز للإنتاج | Production Ready</strong> - جميع بوابات الجودة والمقاييس | All quality gates
                     and metrics</li>
-                <li><strong>إزالة التكرار | Duplication Elimination</strong> - ~1,500+ سطر محذوف | ~1,500+ lines
+                <li><strong>إزالة التكرار | Duplication Elimination</strong> - ~2,000+ سطر محذوف | ~2,000+ lines
                     eliminated</li>
+                <li><strong>دمج الملفات | File Merging</strong> - دمج المجلدات الفرعية في ملفات رئيسية | Subfolder
+                    merging into main files</li>
             </ul>
         </div>
     </div>
 
     <div class="footer">
         <h3>خطط 2025 - تطوير Flutter للتجارة الإلكترونية</h3>
-        <p><strong>خارطة طريق المشروع الكاملة والمراحل وسجلات القرارات وبوابات الجودة مع نظام قوالب متقدم</strong></p>
+        <p><strong>خارطة طريق المشروع الكاملة والمراحل وسجلات القرارات وبوابات الجودة مع نظام قوالب متقدم وهيكل مسطح
+                نظيف</strong></p>
         <p class="english"><strong>Complete project roadmap, phases, decision records, quality gates with advanced
-                template system</strong></p>
+                template system and clean flat structure</strong></p>
     </div>
 </body>
 

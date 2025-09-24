@@ -28,21 +28,23 @@ Implement clean presentation layer with proper navigation, state management, and
   - Implement proper error handling and loading states
 - **Result**: Clean, maintainable presentation layer with excellent UX
 
-## ✅ **Success Criteria | معايير النجاح**
+## ✅ **Quality Standards & Success Criteria | معايير الجودة ومعايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../00-Templates/06_Success_Criteria_Template.md) for standard criteria.
+> **Reference**: See [Quality Standards | معايير الجودة](Quality_Standards.md) for comprehensive quality requirements.
 
-### **Presentation Layer Specific Criteria:**
-- [ ] All routes properly configured with GoRouter
-- [ ] Deep linking works for products and orders
-- [ ] Route guards implemented for protected screens
-- [ ] UI state properly managed with StateNotifier
-- [ ] Error states and loading states handled
-- [ ] Navigation flow documented and tested
+> **Reference**: See [Success Criteria | معايير النجاح](Success_Criteria.md) for detailed success metrics and validation criteria.
 
-## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
+### **Presentation Layer Specific Requirements:**
+- **Routing**: All routes properly configured with GoRouter
+- **Deep Linking**: Deep linking works for products and orders
+- **Security**: Route guards implemented for protected screens
+- **State Management**: UI state properly managed with StateNotifier
+- **Error Handling**: Error states and loading states handled
+- **Documentation**: Navigation flow documented and tested
 
-> **Reference**: See [Common Pitfalls Template](../../00-Templates/05_Common_Pitfalls_Template.md) for standard pitfalls.
+## ⚠️ **Common Pitfalls & Best Practices | الأخطاء الشائعة وأفضل الممارسات**
+
+> **Reference**: See [Best Practices | أفضل الممارسات](Best_Practices.md) for comprehensive best practices and common pitfalls.
 
 ### **Presentation Layer Specific Pitfalls:**
 - **Avoid**: Business logic in UI components
@@ -50,27 +52,6 @@ Implement clean presentation layer with proper navigation, state management, and
 - **Avoid**: Missing error handling in UI
 - **Avoid**: Inconsistent navigation patterns
 - **Avoid**: No deep linking support
-- **Avoid**: Poor state management practices
-
----
-
-## 📚 **Detailed Implementation | التنفيذ التفصيلي**
-
-### **🏗️ Presentation Layer Overview**
-For comprehensive presentation layer architecture and principles, see:
-- [Presentation Layer Overview | نظرة عامة على طبقة العرض](05-Presentation-Layer/05_Presentation_Layer_Overview.md)
-
-### **🧭 Navigation & Routing**
-For navigation and routing implementation with GoRouter, see:
-- [Navigation & Routing | التوجيه والتوجيه](05-Presentation-Layer/05_Navigation_Routing.md)
-
-### **🔄 State Management & UI**
-For state management and UI components with Riverpod, see:
-- [State Management & UI | إدارة الحالة والواجهة](05-Presentation-Layer/05_State_Management_UI.md)
-
-### **🔗 Deep Linking & Accessibility**
-For deep linking and accessibility features, see:
-- [Deep Linking & Accessibility | الروابط العميقة وإمكانية الوصول](05-Presentation-Layer/05_Deep_Linking_Accessibility.md)
 
 ---
 
@@ -91,12 +72,13 @@ For deep linking and accessibility features, see:
 > **Reference**: See [Implementation Priority Template](../../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
 
 ### **Presentation Layer Specific Priorities:**
-- **Phase 1: Foundation (Must Have)**
-  - [ ] Basic navigation setup
-  - [ ] Core UI components
-  - [ ] State management implementation
-  - [ ] Error handling
-- **Phase 2: Enhancement (Should Have)**
+### **Phase 1: Foundation (Must Have)**
+- [ ] Basic navigation setup
+- [ ] Core UI components
+- [ ] State management implementation
+- [ ] Error handling
+
+### **Phase 2: Enhancement (Should Have)**
 - [ ] Deep linking support
 - [ ] Advanced UI components
 - [ ] Accessibility features
@@ -135,6 +117,224 @@ For deep linking and accessibility features, see:
 
 ---
 
+## 🏗️ **Presentation Layer Architecture | معمارية طبقة العرض**
+
+### **1. Layer Structure | هيكل الطبقة**
+```
+lib/features/
+├── catalog/
+│   ├── presentation/
+│   │   ├── pages/
+│   │   │   ├── catalog_page.dart
+│   │   │   └── product_detail_page.dart
+│   │   ├── widgets/
+│   │   │   ├── product_card.dart
+│   │   │   └── product_list.dart
+│   │   └── controllers/
+│   │       └── catalog_controller.dart
+│   └── domain/
+│       └── entities/
+├── cart/
+│   ├── presentation/
+│   │   ├── pages/
+│   │   │   └── cart_page.dart
+│   │   ├── widgets/
+│   │   │   └── cart_item_widget.dart
+│   │   └── controllers/
+│   │       └── cart_controller.dart
+│   └── domain/
+│       └── entities/
+└── shared/
+    ├── widgets/
+    │   ├── loading_widget.dart
+    │   └── error_widget.dart
+    └── controllers/
+        └── app_controller.dart
+```
+
+### **2. Presentation Layer Principles | مبادئ طبقة العرض**
+- **Single Responsibility**: Each widget has one clear purpose
+- **Separation of Concerns**: UI logic separate from business logic
+- **State Management**: Centralized state management with Riverpod
+- **Navigation**: Centralized routing with GoRouter
+- **Error Handling**: Consistent error handling across all screens
+- **Accessibility**: Built-in accessibility support
+
+## 🎨 **UI Component Architecture | معمارية مكونات الواجهة**
+
+### **1. Component Hierarchy | تسلسل المكونات**
+```
+App
+├── Router (GoRouter)
+├── Theme (MaterialApp)
+├── Localization (AppLocalizations)
+├── State Management (Riverpod)
+├── Features
+│   ├── Catalog
+│   ├── Cart
+│   ├── Orders
+│   └── Profile
+└── Shared Components
+    ├── Loading Widgets
+    ├── Error Widgets
+    └── Navigation Components
+```
+
+### **2. Widget Organization | تنظيم الودجت**
+- **Pages**: Top-level screens and routes
+- **Widgets**: Reusable UI components
+- **Controllers**: State management and business logic
+- **Models**: UI-specific data models
+
+## 🔄 **State Management & UI | إدارة الحالة والواجهة**
+
+### **1. Riverpod State Management | إدارة الحالة مع Riverpod**
+```dart
+@riverpod
+class CatalogNotifier extends _$CatalogNotifier {
+  @override
+  Future<List<Product>> build() async {
+    return await ref.read(productRepositoryProvider).getProducts();
+  }
+  
+  Future<void> refreshProducts() async {
+    state = const AsyncValue.loading();
+    state = await AsyncValue.guard(() => 
+      ref.read(productRepositoryProvider).getProducts()
+    );
+  }
+  
+  Future<void> addToWishlist(String productId) async {
+    await ref.read(productRepositoryProvider).addToWishlist(productId);
+    // Refresh the list to show updated wishlist status
+    refreshProducts();
+  }
+}
+```
+
+### **2. UI State Handling | معالجة حالة الواجهة**
+```dart
+class CatalogPage extends ConsumerWidget {
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final productsAsync = ref.watch(catalogNotifierProvider);
+    
+    return Scaffold(
+      appBar: AppBar(title: Text('Products')),
+      body: productsAsync.when(
+        data: (products) => ProductList(products: products),
+        loading: () => const LoadingWidget(),
+        error: (error, stack) => ErrorWidget(
+          error: error,
+          onRetry: () => ref.read(catalogNotifierProvider.notifier).refreshProducts(),
+        ),
+      ),
+    );
+  }
+}
+```
+
+## 🧭 **Navigation & Routing | التنقل والتوجيه**
+
+### **1. GoRouter Configuration | إعداد GoRouter**
+```dart
+final router = GoRouter(
+  initialLocation: '/catalog',
+  routes: [
+    GoRoute(
+      path: '/catalog',
+      builder: (context, state) => const CatalogPage(),
+    ),
+    GoRoute(
+      path: '/product/:id',
+      builder: (context, state) {
+        final productId = state.pathParameters['id']!;
+        return ProductDetailPage(productId: productId);
+      },
+    ),
+    GoRoute(
+      path: '/cart',
+      builder: (context, state) => const CartPage(),
+    ),
+  ],
+);
+```
+
+### **2. Deep Linking Support | دعم الروابط العميقة**
+```dart
+// Handle deep links
+class DeepLinkHandler {
+  static void handleDeepLink(String link) {
+    if (link.contains('/product/')) {
+      final productId = link.split('/product/')[1];
+      GoRouter.of(context).go('/product/$productId');
+    }
+  }
+}
+```
+
+## ♿ **Accessibility & RTL | إمكانية الوصول والنص من اليمين لليسار**
+
+### **1. Accessibility Implementation | تنفيذ إمكانية الوصول**
+```dart
+class AccessibleProductCard extends StatelessWidget {
+  final Product product;
+  
+  const AccessibleProductCard({required this.product});
+  
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      label: 'Product: ${product.title}, Price: ${product.displayPrice}',
+      hint: 'Double tap to view product details',
+      button: true,
+      child: Card(
+        child: InkWell(
+          onTap: () => _navigateToProduct(context),
+          child: Column(
+            children: [
+              Image.network(product.imageUrl ?? ''),
+              Text(product.title),
+              Text(product.displayPrice),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+
+### **2. RTL Support | دعم النص من اليمين لليسار**
+```dart
+class RTLProductCard extends StatelessWidget {
+  final Product product;
+  
+  const RTLProductCard({required this.product});
+  
+  @override
+  Widget build(BuildContext context) {
+    final isRTL = Directionality.of(context) == TextDirection.rtl;
+    
+    return Card(
+      child: Row(
+        children: [
+          if (isRTL) ...[
+            Expanded(child: _buildProductInfo()),
+            _buildProductImage(),
+          ] else ...[
+            _buildProductImage(),
+            Expanded(child: _buildProductInfo()),
+          ],
+        ],
+      ),
+    );
+  }
+}
+```
+
+---
+
 **Last Updated | آخر تحديث**: January 2025  
 **Version | الإصدار**: 2.0 - Enhanced Presentation Layer  
 **Status | الحالة**: ✅ Production Ready
@@ -148,15 +348,22 @@ For deep linking and accessibility features, see:
 [🏠 Home | الرئيسية](../../index.html)
 
 ### **Quick Navigation | التنقل السريع**
-- [Presentation Layer Overview | نظرة عامة على طبقة العرض](#presentation-layer-overview--نظرة-عامة-على-طبقة-العرض)
-- [State Management & UI | إدارة الحالة والواجهة](#state-management--ui--إدارة-الحالة-والواجهة)
-- [Navigation & Routing | التنقل والتوجيه](#navigation--routing--التنقل-والتوجيه)
-- [Deep Linking & Accessibility | الروابط العميقة وإمكانية الوصول](#deep-linking--accessibility--الروابط-العميقة-وإمكانية-الوصول)
+- [Presentation Layer Architecture | معمارية طبقة العرض](#-presentation-layer-architecture--معمارية-طبقة-العرض)
+- [UI Component Architecture | معمارية مكونات الواجهة](#-ui-component-architecture--معمارية-مكونات-الواجهة)
+- [State Management & UI | إدارة الحالة والواجهة](#-state-management--ui--إدارة-الحالة-والواجهة)
+- [Navigation & Routing | التنقل والتوجيه](#-navigation--routing--التنقل-والتوجيه)
+- [Accessibility & RTL | إمكانية الوصول والنص من اليمين لليسار](#-accessibility--rtl--إمكانية-الوصول-والنص-من-اليمين-ليسار)
 
 ### **Related Files | الملفات ذات الصلة**
-- [Presentation Layer Overview | نظرة عامة على طبقة العرض](05-Presentation-Layer/05_Presentation_Layer_Overview.md)
-- [State Management & UI | إدارة الحالة والواجهة](05-Presentation-Layer/05_State_Management_UI.md)
-- [Navigation & Routing | التنقل والتوجيه](05-Presentation-Layer/05_Navigation_Routing.md)
-- [Deep Linking & Accessibility | الروابط العميقة وإمكانية الوصول](05-Presentation-Layer/05_Deep_Linking_Accessibility.md)
+- [Domain Layer | طبقة المجال](04_Domain_Layer.md)
+- [Design System | نظام التصميم](06_Design_System.md)
+- [State Management & DI | إدارة الحالة وحقن التبعية](02_State_Management_DI.md)
+
+### **Shared Architecture Resources | موارد المعمارية المشتركة**
+- [Quality Standards | معايير الجودة](Quality_Standards.md)
+- [Testing Strategy | استراتيجية الاختبار](Testing_Strategy.md)
+- [Troubleshooting Guide | دليل استكشاف الأخطاء](Troubleshooting_Guide.md)
+- [Best Practices | أفضل الممارسات](Best_Practices.md)
+- [Success Criteria | معايير النجاح](Success_Criteria.md)
 
 ---

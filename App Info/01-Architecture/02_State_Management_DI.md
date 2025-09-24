@@ -30,105 +30,33 @@ Implement robust state management and dependency injection for predictable, test
   - Use Consumer/ConsumerWidget for UI updates
 - **Result**: Predictable state management with better performance and testability
 
-## ✅ **Success Criteria | معايير النجاح**
+## ✅ **Quality Standards & Success Criteria | معايير الجودة ومعايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../00-Templates/06_Success_Criteria_Template.md) for standard criteria.
+> **Reference**: See [Quality Standards | معايير الجودة](Quality_Standards.md) for comprehensive quality requirements.
 
-### **State Management Specific Criteria:**
-- [ ] One state management solution across entire project
-- [ ] No business logic in Widgets
-- [ ] Proper resource disposal and cleanup
-- [ ] Easy to test state changes and side effects
-- [ ] Clear separation between UI and business logic
-- [ ] Consistent patterns across all features
+> **Reference**: See [Success Criteria | معايير النجاح](Success_Criteria.md) for detailed success metrics and validation criteria.
 
-## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
+### **State Management & DI Specific Requirements:**
+- **One State Solution**: Riverpod used consistently across entire project
+- **Clean Separation**: No business logic in UI components  
+- **Resource Management**: Proper disposal and cleanup of providers
+- **Testing**: >90% coverage for state management logic
+- **Performance**: <100ms average state update time
+- **Memory Safety**: Zero memory leaks from state management
 
-> **Reference**: See [Common Pitfalls Template](../../00-Templates/05_Common_Pitfalls_Template.md) for standard pitfalls.
+## ⚠️ **Common Pitfalls & Best Practices | الأخطاء الشائعة وأفضل الممارسات**
 
-### **State Management Specific Pitfalls:**
+> **Reference**: See [Best Practices | أفضل الممارسات](Best_Practices.md) for comprehensive best practices and common pitfalls.
+
+### **State Management & DI Specific Pitfalls:**
 - **Avoid**: Mixed state management patterns in same project
-- **Avoid**: Memory leaks from improper disposal
+- **Avoid**: Memory leaks from improper disposal  
 - **Avoid**: Business logic in UI components
 - **Avoid**: No disposal of resources and streams
 - **Avoid**: Direct state mutation without proper patterns
-- **Avoid**: Over-engineering simple state requirements
 
 ---
 
-
-
-## 🚨 **Risk Assessment | تقييم المخاطر**
-
-> **Reference**: See [Risk Assessment Template](../00-Templates/01_Risk_Assessment_Template.md) for standard risk categories.
-
-### **State Management & DI Specific Risks:**
-| Risk | Impact | Probability | Mitigation Strategy |
-|------|--------|-------------|-------------------|
-| **State Inconsistency** | High | Medium | Immutable state, proper state updates, testing |
-| **Memory Leaks** | High | Medium | Proper disposal, weak references, lifecycle management |
-| **Provider Overuse** | Medium | High | Provider scoping, selective watching, performance monitoring |
-| **Tight Coupling** | Medium | High | Interface segregation, dependency injection |
-| **Testing Complexity** | High | Medium | Mock providers, test utilities, isolated testing |
-| **Performance Issues** | Medium | Low | Selective rebuilds, provider optimization, state normalization |
-
-## 📊 **Implementation Priority | أولوية التنفيذ**
-
-> **Reference**: See [Implementation Priority Template](../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
-
-### **State Management & DI Specific Priorities:**
-- **Phase 1: Foundation (Must Have)**
-  - [ ] Riverpod setup and configuration
-  - [ ] StateNotifier implementation for features
-  - [ ] Provider-based dependency injection
-  - [ ] Basic state management patterns
-- **Phase 2: Enhancement (Should Have)**
-  - [ ] Advanced provider patterns (FutureProvider, StreamProvider)
-  - [ ] State persistence and restoration
-  - [ ] Provider scoping and optimization
-- [ ] Comprehensive testing setup
-
-### **Phase 3: Optimization (Could Have)**
-- [ ] Performance monitoring and optimization
-- [ ] Advanced state management patterns
-- [ ] State management documentation
-- [ ] Provider debugging tools
-
-## 📋 **Architecture Decision Record (ADR)**
-
-### **ADR-001: Clean Architecture Pattern**
-- **Status**: Accepted
-- **Date**: 2025-01-27
-- **Context**: Need for maintainable, testable architecture
-- **Decision**: Implement Clean Architecture with 4 layers
-- **Consequences**: 
-  - ✅ Better testability
-  - ✅ Clear separation of concerns
-  - ⚠️ More initial setup complexity
-  - ⚠️ Learning curve for team
-
-## 🚪 **Quality Gates | بوابات الجودة**
-
-> **Reference**: See [Quality Gates Template](../00-Templates/03_Quality_Gates_Template.md) for standard quality criteria.
-
-### **State Management & DI Specific Quality Gates:**
-- [ ] Riverpod properly configured and working
-- [ ] No business logic in UI components
-- [ ] Proper resource disposal and cleanup
-- [ ] State changes are predictable and testable
-- [ ] Provider dependencies are properly managed
-- [ ] No memory leaks from providers or state
-
-## 📈 **Success Metrics | مؤشرات النجاح**
-
-> **Reference**: See [Success Metrics Template](../00-Templates/04_Success_Metrics_Template.md) for standard metrics.
-
-### **State Management & DI Specific Metrics:**
-- **State Consistency**: 100% predictable state updates
-- **Memory Management**: Zero memory leaks from state
-- **Provider Performance**: <10ms provider resolution time
-- **Testability**: 100% of state logic covered by tests
-- **Developer Experience**: Easy to understand and maintain state
 
 
 ## 🚀 **التطبيق | Implementation**
@@ -465,5 +393,12 @@ void main() {
 - [Dependency Injection | حقن التبعية](#dependency-injection--حقن-التبعية)
 - [Implementation Examples | أمثلة التنفيذ](#implementation-examples--أمثلة-التنفيذ)
 - [Best Practices | أفضل الممارسات](#best-practices--أفضل-الممارسات)
+
+### **Shared Architecture Resources | موارد المعمارية المشتركة**
+- [Quality Standards | معايير الجودة](Quality_Standards.md)
+- [Testing Strategy | استراتيجية الاختبار](Testing_Strategy.md)
+- [Troubleshooting Guide | دليل استكشاف الأخطاء](Troubleshooting_Guide.md)
+- [Best Practices | أفضل الممارسات](Best_Practices.md)
+- [Success Criteria | معايير النجاح](Success_Criteria.md)
 
 ---

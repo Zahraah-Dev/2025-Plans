@@ -47,20 +47,6 @@ Implement unified design system with consistent theming, reusable components, an
 
 ---
 
-## 📚 **Detailed Implementation | التنفيذ التفصيلي**
-
-### **🎨 Color & Typography System**
-For comprehensive color palette and typography implementation, see:
-- [Color & Typography System | نظام الألوان والخطوط](06-Design-System/06_Color_Typography.md)
-
-### **🧩 Component Library**
-For reusable components and design patterns, see:
-- [Component Library | مكتبة المكونات](06-Design-System/06_Components.md)
-
-### **📱 RTL & Accessibility**
-For RTL support and accessibility features, see:
-- [RTL & Accessibility | دعم RTL وإمكانية الوصول](06-Design-System/06_RTL_Accessibility.md)
-
 ---
 
 ## 🚨 **Risk Assessment | تقييم المخاطر**
@@ -82,12 +68,13 @@ For RTL support and accessibility features, see:
 > **Reference**: See [Implementation Priority Template](../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
 
 ### **Design System Specific Priorities:**
-- **Phase 1: Foundation (Must Have)**
-  - [ ] Design tokens definition (colors, spacing, typography)
-  - [ ] Basic component library creation
-  - [ ] Theme configuration (light/dark)
-  - [ ] RTL support implementation
-- **Phase 2: Enhancement (Should Have)**
+### **Phase 1: Foundation (Must Have)**
+- [ ] Design tokens definition (colors, spacing, typography)
+- [ ] Basic component library creation
+- [ ] Theme configuration (light/dark)
+- [ ] RTL support implementation
+
+### **Phase 2: Enhancement (Should Have)**
 - [ ] Advanced component library
 - [ ] Accessibility features
 - [ ] Component documentation
@@ -126,6 +113,244 @@ For RTL support and accessibility features, see:
 
 ---
 
+## 🏗️ **Design System Architecture | معمارية نظام التصميم**
+
+### **1. Design System Structure | هيكل نظام التصميم**
+```
+lib/design_system/
+├── tokens/
+│   ├── colors.dart
+│   ├── typography.dart
+│   ├── spacing.dart
+│   └── borders.dart
+├── components/
+│   ├── buttons/
+│   ├── inputs/
+│   ├── cards/
+│   └── navigation/
+├── themes/
+│   ├── light_theme.dart
+│   ├── dark_theme.dart
+│   └── rtl_theme.dart
+└── utilities/
+    ├── responsive.dart
+    ├── accessibility.dart
+    └── animations.dart
+```
+
+### **2. Design System Principles | مبادئ نظام التصميم**
+- **Consistency**: Uniform design language across all screens
+- **Reusability**: Components used consistently throughout app
+- **Scalability**: Easy to extend and maintain
+- **Accessibility**: Built-in accessibility features
+- **RTL Support**: Full right-to-left layout support
+- **Performance**: Optimized for mobile devices
+
+## 🎨 **Color & Typography | الألوان والطباعة**
+
+### **1. Color System | نظام الألوان**
+```dart
+class AppColors {
+  // Primary Colors
+  static const Color primary = Color(0xFF6366F1);
+  static const Color primaryDark = Color(0xFF4F46E5);
+  static const Color primaryLight = Color(0xFF818CF8);
+  
+  // Secondary Colors
+  static const Color secondary = Color(0xFFEC4899);
+  static const Color secondaryDark = Color(0xFFDB2777);
+  static const Color secondaryLight = Color(0xFFF472B6);
+  
+  // Neutral Colors
+  static const Color white = Color(0xFFFFFFFF);
+  static const Color black = Color(0xFF000000);
+  static const Color gray50 = Color(0xFFF9FAFB);
+  static const Color gray100 = Color(0xFFF3F4F6);
+  static const Color gray500 = Color(0xFF6B7280);
+  static const Color gray900 = Color(0xFF111827);
+  
+  // Semantic Colors
+  static const Color success = Color(0xFF10B981);
+  static const Color warning = Color(0xFFF59E0B);
+  static const Color error = Color(0xFFEF4444);
+  static const Color info = Color(0xFF3B82F6);
+}
+```
+
+### **2. Typography System | نظام الطباعة**
+```dart
+class AppTypography {
+  static const TextStyle heading1 = TextStyle(
+    fontSize: 32,
+    fontWeight: FontWeight.bold,
+    height: 1.2,
+  );
+  
+  static const TextStyle heading2 = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+    height: 1.3,
+  );
+  
+  static const TextStyle heading3 = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+    height: 1.4,
+  );
+  
+  static const TextStyle bodyLarge = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.normal,
+    height: 1.5,
+  );
+  
+  static const TextStyle bodyMedium = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.normal,
+    height: 1.5,
+  );
+  
+  static const TextStyle bodySmall = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.normal,
+    height: 1.5,
+  );
+}
+```
+
+## 🧩 **Components | المكونات**
+
+### **1. Button Components | مكونات الأزرار**
+```dart
+class AppButton extends StatelessWidget {
+  final String text;
+  final VoidCallback? onPressed;
+  final AppButtonType type;
+  final AppButtonSize size;
+  final bool isLoading;
+  
+  const AppButton({
+    required this.text,
+    this.onPressed,
+    this.type = AppButtonType.primary,
+    this.size = AppButtonSize.medium,
+    this.isLoading = false,
+  });
+  
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: isLoading ? null : onPressed,
+      style: _getButtonStyle(),
+      child: isLoading
+          ? const SizedBox(
+              width: 20,
+              height: 20,
+              child: CircularProgressIndicator(strokeWidth: 2),
+            )
+          : Text(text),
+    );
+  }
+}
+
+enum AppButtonType { primary, secondary, outline, text }
+enum AppButtonSize { small, medium, large }
+```
+
+### **2. Card Components | مكونات البطاقات**
+```dart
+class AppCard extends StatelessWidget {
+  final Widget child;
+  final EdgeInsets? padding;
+  final Color? backgroundColor;
+  final double? elevation;
+  final VoidCallback? onTap;
+  
+  const AppCard({
+    required this.child,
+    this.padding,
+    this.backgroundColor,
+    this.elevation,
+    this.onTap,
+  });
+  
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: elevation ?? 2,
+      color: backgroundColor ?? Theme.of(context).cardColor,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(8),
+        child: Padding(
+          padding: padding ?? const EdgeInsets.all(16),
+          child: child,
+        ),
+      ),
+    );
+  }
+}
+```
+
+## ♿ **RTL & Accessibility | النص من اليمين لليسار وإمكانية الوصول**
+
+### **1. RTL Support | دعم النص من اليمين لليسار**
+```dart
+class RTLWrapper extends StatelessWidget {
+  final Widget child;
+  final bool forceRTL;
+  
+  const RTLWrapper({
+    required this.child,
+    this.forceRTL = false,
+  });
+  
+  @override
+  Widget build(BuildContext context) {
+    final locale = Localizations.localeOf(context);
+    final isRTL = forceRTL || locale.languageCode == 'ar';
+    
+    return Directionality(
+      textDirection: isRTL ? TextDirection.rtl : TextDirection.ltr,
+      child: child,
+    );
+  }
+}
+```
+
+### **2. Accessibility Features | ميزات إمكانية الوصول**
+```dart
+class AccessibleButton extends StatelessWidget {
+  final String text;
+  final VoidCallback? onPressed;
+  final String? semanticLabel;
+  final String? semanticHint;
+  
+  const AccessibleButton({
+    required this.text,
+    this.onPressed,
+    this.semanticLabel,
+    this.semanticHint,
+  });
+  
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      label: semanticLabel ?? text,
+      hint: semanticHint,
+      button: true,
+      enabled: onPressed != null,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        child: Text(text),
+      ),
+    );
+  }
+}
+```
+
+---
+
 **Last Updated | آخر تحديث**: January 2025  
 **Version | الإصدار**: 2.0 - Enhanced Design System  
 **Status | الحالة**: ✅ Production Ready
@@ -139,15 +364,21 @@ For RTL support and accessibility features, see:
 [🏠 Home | الرئيسية](../../index.html)
 
 ### **Quick Navigation | التنقل السريع**
-- [Design System Overview | نظرة عامة على نظام التصميم](#design-system-overview--نظرة-عامة-على-نظام-التصميم)
-- [Color & Typography | الألوان والطباعة](#color--typography--الألوان-والطباعة)
-- [Components | المكونات](#components--المكونات)
-- [RTL & Accessibility | النص من اليمين لليسار وإمكانية الوصول](#rtl--accessibility--النص-من-اليمين-ليسار-وإمكانية-الوصول)
+- [Design System Architecture | معمارية نظام التصميم](#-design-system-architecture--معمارية-نظام-التصميم)
+- [Color & Typography | الألوان والطباعة](#-color--typography--الألوان-والطباعة)
+- [Components | المكونات](#-components--المكونات)
+- [RTL & Accessibility | النص من اليمين لليسار وإمكانية الوصول](#-rtl--accessibility--النص-من-اليمين-ليسار-وإمكانية-الوصول)
 
 ### **Related Files | الملفات ذات الصلة**
-- [Design System Overview | نظرة عامة على نظام التصميم](06-Design-System/06_Design_System_Overview.md)
-- [Color & Typography | الألوان والطباعة](06-Design-System/06_Color_Typography.md)
-- [Components | المكونات](06-Design-System/06_Components.md)
-- [RTL & Accessibility | النص من اليمين لليسار وإمكانية الوصول](06-Design-System/06_RTL_Accessibility.md)
+- [Presentation Layer | طبقة العرض](05_Presentation_Layer.md)
+- [Architecture Overview | نظرة عامة على المعمارية](01_Architecture_Overview.md)
+- [State Management & DI | إدارة الحالة وحقن التبعية](02_State_Management_DI.md)
+
+### **Shared Architecture Resources | موارد المعمارية المشتركة**
+- [Quality Standards | معايير الجودة](Quality_Standards.md)
+- [Testing Strategy | استراتيجية الاختبار](Testing_Strategy.md)
+- [Troubleshooting Guide | دليل استكشاف الأخطاء](Troubleshooting_Guide.md)
+- [Best Practices | أفضل الممارسات](Best_Practices.md)
+- [Success Criteria | معايير النجاح](Success_Criteria.md)
 
 ---

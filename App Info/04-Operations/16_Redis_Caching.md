@@ -73,12 +73,13 @@ Implement Redis caching system for high-performance data storage and retrieval i
 > **Reference**: See [Implementation Priority Template](../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
 
 ### **Redis Caching Specific Priorities:**
-- **Phase 1: Foundation (Must Have)**
-  - [ ] Redis server setup and configuration
-  - [ ] Basic caching layer implementation
-  - [ ] TTL policies for different data types
-  - [ ] Connection pooling and error handling
-- **Phase 2: Enhancement (Should Have)**
+### **Phase 1: Foundation (Must Have)**
+- [ ] Redis server setup and configuration
+- [ ] Basic caching layer implementation
+- [ ] TTL policies for different data types
+- [ ] Connection pooling and error handling
+
+### **Phase 2: Enhancement (Should Have)**
 - [ ] Stale-While-Revalidate pattern
 - [ ] Cache invalidation strategies
 - [ ] Performance monitoring

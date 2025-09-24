@@ -73,12 +73,13 @@ Implement comprehensive business analytics and monitoring system for data-driven
 > **Reference**: See [Implementation Priority Template](../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
 
 ### **Business Analytics Specific Priorities:**
-- **Phase 1: Foundation (Must Have)**
-  - [ ] Set up analytics platform
-  - [ ] Implement basic event tracking
-  - [ ] Create core business dashboards
-  - [ ] Add conversion tracking
-- **Phase 2: Enhancement (Should Have)**
+### **Phase 1: Foundation (Must Have)**
+- [ ] Set up analytics platform
+- [ ] Implement basic event tracking
+- [ ] Create core business dashboards
+- [ ] Add conversion tracking
+
+### **Phase 2: Enhancement (Should Have)**
 - [ ] Add custom events
 - [ ] Implement user segmentation
 - [ ] Create advanced reports
