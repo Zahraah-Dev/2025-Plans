@@ -67,7 +67,7 @@ These tools are integrated with:
 
 ## 🔗 **Navigation | التنقل**
 
-[🏠 Home | الرئيسية](../README.md) | [📚 App Info | معلومات التطبيق](../App%20Info/README.md)
+[🏠 Home | الرئيسية](/2025-Plans/)| الرئيسية](../README.md) | [📚 App Info | معلومات التطبيق](../App%20Info/README.md)
 
 ---
 

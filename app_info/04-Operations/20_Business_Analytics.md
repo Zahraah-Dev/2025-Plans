@@ -203,6 +203,6 @@ Implement comprehensive business analytics and monitoring system for data-driven
 
 [← Previous: Notifications & Deep Links | السابق: الإشعارات والروابط العميقة](19_Notifications_DeepLinks.md)
 [Next: Feature Flags | التالي: نظام Feature Flags →](../05-Advanced/21_Feature_Flags.md)
-[🏠 Home | الرئيسية](/)
+[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
 
 ---

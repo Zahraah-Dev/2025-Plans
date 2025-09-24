@@ -282,10 +282,10 @@ graph TD
 
 ## 🔗 **الروابط ذات الصلة | Related Links**
 
-- [إدارة الحالة وحقن الاعتماديات](/app_info/01-Architecture/02_State_Management_DI/)
-- [طبقة البيانات ومعالجة الأخطاء](/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
-- [طبقة المجال](/app_info/01-Architecture/04_Domain_Layer/)
-- [طبقة العرض](/app_info/01-Architecture/05_Presentation_Layer/)
+- [إدارة الحالة وحقن الاعتماديات](/2025-Plans/app_info/01-Architecture/02_State_Management_DI/)
+- [طبقة البيانات ومعالجة الأخطاء](/2025-Plans/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
+- [طبقة المجال](/2025-Plans/app_info/01-Architecture/04_Domain_Layer/)
+- [طبقة العرض](/2025-Plans/app_info/01-Architecture/05_Presentation_Layer/)
 
 ---
 
@@ -323,10 +323,10 @@ graph TD
 
 <div class="navigation-links">
 
-[Next: State Management & DI →](/app_info/01-Architecture/02_State_Management_DI/)  
+[Next: State Management & DI →](/2025-Plans/app_info/01-Architecture/02_State_Management_DI/)  
 *التالي: إدارة الحالة وحقن التبعية*
 
-[🏠 Home](/)  
+[🏠 Home](/2025-Plans/)  
 *الرئيسية*
 
 </div>

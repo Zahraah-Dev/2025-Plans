@@ -623,6 +623,6 @@ flutter build ios --release
 
 [← Previous: Troubleshooting | السابق: دليل حل المشاكل](27_Troubleshooting.md)
 [Next: Checklists Reference | التالي: مرجع القوائم المرجعية →](29_Checklists_Reference.md)
-[🏠 Home | الرئيسية](/)
+[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
 
 ---

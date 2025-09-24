@@ -344,9 +344,9 @@ class AddToCartUseCase {
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Data Layer Error Handling | السابق: معالجة أخطاء طبقة البيانات](/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
-[Next: Presentation Layer | التالي: طبقة العرض →](/app_info/01-Architecture/05_Presentation_Layer/)
-[🏠 Home | الرئيسية](/)
+[](/2025-Plans/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
+[](/2025-Plans/app_info/01-Architecture/05_Presentation_Layer/)
+[🏠 Home | الرئيسية](/2025-Plans/)|[🏠 Home | الرئيسية](/2025-Plans/)
 
 ### **Quick Navigation | التنقل السريع**
 - [Domain Layer Architecture | معمارية طبقة المجال](#-domain-layer-architecture--معمارية-طبقة-المجال)
@@ -356,10 +356,10 @@ class AddToCartUseCase {
 - [Use Cases Templates | قوالب حالات الاستخدام](#-use-cases-templates--قوالب-حالات-الاستخدام)
 
 ### **Related Architecture Files | ملفات المعمارية ذات الصلة**
-- [Architecture Overview | نظرة عامة على المعمارية](/app_info/01-Architecture/01_Architecture_Overview/)
-- [State Management & DI | إدارة الحالة وحقن التبعية](/app_info/01-Architecture/02_State_Management_DI/)
-- [Data Layer Error Handling | معالجة أخطاء طبقة البيانات](/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
-- [Presentation Layer | طبقة العرض](/app_info/01-Architecture/05_Presentation_Layer/)
-- [Design System | نظام التصميم](/app_info/01-Architecture/06_Design_System/)
+- [Architecture Overview | نظرة عامة على المعمارية](/2025-Plans/app_info/01-Architecture/01_Architecture_Overview/)
+- [State Management & DI | إدارة الحالة وحقن التبعية](/2025-Plans/app_info/01-Architecture/02_State_Management_DI/)
+- [Data Layer Error Handling | معالجة أخطاء طبقة البيانات](/2025-Plans/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
+- [Presentation Layer | طبقة العرض](/2025-Plans/app_info/01-Architecture/05_Presentation_Layer/)
+- [Design System | نظام التصميم](/2025-Plans/app_info/01-Architecture/06_Design_System/)
 
 ---

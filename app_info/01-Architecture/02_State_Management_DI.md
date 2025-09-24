@@ -382,9 +382,9 @@ void main() {
 
 ## 🔗 **الروابط ذات الصلة | Related Links**
 
-- [نظرة عامة على المعمارية النظيفة](/app_info/01-Architecture/01_Architecture_Overview/)
-- [طبقة البيانات ومعالجة الأخطاء](/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
-- [طبقة المجال](/app_info/01-Architecture/04_Domain_Layer/)
+- [نظرة عامة على المعمارية النظيفة](/2025-Plans/app_info/01-Architecture/01_Architecture_Overview/)
+- [طبقة البيانات ومعالجة الأخطاء](/2025-Plans/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
+- [طبقة المجال](/2025-Plans/app_info/01-Architecture/04_Domain_Layer/)
 - [استراتيجية الاختبار](08_Testing_Strategy.md)
 
 ---
@@ -408,9 +408,9 @@ void main() {
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Architecture Overview | السابق: نظرة عامة على المعمارية](/app_info/01-Architecture/01_Architecture_Overview/)
-[Next: Data Layer Error Handling | التالي: معالجة أخطاء طبقة البيانات →](/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
-[🏠 Home | الرئيسية](/)
+[← Previous: Architecture Overview | السابق: نظرة عامة على المعمارية](/2025-Plans/app_info/01-Architecture/01_Architecture_Overview/)
+[Next: Data Layer Error Handling | التالي: معالجة أخطاء طبقة البيانات →](/2025-Plans/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
+[🏠 Home | الرئيسية](/2025-Plans/)| الرئيسية](/2025-Plans/)
 
 ### **Quick Navigation | التنقل السريع**
 - [State Management | إدارة الحالة](#state-management--إدارة-الحالة)
@@ -419,10 +419,10 @@ void main() {
 - [Best Practices | أفضل الممارسات](#best-practices--أفضل-الممارسات)
 
 ### **Shared Architecture Resources | موارد المعمارية المشتركة**
-- [Architecture Overview | نظرة عامة على المعمارية](/app_info/01-Architecture/01_Architecture_Overview/)
-- [Domain Layer | طبقة المجال](/app_info/01-Architecture/04_Domain_Layer/)
-- [Data Layer Error Handling | معالجة أخطاء طبقة البيانات](/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
-- [Presentation Layer | طبقة العرض](/app_info/01-Architecture/05_Presentation_Layer/)
-- [Design System | نظام التصميم](/app_info/01-Architecture/06_Design_System/)
+- [Architecture Overview | نظرة عامة على المعمارية](/2025-Plans/app_info/01-Architecture/01_Architecture_Overview/)
+- [Domain Layer | طبقة المجال](/2025-Plans/app_info/01-Architecture/04_Domain_Layer/)
+- [Data Layer Error Handling | معالجة أخطاء طبقة البيانات](/2025-Plans/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
+- [Presentation Layer | طبقة العرض](/2025-Plans/app_info/01-Architecture/05_Presentation_Layer/)
+- [Design System | نظام التصميم](/2025-Plans/app_info/01-Architecture/06_Design_System/)
 
 ---
