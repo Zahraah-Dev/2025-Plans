@@ -33,11 +33,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Font loading optimization */
-.fonts-loaded {
-    --font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-    --font-arabic: 'Noto Sans Arabic', 'IBM Plex Sans', 'Arial Unicode MS', 'Tahoma', 'Arial', sans-serif;
-}
+/* Font loading optimization - using system fonts only */
 
 /* Arabic text optimization */
 [dir="rtl"],

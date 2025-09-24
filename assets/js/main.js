@@ -3,18 +3,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize the documentation site
     initializeDocumentation();
-
-    // Add fonts-loaded class when fonts are ready
-    if (document.fonts && document.fonts.ready) {
-        document.fonts.ready.then(function () {
-            document.body.classList.add('fonts-loaded');
-        });
-    } else {
-        // Fallback for browsers without font loading API
-        setTimeout(function () {
-            document.body.classList.add('fonts-loaded');
-        }, 1000);
-    }
 });
 
 function initializeDocumentation() {
