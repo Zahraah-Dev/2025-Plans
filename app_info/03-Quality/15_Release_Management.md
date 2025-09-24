@@ -174,6 +174,6 @@ version: 1.2.3+456
 
 [← Previous: Monitoring & Analytics | السابق: المراقبة والتحليلات](14_Monitoring_Analytics.md)
 [Next: Redis Caching | التالي: إدارة التخزين المؤقت →](../04-Operations/16_Redis_Caching.md)
-[🏠 Home | الرئيسية](../../index.html)
+[🏠 Home | الرئيسية](/)
 
 ---

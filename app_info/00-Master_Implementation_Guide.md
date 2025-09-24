@@ -333,6 +333,6 @@ permalink: /app_info/00-master-implementation-guide/
 
 ## 🏠 **Back to Home | العودة للرئيسية**
 
-[← Back to Main Index | العودة للفهرس الرئيسي](../index.html)
+[← Back to Main Index | العودة للفهرس الرئيسي](/)
 
 ---

@@ -270,7 +270,7 @@ git commit -m "test: add unit tests for cart service"
 
 ## 🔗 **الروابط ذات الصلة | Related Links**
 
-- [جودة الكود والمعايير](09_Code_Quality_Standards.md)
+- [جودة الكود والمعايير](/app_info/02-Implementation/09_Code_Quality_Standards/)
 - [خط أنابيب CI/CD](11_CI_CD_Pipeline.md)
 - [إدارة الإصدارات](15_Release_Management.md)
 
@@ -290,8 +290,8 @@ git commit -m "test: add unit tests for cart service"
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Code Quality Standards | السابق: معايير جودة الكود](09_Code_Quality_Standards.md)
-[Next: CI/CD Pipeline | التالي: خط أنابيب CI/CD →](../03-Quality/11_CI_CD_Pipeline.md)
-[🏠 Home | الرئيسية](../../index.html)
+[← Previous: Code Quality Standards | السابق: معايير جودة الكود](/app_info/02-Implementation/09_Code_Quality_Standards/)
+[Next: CI/CD Pipeline | التالي: خط أنابيب CI/CD →](/app_info/03-Quality/11_CI_CD_Pipeline/)
+[🏠 Home | الرئيسية](/)
 
 ---

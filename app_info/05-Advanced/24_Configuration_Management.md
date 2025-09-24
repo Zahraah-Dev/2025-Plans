@@ -194,6 +194,6 @@ Implement advanced configuration management system for environment-specific sett
 
 ## 🏠 **Back to Home | العودة للرئيسية**
 
-[← Back to Main Index | العودة للفهرس الرئيسي](../../index.html)
+[← Back to Main Index | العودة للفهرس الرئيسي](/)
 
 ---

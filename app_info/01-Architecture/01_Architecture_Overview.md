@@ -282,10 +282,10 @@ graph TD
 
 ## 🔗 **الروابط ذات الصلة | Related Links**
 
-- [إدارة الحالة وحقن الاعتماديات](02_State_Management_DI.md)
-- [طبقة البيانات ومعالجة الأخطاء](03_Data_Layer_Error_Handling.md)
-- [طبقة المجال](04_Domain_Layer.md)
-- [طبقة العرض](05_Presentation_Layer.md)
+- [إدارة الحالة وحقن الاعتماديات](/app_info/01-Architecture/02_State_Management_DI/)
+- [طبقة البيانات ومعالجة الأخطاء](/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
+- [طبقة المجال](/app_info/01-Architecture/04_Domain_Layer/)
+- [طبقة العرض](/app_info/01-Architecture/05_Presentation_Layer/)
 
 ---
 
@@ -321,8 +321,8 @@ graph TD
 
 ## 🔗 **Navigation | التنقل**
 
-[Next: State Management & DI | التالي: إدارة الحالة وحقن التبعية →](02_State_Management_DI.md)
-[🏠 Home | الرئيسية](../../index.html)
+[Next: State Management & DI | التالي: إدارة الحالة وحقن التبعية →](/app_info/01-Architecture/02_State_Management_DI/)
+[🏠 Home | الرئيسية](/)
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 

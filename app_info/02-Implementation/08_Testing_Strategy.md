@@ -389,14 +389,14 @@ jobs:
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Project Setup & Configuration | السابق: إعداد المشروع والتكوين](07_Project_Setup_Config.md)
-[Next: Code Quality Standards | التالي: معايير جودة الكود →](09_Code_Quality_Standards.md)
-[🏠 Home | الرئيسية](../../index.html)
+[← Previous: Project Setup & Configuration | السابق: إعداد المشروع والتكوين](/app_info/02-Implementation/07_Project_Setup_Config/)
+[Next: Code Quality Standards | التالي: معايير جودة الكود →](/app_info/02-Implementation/09_Code_Quality_Standards/)
+[🏠 Home | الرئيسية](/)
 
 ### **Related Files | الملفات ذات الصلة**
-- [Code Quality Standards | معايير جودة الكود](09_Code_Quality_Standards.md)
-- [Git Workflow | سير عمل Git](10_Git_Workflow.md)
-- [CI/CD Pipeline | خط أنابيب CI/CD](../03-Quality/11_CI_CD_Pipeline.md)
+- [Code Quality Standards | معايير جودة الكود](/app_info/02-Implementation/09_Code_Quality_Standards/)
+- [Git Workflow | سير عمل Git](/app_info/02-Implementation/10_Git_Workflow/)
+- [CI/CD Pipeline | خط أنابيب CI/CD](/app_info/03-Quality/11_CI_CD_Pipeline/)
 - [Performance Optimization | تحسين الأداء](../03-Quality/12_Performance_Optimization.md)
 
 ---

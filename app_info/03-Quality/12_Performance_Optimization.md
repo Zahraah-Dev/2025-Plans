@@ -238,6 +238,6 @@ ListView.builder(
 
 [← Previous: CI/CD Pipeline | السابق: خط أنابيب CI/CD](11_CI_CD_Pipeline.md)
 [Next: Security & Privacy | التالي: الأمان والخصوصية →](13_Security_Privacy.md)
-[🏠 Home | الرئيسية](../../index.html)
+[🏠 Home | الرئيسية](/)
 
 ---

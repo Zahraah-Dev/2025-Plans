@@ -454,8 +454,8 @@ repos:
 
 ## 🔗 **الروابط ذات الصلة | Related Links**
 
-- [استراتيجية الاختبار](08_Testing_Strategy.md)
-- [سير عمل Git والفروع](10_Git_Workflow.md)
+- [استراتيجية الاختبار](/app_info/02-Implementation/08_Testing_Strategy/)
+- [سير عمل Git والفروع](/app_info/02-Implementation/10_Git_Workflow/)
 - [خط أنابيب CI/CD](11_CI_CD_Pipeline.md)
 
 ---
@@ -474,8 +474,8 @@ repos:
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: Testing Strategy | السابق: استراتيجية الاختبار](08_Testing_Strategy.md)
-[Next: Git Workflow | التالي: سير عمل Git →](10_Git_Workflow.md)
-[🏠 Home | الرئيسية](../../index.html)
+[← Previous: Testing Strategy | السابق: استراتيجية الاختبار](/app_info/02-Implementation/08_Testing_Strategy/)
+[Next: Git Workflow | التالي: سير عمل Git →](/app_info/02-Implementation/10_Git_Workflow/)
+[🏠 Home | الرئيسية](/)
 
 ---

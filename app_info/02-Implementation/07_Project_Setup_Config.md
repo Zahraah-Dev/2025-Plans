@@ -459,7 +459,7 @@ echo "Build completed successfully!"
 ## 🔗 **Navigation | التنقل**
 
 [← Previous: Design System | السابق: نظام التصميم](../01-Architecture/06_Design_System.md)
-[Next: Testing Strategy | التالي: استراتيجية الاختبار →](08_Testing_Strategy.md)
-[🏠 Home | الرئيسية](../../index.html)
+[Next: Testing Strategy | التالي: استراتيجية الاختبار →](/app_info/02-Implementation/08_Testing_Strategy/)
+[🏠 Home | الرئيسية](/)
 
 ---
