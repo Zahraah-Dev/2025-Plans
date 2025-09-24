@@ -2,7 +2,7 @@
 layout: default
 title: "15. إدارة الإصدارات"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/15-release-management/
+permalink: /app_info/03-quality/15-release-management/
 ---
 
 # 15. إدارة الإصدارات

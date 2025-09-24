@@ -2,7 +2,7 @@
 layout: default
 title: "Risk Assessment Template"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/01-risk-assessment-template/
+permalink: /app_info/00-templates/01-risk-assessment-template/
 ---
 
 # Risk Assessment Template

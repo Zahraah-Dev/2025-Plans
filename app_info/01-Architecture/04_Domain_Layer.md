@@ -2,7 +2,7 @@
 layout: default
 title: "4. طبقة المجال"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/04-domain-layer/
+permalink: /app_info/01-architecture/04-domain-layer/
 ---
 
 # 4. طبقة المجال

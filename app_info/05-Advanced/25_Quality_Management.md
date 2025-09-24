@@ -2,7 +2,7 @@
 layout: default
 title: "25. إدارة الجودة الشاملة"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/25-quality-management/
+permalink: /app_info/05-advanced/25-quality-management/
 ---
 
 # 25. إدارة الجودة الشاملة

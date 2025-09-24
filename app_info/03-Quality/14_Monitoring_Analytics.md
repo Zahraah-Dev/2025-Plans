@@ -2,7 +2,7 @@
 layout: default
 title: "14. المراقبة والتحليلات"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/14-monitoring-analytics/
+permalink: /app_info/03-quality/14-monitoring-analytics/
 ---
 
 # 14. المراقبة والتحليلات

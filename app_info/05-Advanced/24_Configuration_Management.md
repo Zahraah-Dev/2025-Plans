@@ -2,7 +2,7 @@
 layout: default
 title: "24. إدارة التكوين المتقدمة"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/24-configuration-management/
+permalink: /app_info/05-advanced/24-configuration-management/
 ---
 
 # 24. إدارة التكوين المتقدمة

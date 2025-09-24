@@ -2,7 +2,7 @@
 layout: default
 title: "15. Comprehensive Metrics Template | قالب المقاييس الشاملة"
 description: "Flutter e-commerce development guide"
-permalink: /app_info/15-comprehensive-metrics-template/
+permalink: /app_info/00-templates/15-comprehensive-metrics-template/
 ---
 
 # 15. Comprehensive Metrics Template | قالب المقاييس الشاملة
