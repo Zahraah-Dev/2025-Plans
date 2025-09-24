@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.fonts.ready.then(function () {
             document.body.classList.remove('font-loading');
             document.body.classList.add('fonts-loaded');
-        }).catch(function(error) {
+        }).catch(function (error) {
             console.warn('Font loading failed, using fallbacks:', error);
             document.body.classList.remove('font-loading');
             document.body.classList.add('fonts-loaded');
@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (document.fonts && document.fonts.check) {
         const checkFonts = () => {
             try {
-                const ibmPlexLoaded = document.fonts.check('16px IBM Plex Sans') || 
-                                    document.fonts.check('16px "IBM Plex Sans"');
-                const ibmPlexArabicLoaded = document.fonts.check('16px IBM Plex Sans Arabic') || 
-                                          document.fonts.check('16px "IBM Plex Sans Arabic"');
-                
+                const ibmPlexLoaded = document.fonts.check('16px IBM Plex Sans') ||
+                    document.fonts.check('16px "IBM Plex Sans"');
+                const ibmPlexArabicLoaded = document.fonts.check('16px IBM Plex Sans Arabic') ||
+                    document.fonts.check('16px "IBM Plex Sans Arabic"');
+
                 if (ibmPlexLoaded || ibmPlexArabicLoaded) {
                     document.body.classList.remove('font-loading');
                     document.body.classList.add('fonts-loaded');
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.classList.add('fonts-loaded');
             }
         };
-        
+
         // Start checking after a short delay
         setTimeout(checkFonts, 100);
     }
