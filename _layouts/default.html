@@ -11,18 +11,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{{ '/2025-Plans/assets/css/style.css' | relative_url }}">
 
-    <!-- Fonts - IBM Plex Arabic with system font fallbacks -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-        <link
-            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet">
-    </noscript>
+    <!-- Fonts - IBM Plex Arabic with @import -->
     <style>
+        /* Import IBM Plex fonts */
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+        
         /* Font definitions with IBM Plex Arabic and system fallbacks */
         :root {
             --font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
