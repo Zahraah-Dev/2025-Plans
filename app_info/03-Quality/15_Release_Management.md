@@ -38,7 +38,7 @@ Implement comprehensive release management system for reliable, traceable, and e
 
 ## ✅ **Success Criteria | معايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template.md) for standard criteria.
+> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template/) for standard criteria.
 
 ### **Release Management Specific Criteria:**
 - [ ] Semantic versioning implemented
@@ -50,7 +50,7 @@ Implement comprehensive release management system for reliable, traceable, and e
 
 ## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
 
-> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template.md) for standard pitfalls.
+> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template/) for standard pitfalls.
 
 ### **Release Management Specific Pitfalls:**
 - **Avoid**: No versioning strategy
@@ -67,7 +67,7 @@ Implement comprehensive release management system for reliable, traceable, and e
 
 ## 🚨 **Risk Assessment | تقييم المخاطر**
 
-> **Reference**: See [Risk Assessment Template](../../00-Templates/01-risk-assessment-template.md) for standard risk categories.
+> **Reference**: See [Risk Assessment Template](../../00-Templates/01-risk-assessment-template/) for standard risk categories.
 
 ### **Release Management Specific Risks:**
 | Risk | Impact | Probability | Mitigation Strategy |
@@ -79,7 +79,7 @@ Implement comprehensive release management system for reliable, traceable, and e
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework/) for priority levels and criteria.
 
 ### **Release Management Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -99,7 +99,7 @@ Implement comprehensive release management system for reliable, traceable, and e
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
-> **Reference**: See [Quality Gates Template](../../00-Templates/03-quality-gates-template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../../00-Templates/03-quality-gates-template/) for standard quality criteria.
 
 ### **Release Management Specific Quality Gates:**
 - [ ] Release candidate tested in staging environment
@@ -112,7 +112,7 @@ Implement comprehensive release management system for reliable, traceable, and e
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template/) for topic-specific metrics.
 
 ### **Release Management Specific Metrics:**
 - **Release Success Rate**: 99%+ successful releases, <1% rollback rate

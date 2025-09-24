@@ -57,13 +57,13 @@ The AI agent should recognize these patterns as **duplications**:
 # Instead of duplicating content, use references:
 
 ## 🚨 **Risk Assessment | تقييم المخاطر**
-> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template.md) for standard risk categories.
+> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template/) for standard risk categories.
 
 ## 📊 **Implementation Priority | أولوية التنفيذ**
-> **Reference**: See [Implementation Priority Template](../00-Templates/04-implementation-priority-template.md) for standard phases.
+> **Reference**: See [Implementation Priority Template](../00-Templates/04-implementation-priority-template/) for standard phases.
 
 ## 🚪 **Quality Gates | بوابات الجودة**
-> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template/) for standard quality criteria.
 ```
 
 #### **Step 3: File-Specific Content Only**
@@ -184,16 +184,16 @@ The AI agent should recognize these patterns as **duplications**:
 
 ---
 ## 🚨 **Risk Assessment | تقييم المخاطر**
-> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template.md)
+> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template/)
 
 ## 📊 **Implementation Priority | أولوية التنفيذ**
-> **Reference**: See [Implementation Priority Template](../00-Templates/04-implementation-priority-template.md)
+> **Reference**: See [Implementation Priority Template](../00-Templates/04-implementation-priority-template/)
 
 ## 🚪 **Quality Gates | بوابات الجودة**
-> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template.md)
+> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template/)
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
-> **Reference**: See [Success Metrics Template](../00-Templates/02-success-criteria-template.md)
+> **Reference**: See [Success Metrics Template](../00-Templates/02-success-criteria-template/)
 
 ---
 ## [FILE-SPECIFIC CONTENT STARTS HERE]

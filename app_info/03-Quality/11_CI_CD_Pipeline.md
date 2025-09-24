@@ -37,7 +37,7 @@ Implement automated CI/CD pipeline for reliable, consistent, and efficient softw
 
 ## ✅ **Success Criteria | معايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template.md) for standard criteria.
+> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template/) for standard criteria.
 
 ### **CI/CD Pipeline Specific Criteria:**
 - [ ] All PRs go through automated checks
@@ -49,7 +49,7 @@ Implement automated CI/CD pipeline for reliable, consistent, and efficient softw
 
 ## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
 
-> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template.md) for standard pitfalls.
+> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template/) for standard pitfalls.
 
 ### **CI/CD Pipeline Specific Pitfalls:**
 - **Avoid**: Skipping quality checks
@@ -65,7 +65,7 @@ Implement automated CI/CD pipeline for reliable, consistent, and efficient softw
 
 ## 🚨 **Risk Assessment | تقييم المخاطر**
 
-> **Reference**: See [Risk Assessment Template](../../00-Templates/01-risk-assessment-template.md) for standard risk categories.
+> **Reference**: See [Risk Assessment Template](../../00-Templates/01-risk-assessment-template/) for standard risk categories.
 
 ### **CI/CD Pipeline Specific Risks:**
 | Risk | Impact | Probability | Mitigation Strategy |
@@ -77,7 +77,7 @@ Implement automated CI/CD pipeline for reliable, consistent, and efficient softw
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework/) for priority levels and criteria.
 
 ### **CI/CD Pipeline Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -97,7 +97,7 @@ Implement automated CI/CD pipeline for reliable, consistent, and efficient softw
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
-> **Reference**: See [Quality Gates Template](../../00-Templates/03-quality-gates-template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../../00-Templates/03-quality-gates-template/) for standard quality criteria.
 
 ### **CI/CD Pipeline Specific Quality Gates:**
 - [ ] GitHub Actions workflows running successfully
@@ -110,7 +110,7 @@ Implement automated CI/CD pipeline for reliable, consistent, and efficient softw
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template/) for topic-specific metrics.
 
 ### **CI/CD Pipeline Specific Metrics:**
 - **Build Time**: <5 minutes for full pipeline execution

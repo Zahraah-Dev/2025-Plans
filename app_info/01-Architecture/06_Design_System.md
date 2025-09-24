@@ -58,7 +58,7 @@ Implement unified design system with consistent theming, reusable components, an
 
 ## 🚨 **Risk Assessment | تقييم المخاطر**
 
-> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template.md) for standard risk categories.
+> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template/) for standard risk categories.
 
 ### **Design System Specific Risks:**
 | Risk | Impact | Probability | Mitigation Strategy |
@@ -72,7 +72,7 @@ Implement unified design system with consistent theming, reusable components, an
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../00-Templates/13-generic-priority-framework/) for priority levels and criteria.
 
 ### **Design System Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -92,7 +92,7 @@ Implement unified design system with consistent theming, reusable components, an
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
-> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template/) for standard quality criteria.
 
 ### **Design System Specific Quality Gates:**
 - [ ] 80%+ screens use shared components
@@ -105,7 +105,7 @@ Implement unified design system with consistent theming, reusable components, an
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../00-Templates/15-comprehensive-metrics-template/) for topic-specific metrics.
 
 ### **Design System Specific Metrics:**
 - **Component Reuse**: 80%+ of screens use shared components

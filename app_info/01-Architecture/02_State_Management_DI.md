@@ -39,7 +39,7 @@ Implement robust state management and dependency injection for predictable, test
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework/) for priority levels and criteria.
 
 ### **State Management & DI Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -59,7 +59,7 @@ Implement robust state management and dependency injection for predictable, test
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template/) for topic-specific metrics.
 
 ### **State Management & DI Specific Metrics:**
 - **State Consistency**: 100% state consistency, zero state corruption

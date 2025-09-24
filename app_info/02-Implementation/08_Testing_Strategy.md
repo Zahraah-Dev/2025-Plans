@@ -64,7 +64,7 @@ Implement comprehensive testing strategy to ensure code quality, prevent regress
 
 ## ✅ **Success Criteria | معايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template.md) for standard criteria.
+> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template/) for standard criteria.
 
 ### **Testing Strategy Specific Criteria:**
 - [ ] 70%+ test coverage for business logic
@@ -76,7 +76,7 @@ Implement comprehensive testing strategy to ensure code quality, prevent regress
 
 ## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
 
-> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template.md) for standard pitfalls.
+> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template/) for standard pitfalls.
 
 ### **Testing Strategy Specific Pitfalls:**
 - **Avoid**: Testing implementation details instead of behavior
@@ -328,7 +328,7 @@ jobs:
 
 ## 🚨 **Risk Assessment | تقييم المخاطر**
 
-> **Reference**: See [Risk Assessment Template](../../00-Templates/01-risk-assessment-template.md) for standard risk categories.
+> **Reference**: See [Risk Assessment Template](../../00-Templates/01-risk-assessment-template/) for standard risk categories.
 
 ### **Testing Strategy Specific Risks:**
 | Risk | Impact | Probability | Mitigation Strategy |
@@ -340,7 +340,7 @@ jobs:
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework/) for priority levels and criteria.
 
 ### **Testing Strategy Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -361,7 +361,7 @@ jobs:
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
-> **Reference**: See [Quality Gates Template](../../00-Templates/03-quality-gates-template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../../00-Templates/03-quality-gates-template/) for standard quality criteria.
 
 ### **Testing Strategy Specific Quality Gates:**
 - [ ] 70%+ test coverage for business logic
@@ -375,7 +375,7 @@ jobs:
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template/) for topic-specific metrics.
 
 ### **Testing Strategy Specific Metrics:**
 - **Test Coverage**: 70%+ for business logic, 50%+ overall

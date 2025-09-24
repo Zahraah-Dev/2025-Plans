@@ -37,7 +37,7 @@ Implement comprehensive monitoring and alerting system for proactive issue detec
 
 ## ✅ **Success Criteria | معايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template.md) for standard criteria.
+> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template/) for standard criteria.
 
 ### **Monitoring & Alerting Specific Criteria:**
 - [ ] Comprehensive monitoring tools configured
@@ -49,7 +49,7 @@ Implement comprehensive monitoring and alerting system for proactive issue detec
 
 ## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
 
-> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template.md) for standard pitfalls.
+> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template/) for standard pitfalls.
 
 ### **Monitoring & Alerting Specific Pitfalls:**
 - **Avoid**: No monitoring or insufficient monitoring
@@ -63,7 +63,7 @@ Implement comprehensive monitoring and alerting system for proactive issue detec
 
 ## 🚨 **Risk Assessment | تقييم المخاطر**
 
-> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template.md) for standard risk categories.
+> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template/) for standard risk categories.
 
 ### **Monitoring & Alerting Specific Risks:**
 | Risk | Impact | Probability | Mitigation Strategy |
@@ -77,7 +77,7 @@ Implement comprehensive monitoring and alerting system for proactive issue detec
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../00-Templates/13-generic-priority-framework/) for priority levels and criteria.
 
 ### **Monitoring & Alerting Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -97,7 +97,7 @@ Implement comprehensive monitoring and alerting system for proactive issue detec
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
-> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template/) for standard quality criteria.
 
 ### **Monitoring & Alerting Specific Quality Gates:**
 - [ ] Monitoring tools working correctly
@@ -109,7 +109,7 @@ Implement comprehensive monitoring and alerting system for proactive issue detec
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../00-Templates/15-comprehensive-metrics-template/) for topic-specific metrics.
 
 ### **Monitoring & Alerting Specific Metrics:**
 - **Alert Accuracy**: >95% accurate alerts, <5% false positive rate

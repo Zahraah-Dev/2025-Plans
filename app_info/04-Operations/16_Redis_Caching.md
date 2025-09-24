@@ -37,7 +37,7 @@ Implement Redis caching system for high-performance data storage and retrieval i
 
 ## ✅ **Success Criteria | معايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template.md) for standard criteria.
+> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template/) for standard criteria.
 
 ### **Redis Caching Specific Criteria:**
 - [ ] Redis server configured and running
@@ -49,7 +49,7 @@ Implement Redis caching system for high-performance data storage and retrieval i
 
 ## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
 
-> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template.md) for standard pitfalls.
+> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template/) for standard pitfalls.
 
 ### **Redis Caching Specific Pitfalls:**
 - **Avoid**: No TTL policies leading to stale data
@@ -63,7 +63,7 @@ Implement Redis caching system for high-performance data storage and retrieval i
 
 ## 🚨 **Risk Assessment | تقييم المخاطر**
 
-> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template.md) for standard risk categories.
+> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template/) for standard risk categories.
 
 ### **Redis Caching Specific Risks:**
 | Risk | Impact | Probability | Mitigation Strategy |
@@ -77,7 +77,7 @@ Implement Redis caching system for high-performance data storage and retrieval i
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../00-Templates/13-generic-priority-framework/) for priority levels and criteria.
 
 ### **Redis Caching Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -97,7 +97,7 @@ Implement Redis caching system for high-performance data storage and retrieval i
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
-> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template/) for standard quality criteria.
 
 ### **Redis Caching Specific Quality Gates:**
 - [ ] Redis server running and accessible
@@ -109,7 +109,7 @@ Implement Redis caching system for high-performance data storage and retrieval i
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../00-Templates/15-comprehensive-metrics-template/) for topic-specific metrics.
 
 ### **Redis Caching Specific Metrics:**
 - **Cache Hit Rate**: >80% for frequently accessed data, >95% for critical data

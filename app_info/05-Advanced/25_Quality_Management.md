@@ -55,7 +55,7 @@ Implement comprehensive quality management system with automated testing, qualit
 
 ## 🚨 **Risk Assessment | تقييم المخاطر**
 
-> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template.md) for standard risk categories.
+> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template/) for standard risk categories.
 
 ### **Quality Management Specific Risks:**
 | Risk | Impact | Probability | Mitigation Strategy |
@@ -69,7 +69,7 @@ Implement comprehensive quality management system with automated testing, qualit
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../00-Templates/13-generic-priority-framework/) for priority levels and criteria.
 
 ### **Quality Management Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -89,7 +89,7 @@ Implement comprehensive quality management system with automated testing, qualit
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
-> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template/) for standard quality criteria.
 
 ### **Quality Management Specific Quality Gates:**
 - [ ] Testing framework working
@@ -101,7 +101,7 @@ Implement comprehensive quality management system with automated testing, qualit
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../00-Templates/15-comprehensive-metrics-template/) for topic-specific metrics.
 
 ### **Quality Management Specific Metrics:**
 - **Test Coverage**: >90% code coverage, >95% critical path coverage
