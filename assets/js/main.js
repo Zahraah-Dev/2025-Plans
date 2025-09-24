@@ -80,52 +80,68 @@ function addCopyCodeButtons() {
 function generateTableOfContents() {
     // Generate table of contents from headings for sidebar
     const content = document.querySelector('#main-content');
-    if (!content) return;
+    if (!content) {
+        console.log('TOC: No main-content found');
+        return;
+    }
 
     const headings = content.querySelectorAll('h2, h3, h4, h5, h6');
-    if (headings.length === 0) return;
+    if (headings.length === 0) {
+        console.log('TOC: No headings found');
+        return;
+    }
 
     const tocNav = document.querySelector('#toc-nav');
-    if (!tocNav) return;
+    if (!tocNav) {
+        console.log('TOC: No toc-nav found');
+        return;
+    }
+
+    console.log('TOC: Found', headings.length, 'headings');
 
     // Clear existing TOC
     tocNav.innerHTML = '';
 
     // Simple approach - create a flat list first, then we can enhance later
     headings.forEach((heading, index) => {
-        const level = parseInt(heading.tagName.substring(1));
-        const id = `heading-${index}`;
-        heading.id = id;
+        try {
+            const level = parseInt(heading.tagName.substring(1));
+            const id = `heading-${index}`;
+            heading.id = id;
 
-        // Create list item
-        const li = document.createElement('li');
-        li.className = `toc-${heading.tagName.toLowerCase()}`;
-        
-        // Add indentation based on level
-        const indent = (level - 2) * 20; // h2 = 0, h3 = 20px, h4 = 40px, etc.
-        li.style.paddingLeft = `${indent}px`;
+            // Create list item
+            const li = document.createElement('li');
+            li.className = `toc-${heading.tagName.toLowerCase()}`;
+            
+            // Add indentation based on level
+            const indent = (level - 2) * 20; // h2 = 0, h3 = 20px, h4 = 40px, etc.
+            li.style.paddingLeft = `${indent}px`;
 
-        // Create link
-        const a = document.createElement('a');
-        a.href = `#${id}`;
-        a.textContent = heading.textContent.trim();
-        a.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetElement = document.getElementById(id);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-                // Update active state
-                updateActiveTocLink(a);
-            }
-        });
+            // Create link
+            const a = document.createElement('a');
+            a.href = `#${id}`;
+            a.textContent = heading.textContent.trim();
+            a.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetElement = document.getElementById(id);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Update active state
+                    updateActiveTocLink(a);
+                }
+            });
 
-        li.appendChild(a);
-        tocNav.appendChild(li);
+            li.appendChild(a);
+            tocNav.appendChild(li);
+        } catch (error) {
+            console.error('TOC: Error processing heading', index, error);
+        }
     });
 
+    console.log('TOC: Generated successfully');
     // Add scroll spy functionality
     addScrollSpy();
 }
