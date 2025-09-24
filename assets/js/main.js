@@ -20,18 +20,21 @@ document.addEventListener('DOMContentLoaded', function () {
 function initializeDocumentation() {
     // Add smooth scrolling for anchor links
     addSmoothScrolling();
-
+    
     // Add copy code functionality
     addCopyCodeButtons();
-
+    
     // Add table of contents generation
     generateTableOfContents();
-
+    
     // Add search functionality
     initializeSearch();
-
+    
     // Add mobile menu toggle
     initializeMobileMenu();
+    
+    // Add theme toggle functionality
+    initializeThemeToggle();
 }
 
 function addSmoothScrolling() {
@@ -195,6 +198,49 @@ function addScrollSpy() {
 
     window.addEventListener('scroll', onScroll);
     updateActiveSection(); // Initial call
+}
+
+function initializeThemeToggle() {
+    const themeToggle = document.getElementById('theme-toggle');
+    if (!themeToggle) return;
+    
+    // Get saved theme or default to system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+    
+    // Apply initial theme
+    applyTheme(initialTheme);
+    
+    // Listen for system theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+            applyTheme(e.matches ? 'dark' : 'light');
+        }
+    });
+    
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+}
+
+function applyTheme(theme) {
+    const themeToggle = document.getElementById('theme-toggle');
+    if (!themeToggle) return;
+    
+    if (theme === 'dark') {
+        document.body.classList.add('dark-theme');
+        themeToggle.textContent = '☀️';
+        themeToggle.setAttribute('aria-label', 'Switch to light theme');
+    } else {
+        document.body.classList.remove('dark-theme');
+        themeToggle.textContent = '🌙';
+        themeToggle.setAttribute('aria-label', 'Switch to dark theme');
+    }
 }
 
 function initializeSearch() {
