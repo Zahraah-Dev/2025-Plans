@@ -321,8 +321,15 @@ graph TD
 
 ## 🔗 **Navigation | التنقل**
 
-[Next: State Management & DI | التالي: إدارة الحالة وحقن التبعية →](/app_info/01-Architecture/02_State_Management_DI/)
-[🏠 Home | الرئيسية](/)
+<div class="navigation-links">
+
+[Next: State Management & DI →](/app_info/01-Architecture/02_State_Management_DI/)  
+*التالي: إدارة الحالة وحقن التبعية*
+
+[🏠 Home](/)  
+*الرئيسية*
+
+</div>
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 

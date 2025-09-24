@@ -92,3 +92,12 @@ kramdown:
       line_numbers: false
     block:
       line_numbers: false
+  parse_block_html: true
+  parse_span_html: true
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
