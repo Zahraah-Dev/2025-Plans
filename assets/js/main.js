@@ -3,15 +3,15 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize the documentation site
     initializeDocumentation();
-    
+
     // Add fonts-loaded class when fonts are ready
     if (document.fonts && document.fonts.ready) {
-        document.fonts.ready.then(function() {
+        document.fonts.ready.then(function () {
             document.body.classList.add('fonts-loaded');
         });
     } else {
         // Fallback for browsers without font loading API
-        setTimeout(function() {
+        setTimeout(function () {
             document.body.classList.add('fonts-loaded');
         }, 1000);
     }
@@ -112,7 +112,7 @@ function generateTableOfContents() {
             // Create list item
             const li = document.createElement('li');
             li.className = `toc-${heading.tagName.toLowerCase()}`;
-            
+
             // Add indentation based on level
             const indent = (level - 2) * 20; // h2 = 0, h3 = 20px, h4 = 40px, etc.
             li.style.paddingLeft = `${indent}px`;
