@@ -343,8 +343,8 @@ class RTLProductCard extends StatelessWidget {
 
 ## 🔗 **Navigation | التنقل**
 
-[](/2025-Plans/app_info/01-Architecture/04_Domain_Layer/)
-[](/2025-Plans/app_info/01-Architecture/06_Design_System/)
+[](/2025-Plans/app_info/01-Architecture/04-domain-layer/)
+[](/2025-Plans/app_info/01-Architecture/06-design-system/)
 [🏠 Home](/2025-Plans/)
 **الرئيسية**|[🏠 Home](/2025-Plans/)
 **الرئيسية**|[🏠 Home](/2025-Plans/)
@@ -359,10 +359,10 @@ class RTLProductCard extends StatelessWidget {
 - [Accessibility & RTL | إمكانية الوصول والنص من اليمين لليسار](#-accessibility--rtl--إمكانية-الوصول-والنص-من-اليمين-ليسار)
 
 ### **Related Architecture Files | ملفات المعمارية ذات الصلة**
-- [Architecture Overview | نظرة عامة على المعمارية](/2025-Plans/app_info/01-Architecture/01_Architecture_Overview/)
-- [State Management & DI | إدارة الحالة وحقن التبعية](/2025-Plans/app_info/01-Architecture/02_State_Management_DI/)
-- [Domain Layer | طبقة المجال](/2025-Plans/app_info/01-Architecture/04_Domain_Layer/)
-- [Data Layer Error Handling | معالجة أخطاء طبقة البيانات](/2025-Plans/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
-- [Design System | نظام التصميم](/2025-Plans/app_info/01-Architecture/06_Design_System/)
+- [Architecture Overview | نظرة عامة على المعمارية](/2025-Plans/app_info/01-Architecture/01-architecture-overview/)
+- [State Management & DI | إدارة الحالة وحقن التبعية](/2025-Plans/app_info/01-Architecture/02-state-management-di/)
+- [Domain Layer | طبقة المجال](/2025-Plans/app_info/01-Architecture/04-domain-layer/)
+- [Data Layer Error Handling | معالجة أخطاء طبقة البيانات](/2025-Plans/app_info/01-Architecture/03-data-layer-error-handling/)
+- [Design System | نظام التصميم](/2025-Plans/app_info/01-Architecture/06-design-system/)
 
 ---

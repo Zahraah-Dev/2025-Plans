@@ -178,7 +178,7 @@ Implement comprehensive quality management system with automated testing, qualit
 
 - [Testing Strategy | استراتيجية الاختبار](../02-Implementation/08_Testing_Strategy.md)
 - [Code Quality Standards | جودة الكود والمعايير](../02-Implementation/09_Code_Quality_Standards.md)
-- [CI/CD Pipeline | خط أنابيب CI/CD](/2025-Plans/app_info/03-Quality/11_CI_CD_Pipeline/)
+- [CI/CD Pipeline | خط أنابيب CI/CD](/2025-Plans/app_info/03-Quality/11-ci-cd-pipeline/)
 - [Monitoring & Alerting | المراقبة والتنبيهات](23_Monitoring_Alerting.md)
 
 ---

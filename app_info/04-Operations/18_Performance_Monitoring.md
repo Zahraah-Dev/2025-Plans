@@ -185,7 +185,7 @@ Implement comprehensive performance monitoring with detailed budgets and metrics
 - [Performance Optimization | تحسين الأداء](../03-Quality/12_Performance_Optimization.md)
 - [Redis Caching | إدارة التخزين المؤقت](16_Redis_Caching.md)
 - [Business Analytics | تحليل الأعمال](20_Business_Analytics.md)
-- [CI/CD Pipeline | خط أنابيب CI/CD](/2025-Plans/app_info/03-Quality/11_CI_CD_Pipeline/)
+- [CI/CD Pipeline | خط أنابيب CI/CD](/2025-Plans/app_info/03-Quality/11-ci-cd-pipeline/)
 
 ---
 

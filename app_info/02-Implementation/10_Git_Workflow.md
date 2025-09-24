@@ -270,7 +270,7 @@ git commit -m "test: add unit tests for cart service"
 
 ## 🔗 **الروابط ذات الصلة | Related Links**
 
-- [جودة الكود والمعايير](/2025-Plans/app_info/02-Implementation/09_Code_Quality_Standards/)
+- [جودة الكود والمعايير](/2025-Plans/app_info/02-Implementation/09-code-quality-standards/)
 - [خط أنابيب CI/CD](11_CI_CD_Pipeline.md)
 - [إدارة الإصدارات](15_Release_Management.md)
 
@@ -290,8 +290,8 @@ git commit -m "test: add unit tests for cart service"
 
 ## 🔗 **Navigation | التنقل**
 
-[](/2025-Plans/app_info/02-Implementation/09_Code_Quality_Standards/)
-[](/2025-Plans/app_info/03-Quality/11_CI_CD_Pipeline/)
+[](/2025-Plans/app_info/02-Implementation/09-code-quality-standards/)
+[](/2025-Plans/app_info/03-Quality/11-ci-cd-pipeline/)
 [🏠 Home](/2025-Plans/)
 **الرئيسية**|[🏠 Home](/2025-Plans/)
 **الرئيسية**|[🏠 Home](/2025-Plans/)

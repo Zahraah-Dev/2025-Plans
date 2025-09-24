@@ -454,8 +454,8 @@ repos:
 
 ## 🔗 **الروابط ذات الصلة | Related Links**
 
-- [استراتيجية الاختبار](/2025-Plans/app_info/02-Implementation/08_Testing_Strategy/)
-- [سير عمل Git والفروع](/2025-Plans/app_info/02-Implementation/10_Git_Workflow/)
+- [استراتيجية الاختبار](/2025-Plans/app_info/02-Implementation/08-testing-strategy/)
+- [سير عمل Git والفروع](/2025-Plans/app_info/02-Implementation/10-git-workflow/)
 - [خط أنابيب CI/CD](11_CI_CD_Pipeline.md)
 
 ---
@@ -474,8 +474,8 @@ repos:
 
 ## 🔗 **Navigation | التنقل**
 
-[](/2025-Plans/app_info/02-Implementation/08_Testing_Strategy/)
-[](/2025-Plans/app_info/02-Implementation/10_Git_Workflow/)
+[](/2025-Plans/app_info/02-Implementation/08-testing-strategy/)
+[](/2025-Plans/app_info/02-Implementation/10-git-workflow/)
 [🏠 Home](/2025-Plans/)
 **الرئيسية**|[🏠 Home](/2025-Plans/)
 **الرئيسية**|[🏠 Home](/2025-Plans/)

@@ -357,10 +357,10 @@ class NetworkInfoImpl implements NetworkInfo {
 
 ## 🔗 **Navigation | التنقل**
 
-[← Previous: State Management & DI](/2025-Plans/app_info/01-Architecture/02_State_Management_DI/)
+[← Previous: State Management & DI](/2025-Plans/app_info/01-Architecture/02-state-management-di/)
 **السابق: إدارة الحالة وحقن التبعية**
 
-[Next: Domain Layer →](/2025-Plans/app_info/01-Architecture/04_Domain_Layer/)
+[Next: Domain Layer →](/2025-Plans/app_info/01-Architecture/04-domain-layer/)
 **التالي: طبقة المجال**
 
 [🏠 Home](/2025-Plans/)
@@ -372,15 +372,15 @@ class NetworkInfoImpl implements NetworkInfo {
 - [References | المراجع](#-references--المراجع)
 
 ### **Related Files | الملفات ذات الصلة**
-- [State Management & DI | إدارة الحالة وحقن التبعية](/2025-Plans/app_info/01-Architecture/02_State_Management_DI/)
-- [Domain Layer | طبقة المجال](/2025-Plans/app_info/01-Architecture/04_Domain_Layer/)
-- [Architecture Overview | نظرة عامة على المعمارية](/2025-Plans/app_info/01-Architecture/01_Architecture_Overview/)
+- [State Management & DI | إدارة الحالة وحقن التبعية](/2025-Plans/app_info/01-Architecture/02-state-management-di/)
+- [Domain Layer | طبقة المجال](/2025-Plans/app_info/01-Architecture/04-domain-layer/)
+- [Architecture Overview | نظرة عامة على المعمارية](/2025-Plans/app_info/01-Architecture/01-architecture-overview/)
 
 ### **Shared Architecture Resources | موارد المعمارية المشتركة**
-- [Architecture Overview | نظرة عامة على المعمارية](/2025-Plans/app_info/01-Architecture/01_Architecture_Overview/)
-- [State Management & DI | إدارة الحالة وحقن التبعية](/2025-Plans/app_info/01-Architecture/02_State_Management_DI/)
-- [Domain Layer | طبقة المجال](/2025-Plans/app_info/01-Architecture/04_Domain_Layer/)
-- [Presentation Layer | طبقة العرض](/2025-Plans/app_info/01-Architecture/05_Presentation_Layer/)
-- [Design System | نظام التصميم](/2025-Plans/app_info/01-Architecture/06_Design_System/)
+- [Architecture Overview | نظرة عامة على المعمارية](/2025-Plans/app_info/01-Architecture/01-architecture-overview/)
+- [State Management & DI | إدارة الحالة وحقن التبعية](/2025-Plans/app_info/01-Architecture/02-state-management-di/)
+- [Domain Layer | طبقة المجال](/2025-Plans/app_info/01-Architecture/04-domain-layer/)
+- [Presentation Layer | طبقة العرض](/2025-Plans/app_info/01-Architecture/05-presentation-layer/)
+- [Design System | نظام التصميم](/2025-Plans/app_info/01-Architecture/06-design-system/)
 
 ---

@@ -363,7 +363,7 @@ class AccessibleButton extends StatelessWidget {
 
 ## 🔗 **Navigation | التنقل**
 
-[](/2025-Plans/app_info/01-Architecture/05_Presentation_Layer/)
+[](/2025-Plans/app_info/01-Architecture/05-presentation-layer/)
 [Next: Project Setup & Configuration →](../02-Implementation/07_Project_Setup_Config.md)
 **التالي: إعداد المشروع والتكوين**
 [🏠 Home](/2025-Plans/)
@@ -379,15 +379,15 @@ class AccessibleButton extends StatelessWidget {
 - [RTL & Accessibility | النص من اليمين لليسار وإمكانية الوصول](#-rtl--accessibility--النص-من-اليمين-ليسار-وإمكانية-الوصول)
 
 ### **Related Files | الملفات ذات الصلة**
-- [Presentation Layer | طبقة العرض](/2025-Plans/app_info/01-Architecture/05_Presentation_Layer/)
-- [Architecture Overview | نظرة عامة على المعمارية](/2025-Plans/app_info/01-Architecture/01_Architecture_Overview/)
-- [State Management & DI | إدارة الحالة وحقن التبعية](/2025-Plans/app_info/01-Architecture/02_State_Management_DI/)
+- [Presentation Layer | طبقة العرض](/2025-Plans/app_info/01-Architecture/05-presentation-layer/)
+- [Architecture Overview | نظرة عامة على المعمارية](/2025-Plans/app_info/01-Architecture/01-architecture-overview/)
+- [State Management & DI | إدارة الحالة وحقن التبعية](/2025-Plans/app_info/01-Architecture/02-state-management-di/)
 
 ### **Shared Architecture Resources | موارد المعمارية المشتركة**
-- [Architecture Overview | نظرة عامة على المعمارية](/2025-Plans/app_info/01-Architecture/01_Architecture_Overview/)
-- [State Management & DI | إدارة الحالة وحقن التبعية](/2025-Plans/app_info/01-Architecture/02_State_Management_DI/)
-- [Domain Layer | طبقة المجال](/2025-Plans/app_info/01-Architecture/04_Domain_Layer/)
-- [Presentation Layer | طبقة العرض](/2025-Plans/app_info/01-Architecture/05_Presentation_Layer/)
-- [Data Layer Error Handling | معالجة أخطاء طبقة البيانات](/2025-Plans/app_info/01-Architecture/03_Data_Layer_Error_Handling/)
+- [Architecture Overview | نظرة عامة على المعمارية](/2025-Plans/app_info/01-Architecture/01-architecture-overview/)
+- [State Management & DI | إدارة الحالة وحقن التبعية](/2025-Plans/app_info/01-Architecture/02-state-management-di/)
+- [Domain Layer | طبقة المجال](/2025-Plans/app_info/01-Architecture/04-domain-layer/)
+- [Presentation Layer | طبقة العرض](/2025-Plans/app_info/01-Architecture/05-presentation-layer/)
+- [Data Layer Error Handling | معالجة أخطاء طبقة البيانات](/2025-Plans/app_info/01-Architecture/03-data-layer-error-handling/)
 
 ---

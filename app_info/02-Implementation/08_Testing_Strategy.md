@@ -389,8 +389,8 @@ jobs:
 
 ## 🔗 **Navigation | التنقل**
 
-[](/2025-Plans/app_info/02-Implementation/07_Project_Setup_Config/)
-[](/2025-Plans/app_info/02-Implementation/09_Code_Quality_Standards/)
+[](/2025-Plans/app_info/02-Implementation/07-project-setup-config/)
+[](/2025-Plans/app_info/02-Implementation/09-code-quality-standards/)
 [🏠 Home](/2025-Plans/)
 **الرئيسية**|[🏠 Home](/2025-Plans/)
 **الرئيسية**|[🏠 Home](/2025-Plans/)
@@ -398,9 +398,9 @@ jobs:
 **الرئيسية**
 
 ### **Related Files | الملفات ذات الصلة**
-- [Code Quality Standards | معايير جودة الكود](/2025-Plans/app_info/02-Implementation/09_Code_Quality_Standards/)
-- [Git Workflow | سير عمل Git](/2025-Plans/app_info/02-Implementation/10_Git_Workflow/)
-- [CI/CD Pipeline | خط أنابيب CI/CD](/2025-Plans/app_info/03-Quality/11_CI_CD_Pipeline/)
+- [Code Quality Standards | معايير جودة الكود](/2025-Plans/app_info/02-Implementation/09-code-quality-standards/)
+- [Git Workflow | سير عمل Git](/2025-Plans/app_info/02-Implementation/10-git-workflow/)
+- [CI/CD Pipeline | خط أنابيب CI/CD](/2025-Plans/app_info/03-Quality/11-ci-cd-pipeline/)
 - [Performance Optimization | تحسين الأداء](../03-Quality/12_Performance_Optimization.md)
 
 ---

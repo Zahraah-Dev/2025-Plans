@@ -460,7 +460,7 @@ echo "Build completed successfully!"
 
 [← Previous: Design System](../01-Architecture/06_Design_System.md)
 **السابق: نظام التصميم**
-[](/2025-Plans/app_info/02-Implementation/08_Testing_Strategy/)
+[](/2025-Plans/app_info/02-Implementation/08-testing-strategy/)
 [🏠 Home](/2025-Plans/)
 **الرئيسية**|[🏠 Home](/2025-Plans/)
 **الرئيسية**|[🏠 Home](/2025-Plans/)
