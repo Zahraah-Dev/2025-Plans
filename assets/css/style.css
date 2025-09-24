@@ -155,7 +155,7 @@ body {
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
@@ -171,18 +171,23 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 3rem;
+    flex: 1;
+    justify-content: center;
 }
 
 .nav-menu a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: opacity 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 .nav-menu a:hover {
-    opacity: 0.8;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
 }
 
 /* Theme Toggle Button */
