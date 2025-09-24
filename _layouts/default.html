@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    
+    <meta name="description"
+        content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
     <!-- CSS -->
     <link rel="stylesheet" href="{{ '/2025-Plans/assets/css/style.css' | relative_url }}">
-    
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- SEO -->
     {% seo %}
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -47,7 +50,7 @@
                 {% endif %}
             </header>
             {% endif %}
-            
+
             <div class="content">
                 {{ content }}
             </div>
@@ -65,4 +68,5 @@
     <!-- Scripts -->
     <script src="{{ '/2025-Plans/assets/js/main.js' | relative_url }}"></script>
 </body>
+
 </html>
