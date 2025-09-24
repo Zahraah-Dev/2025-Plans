@@ -68,28 +68,25 @@ Create comprehensive error catalog with unified error mapping, user-friendly mes
 | **Performance Impact** | Low | Low | Efficient error handling, caching |
 | **Security Information Leakage** | High | Low | Sanitized error messages, security review |
 
-## 📊 **Implementation Priority | أولوية التنفيذ**
+## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Reference**: See [Implementation Priority Template](../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
+> **Framework**: See [Generic Priority Framework](../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
 
 ### **Error Catalog Specific Priorities:**
-### **Phase 1: Foundation (Must Have)**
-- [ ] Create error mapping table
-- [ ] Implement error code standardization
-- [ ] Add basic error message translation
-- [ ] Create error handling utilities
+#### **Phase 1: Foundation | المرحلة الأولى: الأساس**
+- **🔴 Critical**: Create error mapping table and implement error code standardization
+- **🔴 Critical**: Add basic error message translation and create error handling utilities
+- **🟠 High**: Implement error logging and monitoring
 
-### **Phase 2: Enhancement (Should Have)**
-- [ ] Add comprehensive error recovery strategies
-- [ ] Implement error logging and monitoring
-- [ ] Add error analytics and reporting
-- [ ] Create error testing framework
+#### **Phase 2: Enhancement | المرحلة الثانية: التحسين**
+- **🟠 High**: Add comprehensive error recovery strategies and error analytics
+- **🟠 High**: Create error testing framework and advanced error categorization
+- **🟡 Medium**: Machine learning for error prediction and automated resolution
 
-### **Phase 3: Optimization (Could Have)**
-- [ ] Advanced error categorization
-- [ ] Machine learning for error prediction
-- [ ] Automated error resolution
-- [ ] Error trend analysis
+#### **Phase 3: Optimization | المرحلة الثالثة: التحسين**
+- **🟡 Medium**: Advanced error categorization and error trend analysis
+- **🟡 Medium**: AI-powered error prediction and automated resolution
+- **🟢 Low**: Advanced analytics and predictive error management
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
@@ -105,15 +102,15 @@ Create comprehensive error catalog with unified error mapping, user-friendly mes
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Success Metrics Template](../00-Templates/04_Success_Metrics_Template.md) for standard metrics.
+> **Reference**: See [Comprehensive Metrics Template](../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
 
 ### **Error Catalog Specific Metrics:**
-- **Error Coverage**: 100% of HTTP codes mapped
-- **Translation Coverage**: 100% of error messages translated
-- **User Satisfaction**: >90% user satisfaction with error messages
-- **Error Recovery Rate**: >95% successful error recovery
-- **Error Resolution Time**: <2 minutes average resolution time
-- **Error Consistency**: 100% consistent error handling
+- **Error Coverage**: 100% of HTTP codes mapped, 95% of business errors covered
+- **Error Recovery**: 90%+ successful error recovery, <5% error escalation
+- **User Experience**: 100% user-friendly error messages, 95% error translation accuracy
+- **Monitoring**: 100% error logging coverage, <1min error detection time
+- **Analytics**: 100% error tracking, 90% error trend analysis accuracy
+- **Performance**: <10ms error handling overhead, 99% error processing success
 
 ## 🔧 **Troubleshooting | استكشاف الأخطاء وإصلاحها**
 

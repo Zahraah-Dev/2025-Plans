@@ -30,19 +30,37 @@ Implement robust state management and dependency injection for predictable, test
   - Use Consumer/ConsumerWidget for UI updates
 - **Result**: Predictable state management with better performance and testability
 
-## ✅ **Quality Standards & Success Criteria | معايير الجودة ومعايير النجاح**
+## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Reference**: See [Quality Standards | معايير الجودة](Quality_Standards.md) for comprehensive quality requirements.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
 
-> **Reference**: See [Success Criteria | معايير النجاح](Success_Criteria.md) for detailed success metrics and validation criteria.
+### **State Management & DI Specific Priorities:**
+#### **Phase 1: Foundation | المرحلة الأولى: الأساس**
+- **🔴 Critical**: Set up Riverpod ProviderScope and implement basic state management
+- **🔴 Critical**: Create StateNotifier controllers and implement proper DI patterns
+- **🟠 High**: Implement Result pattern integration and error handling
 
-### **State Management & DI Specific Requirements:**
-- **One State Solution**: Riverpod used consistently across entire project
-- **Clean Separation**: No business logic in UI components  
-- **Resource Management**: Proper disposal and cleanup of providers
-- **Testing**: >90% coverage for state management logic
-- **Performance**: <100ms average state update time
-- **Memory Safety**: Zero memory leaks from state management
+#### **Phase 2: Enhancement | المرحلة الثانية: التحسين**
+- **🟠 High**: Add advanced state management patterns and performance optimization
+- **🟠 High**: Implement comprehensive testing and monitoring
+- **🟡 Medium**: Add state persistence and advanced DI features
+
+#### **Phase 3: Optimization | المرحلة الثالثة: التحسين**
+- **🟡 Medium**: Advanced state management patterns and AI-powered optimization
+- **🟡 Medium**: Performance optimization and advanced monitoring
+- **🟢 Low**: Advanced analytics and AI-powered state management
+
+## 📈 **Success Metrics | مؤشرات النجاح**
+
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
+
+### **State Management & DI Specific Metrics:**
+- **State Consistency**: 100% state consistency, zero state corruption
+- **Performance**: <100ms average state update time, <50ms for critical updates
+- **Memory Safety**: Zero memory leaks, <5% memory overhead
+- **Testing Coverage**: >90% state management coverage, >95% DI coverage
+- **Resource Management**: 100% proper disposal, <1% resource leaks
+- **Team Productivity**: 50% faster development, 60% less debugging time
 
 ## ⚠️ **Common Pitfalls & Best Practices | الأخطاء الشائعة وأفضل الممارسات**
 

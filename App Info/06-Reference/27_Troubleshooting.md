@@ -66,25 +66,25 @@ Provide comprehensive troubleshooting guide for common issues, debugging techniq
 | **Security Vulnerabilities** | High | Low | Security audits, penetration testing, updates |
 | **Deployment Failures** | Medium | Medium | Automated testing, staging environment, rollback |
 
-## 📊 **Implementation Priority | أولوية التنفيذ**
+## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Reference**: See [Implementation Priority Template](../../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
 
 ### **Troubleshooting Specific Priorities:**
-### **Phase 1: Foundation (Must Have)**
-- [ ] Basic production setup
-- [ ] Essential monitoring
-- [ ] Security basics
+#### **Phase 1: Foundation | المرحلة الأولى: الأساس**
+- **🔴 Critical**: Basic production setup and essential monitoring
+- **🔴 Critical**: Security basics and core troubleshooting procedures
+- **🟠 High**: Advanced monitoring and performance optimization
 
-### **Phase 2: Enhancement (Should Have)**
-- [ ] Advanced monitoring
-- [ ] Performance optimization
-- [ ] Security hardening
+#### **Phase 2: Enhancement | المرحلة الثانية: التحسين**
+- **🟠 High**: Security hardening and advanced monitoring
+- **🟠 High**: Performance optimization and advanced analytics
+- **🟡 Medium**: Automation and advanced features
 
-### **Phase 3: Optimization (Could Have)**
-- [ ] Advanced analytics
-- [ ] Automation
-- [ ] Advanced features
+#### **Phase 3: Optimization | المرحلة الثالثة: التحسين**
+- **🟡 Medium**: Advanced analytics and AI-powered troubleshooting
+- **🟡 Medium**: Automation and advanced features
+- **🟢 Low**: Advanced analytics and AI-powered problem resolution
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
@@ -100,17 +100,15 @@ Provide comprehensive troubleshooting guide for common issues, debugging techniq
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-### **Operational Metrics**
-- **Uptime**: 99.9%+ availability
-- **Performance**: Meet all performance budgets
-- **Security**: Zero security incidents
-- **Reliability**: <1% error rate
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
 
-### **Business Metrics**
-- **User Satisfaction**: High app store ratings
-- **Performance**: Fast, responsive user experience
-- **Stability**: Minimal crashes and bugs
-- **Scalability**: Handle growth without issues
+### **Troubleshooting Specific Metrics:**
+- **Issue Resolution**: 95%+ successful issue resolution, <2h average resolution time
+- **System Uptime**: 99.9%+ availability, <1% downtime
+- **Performance**: Meet all performance budgets, <5% performance degradation
+- **Security**: Zero security incidents, 100% security compliance
+- **Monitoring**: 100% issue detection, <5min alert response time
+- **Team Efficiency**: 50% faster troubleshooting, 80% first-time resolution
 
 
 ## 22. Troubleshooting Guide

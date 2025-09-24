@@ -68,12 +68,12 @@ Establish efficient Git workflow and branching strategy for team collaboration, 
 | **Technical Debt** | High | Medium | Regular refactoring, code quality gates |
 | **Testing Gaps** | High | Medium | Comprehensive test strategy, CI/CD integration |
 
-## 📊 **Implementation Priority | أولوية التنفيذ**
+## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Reference**: See [Implementation Priority Template](../../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
 
 ### **Git Workflow Specific Priorities:**
-### **Phase 1: Foundation (Must Have)**
+#### **Phase 1: Foundation | المرحلة الأولى: الأساس**
 - [ ] Project setup and configuration
 - [ ] Basic testing infrastructure
 - [ ] Code quality standards
@@ -110,10 +110,12 @@ Establish efficient Git workflow and branching strategy for team collaboration, 
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-### **Technical Metrics**
-- **Code Quality**: 90%+ test coverage, zero linting warnings
-- **Testing**: Comprehensive test suite, <5% flaky tests
-- **Development Speed**: 50% faster feature development
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
+
+### **Git Workflow Specific Metrics:**
+- **Code Quality**: 90%+ test coverage, zero linting warnings, 100% PR review coverage
+- **Testing**: Comprehensive test suite, <5% flaky tests, >95% CI/CD success rate
+- **Development Speed**: 50% faster feature development, 40% less debugging time
 - **Bug Reduction**: 70% fewer production bugs
 
 ### **Process Metrics**

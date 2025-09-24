@@ -50,7 +50,7 @@
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Success Metrics Template](../../00-Templates/04_Success_Metrics_Template.md) for standard metrics.
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
 
 ### **Architecture-Specific Metrics:**
 - **Code Quality**: 90%+ test coverage across all layers

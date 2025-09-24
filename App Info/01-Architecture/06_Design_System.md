@@ -63,28 +63,25 @@ Implement unified design system with consistent theming, reusable components, an
 | **Maintenance Overhead** | Medium | High | Component documentation, versioning |
 | **Brand Inconsistency** | High | Low | Brand guidelines, design review process |
 
-## 📊 **Implementation Priority | أولوية التنفيذ**
+## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Reference**: See [Implementation Priority Template](../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
+> **Framework**: See [Generic Priority Framework](../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
 
 ### **Design System Specific Priorities:**
-### **Phase 1: Foundation (Must Have)**
-- [ ] Design tokens definition (colors, spacing, typography)
-- [ ] Basic component library creation
-- [ ] Theme configuration (light/dark)
-- [ ] RTL support implementation
+#### **Phase 1: Foundation | المرحلة الأولى: الأساس**
+- **🔴 Critical**: Design tokens definition (colors, spacing, typography)
+- **🔴 Critical**: Basic component library creation and theme configuration
+- **🟠 High**: RTL support implementation and accessibility features
 
-### **Phase 2: Enhancement (Should Have)**
-- [ ] Advanced component library
-- [ ] Accessibility features
-- [ ] Component documentation
-- [ ] Design system testing
+#### **Phase 2: Enhancement | المرحلة الثانية: التحسين**
+- **🟠 High**: Advanced component library and component documentation
+- **🟠 High**: Design system testing and accessibility compliance
+- **🟡 Medium**: Performance optimization and advanced theming features
 
-### **Phase 3: Optimization (Could Have)**
-- [ ] Performance optimization
-- [ ] Advanced theming features
-- [ ] Design system automation
-- [ ] Component analytics
+#### **Phase 3: Optimization | المرحلة الثالثة: التحسين**
+- **🟡 Medium**: Design system automation and component analytics
+- **🟡 Medium**: Advanced theming features and performance optimization
+- **🟢 Low**: AI-assisted design generation and advanced analytics
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
@@ -101,7 +98,7 @@ Implement unified design system with consistent theming, reusable components, an
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Success Metrics Template](../00-Templates/04_Success_Metrics_Template.md) for standard metrics.
+> **Reference**: See [Comprehensive Metrics Template](../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
 
 ### **Design System Specific Metrics:**
 - **Component Reuse**: 80%+ of screens use shared components

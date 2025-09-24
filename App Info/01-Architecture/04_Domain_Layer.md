@@ -77,26 +77,25 @@ Implement clean domain layer with business logic, use cases, and entities follow
 | **Use Case Complexity**    | Medium | Medium      | Single responsibility, clear interfaces     |
 | **Repository Coupling**    | High   | Low         | Interface segregation, dependency inversion |
 
-## 📊 **Implementation Priority | أولوية التنفيذ**
+## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Reference**: See [Implementation Priority Template](../../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
 
 ### **Domain Layer Specific Priorities:**
-### **Phase 1: Foundation (Must Have)**
-- [ ] Core entities definition
-- [ ] Basic use cases implementation
-- [ ] Repository interfaces definition
-- [ ] Basic validation rules
+#### **Phase 1: Foundation | المرحلة الأولى: الأساس**
+- **🔴 Critical**: Core entities definition and basic use cases implementation
+- **🔴 Critical**: Repository interfaces definition and basic validation rules
+- **🟠 High**: Domain services and business rules validation
 
-### **Phase 2: Enhancement (Should Have)**
-- [ ] Complex use cases
-- [ ] Domain services
-- [ ] Business rules validation
-- [ ] Domain events
+#### **Phase 2: Enhancement | المرحلة الثانية: التحسين**
+- **🟠 High**: Complex use cases and domain events implementation
+- **🟠 High**: Business rules validation and domain services
+- **🟡 Medium**: Advanced domain patterns and complex workflows
 
-### **Phase 3: Optimization (Could Have)**
-- [ ] Advanced domain patterns
-- [ ] Complex business workflows
+#### **Phase 3: Optimization | المرحلة الثالثة: التحسين**
+- **🟡 Medium**: Advanced domain patterns and complex business workflows
+- **🟡 Medium**: Domain event sourcing and CQRS patterns
+- **🟢 Low**: AI-assisted business logic and advanced domain modeling
 - [ ] Domain event handling
 - [ ] Advanced validation
 
@@ -115,10 +114,9 @@ Implement clean domain layer with business logic, use cases, and entities follow
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Success Metrics Template](../../00-Templates/04_Success_Metrics_Template.md) for standard metrics.
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
 
 ### **Domain Layer Specific Metrics:**
-
 - **Business Logic Isolation**: 100% of business logic in domain layer
 - **Entity Immutability**: All entities immutable with freezed
 - **Use Case Coverage**: 100% of business operations have use cases

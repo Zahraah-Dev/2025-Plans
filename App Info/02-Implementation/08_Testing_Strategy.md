@@ -331,27 +331,25 @@ jobs:
 | **Slow Test Suite** | Medium | Medium | Parallel execution, test optimization |
 | **Missing Edge Cases** | High | Medium | Test case reviews, boundary testing |
 
-## 📊 **Implementation Priority | أولوية التنفيذ**
+## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Reference**: See [Implementation Priority Template](../../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
 
 ### **Testing Strategy Specific Priorities:**
-### **Phase 1: Foundation (Must Have)**
-- [ ] Unit test framework setup
-- [ ] Basic widget tests
-- [ ] Core business logic coverage
-- [ ] CI/CD integration
+#### **Phase 1: Foundation | المرحلة الأولى: الأساس**
+- **🔴 Critical**: Unit test framework setup and basic widget tests
+- **🔴 Critical**: Core business logic coverage and CI/CD integration
+- **🟠 High**: Integration tests and test automation
 
-### **Phase 2: Enhancement (Should Have)**
-- [ ] Integration tests
-- [ ] Golden tests
-- [ ] Performance tests
-- [ ] Test automation
+#### **Phase 2: Enhancement | المرحلة الثانية: التحسين**
+- **🟠 High**: Golden tests and performance tests
+- **🟠 High**: Test automation and advanced testing patterns
+- **🟡 Medium**: Test data management and test reporting
 
-### **Phase 3: Optimization (Could Have)**
-- [ ] Advanced testing patterns
-- [ ] Test data management
-- [ ] Test reporting
+#### **Phase 3: Optimization | المرحلة الثالثة: التحسين**
+- **🟡 Medium**: Advanced testing patterns and test data management
+- **🟡 Medium**: Test reporting and analytics
+- **🟢 Low**: AI-assisted test generation and advanced test analytics
 - [ ] Advanced CI/CD features
 
 ## 🚪 **Quality Gates | بوابات الجودة**
@@ -370,7 +368,7 @@ jobs:
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Success Metrics Template](../../00-Templates/04_Success_Metrics_Template.md) for standard metrics.
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
 
 ### **Testing Strategy Specific Metrics:**
 - **Test Coverage**: 70%+ for business logic, 50%+ overall

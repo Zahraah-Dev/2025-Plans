@@ -68,28 +68,25 @@ Implement comprehensive performance monitoring with detailed budgets and metrics
 | **Data Loss** | Medium | Low | Reliable monitoring infrastructure |
 | **Resource Exhaustion** | High | Low | Resource limits, monitoring |
 
-## 📊 **Implementation Priority | أولوية التنفيذ**
+## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Reference**: See [Implementation Priority Template](../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
+> **Framework**: See [Generic Priority Framework](../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
 
 ### **Performance Monitoring Specific Priorities:**
-### **Phase 1: Foundation (Must Have)**
-- [ ] Set up performance monitoring tools
-- [ ] Define core performance budgets
-- [ ] Implement basic performance tracking
-- [ ] Add performance alerts
+#### **Phase 1: Foundation | المرحلة الأولى: الأساس**
+- **🔴 Critical**: Set up performance monitoring tools and define core performance budgets
+- **🔴 Critical**: Implement basic performance tracking and add performance alerts
+- **🟠 High**: Create performance dashboards and basic reporting
 
-### **Phase 2: Enhancement (Should Have)**
-- [ ] Add advanced performance metrics
-- [ ] Create performance dashboards
-- [ ] Implement performance optimization
-- [ ] Add performance reporting
+#### **Phase 2: Enhancement | المرحلة الثانية: التحسين**
+- **🟠 High**: Add advanced performance metrics and implement performance optimization
+- **🟠 High**: Create performance dashboards and add performance reporting
+- **🟡 Medium**: Machine learning for performance prediction and automated optimization
 
-### **Phase 3: Optimization (Could Have)**
-- [ ] Machine learning for performance prediction
-- [ ] Automated performance optimization
-- [ ] Advanced performance analytics
-- [ ] Performance trend analysis
+#### **Phase 3: Optimization | المرحلة الثالثة: التحسين**
+- **🟡 Medium**: Advanced performance analytics and performance trend analysis
+- **🟡 Medium**: AI-powered performance prediction and automated optimization
+- **🟢 Low**: Advanced analytics and predictive performance management
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
@@ -105,15 +102,18 @@ Implement comprehensive performance monitoring with detailed budgets and metrics
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Success Metrics Template](../00-Templates/04_Success_Metrics_Template.md) for standard metrics.
+> **Reference**: See [Comprehensive Metrics Template](../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
 
 ### **Performance Monitoring Specific Metrics:**
-- **TTI (Time to Interactive)**: ≤ 2.5 seconds
+- **TTI (Time to Interactive)**: ≤ 2.5 seconds, 95th percentile <3s
+- **FPS (Frames Per Second)**: >55 FPS in all animations, >60 FPS for critical paths
+- **Memory Usage**: <100MB peak, <50MB average during normal operation
+- **CPU Usage**: <70% average, <90% peak during intensive operations
+- **Network Performance**: <200ms API response time, <500ms for complex operations
+- **Monitoring Coverage**: 100% critical metrics tracked, <1min alert response time
 - **Jank Rate**: < 1% in PLP/PDP pages
 - **App Size (AAB)**: ≤ 40MB
 - **Cold Start Time**: ≤ 2.5 seconds
-- **Memory Usage**: < 200MB average
-- **FPS**: > 55 FPS in all screens
 
 ## 🔧 **Troubleshooting | استكشاف الأخطاء وإصلاحها**
 

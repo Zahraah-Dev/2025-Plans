@@ -74,28 +74,25 @@ Implement Clean Architecture for robust, maintainable Flutter e-commerce applica
 | **Poor Testability** | High | Medium | Mock-friendly design, clear boundaries |
 | **Performance Bottlenecks** | Medium | Low | Layer optimization, proper state management |
 
-## 📊 **Implementation Priority | أولوية التنفيذ**
+## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Reference**: See [Implementation Priority Template](../00-Templates/02_Implementation_Priority_Template.md) for standard phases.
+> **Framework**: See [Generic Priority Framework](../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
 
-### **Architecture-Specific Priorities:**
-### **Phase 1: Foundation (Must Have)**
-- [ ] Clean Architecture layer separation
-- [ ] Repository pattern implementation
-- [ ] Dependency injection setup
-- [ ] Feature-first folder structure
+### **Architecture Overview Specific Priorities:**
+#### **Phase 1: Foundation | المرحلة الأولى: الأساس**
+- **🔴 Critical**: Clean Architecture layer separation and boundaries
+- **🔴 Critical**: Repository pattern implementation and dependency injection
+- **🟠 High**: Feature-first folder structure and basic state management
 
-### **Phase 2: Enhancement (Should Have)**
-- [ ] Interface segregation principles
-- [ ] Error handling layer implementation
-- [ ] Testing infrastructure setup
-- [ ] Architecture decision records
+#### **Phase 2: Enhancement | المرحلة الثانية: التحسين**
+- **🟠 High**: Interface segregation principles and error handling layer
+- **🟠 High**: Testing infrastructure setup and architecture decision records
+- **🟡 Medium**: Performance monitoring per layer and advanced patterns
 
-### **Phase 3: Optimization (Could Have)**
-- [ ] Performance monitoring per layer
-- [ ] Advanced architectural patterns
-- [ ] Architecture documentation automation
-- [ ] Layer-specific metrics
+#### **Phase 3: Optimization | المرحلة الثالثة: التحسين**
+- **🟡 Medium**: Architecture documentation automation and layer-specific metrics
+- **🟡 Medium**: Advanced architectural patterns and optimization
+- **🟢 Low**: AI-assisted architecture decisions and advanced monitoring
 
 ---
 
@@ -209,14 +206,15 @@ graph TD
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Success Metrics Template](../00-Templates/04_Success_Metrics_Template.md) for standard metrics.
+> **Reference**: See [Comprehensive Metrics Template](../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
 
-### **Architecture-Specific Metrics:**
-- **Layer Separation**: 100% compliance with Clean Architecture
-- **Dependency Direction**: All dependencies point inward
-- **Testability**: Each layer can be tested independently
-- **Maintainability**: Changes in one layer don't affect others
+### **Architecture Overview Specific Metrics:**
+- **Layer Separation**: 100% compliance with Clean Architecture principles
+- **Dependency Direction**: All dependencies point inward, no circular dependencies
+- **Testability**: Each layer can be tested independently with >90% coverage
+- **Maintainability**: Changes in one layer don't affect others, <5% coupling
 - **Scalability**: Easy to add new features without breaking existing code
+- **Code Quality**: Maintainability index >80, cyclomatic complexity <10
 
 ## 🔧 **Troubleshooting | استكشاف الأخطاء وإصلاحها**
 
