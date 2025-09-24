@@ -57,13 +57,13 @@ The AI agent should recognize these patterns as **duplications**:
 # Instead of duplicating content, use references:
 
 ## 🚨 **Risk Assessment | تقييم المخاطر**
-> **Reference**: See [Risk Assessment Template](../00-Templates/01_Risk_Assessment_Template.md) for standard risk categories.
+> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template.md) for standard risk categories.
 
 ## 📊 **Implementation Priority | أولوية التنفيذ**
-> **Reference**: See [Implementation Priority Template](../00-Templates/04_Implementation_Priority_Template.md) for standard phases.
+> **Reference**: See [Implementation Priority Template](../00-Templates/04-implementation-priority-template.md) for standard phases.
 
 ## 🚪 **Quality Gates | بوابات الجودة**
-> **Reference**: See [Quality Gates Template](../00-Templates/03_Quality_Gates_Template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template.md) for standard quality criteria.
 ```
 
 #### **Step 3: File-Specific Content Only**
@@ -184,16 +184,16 @@ The AI agent should recognize these patterns as **duplications**:
 
 ---
 ## 🚨 **Risk Assessment | تقييم المخاطر**
-> **Reference**: See [Risk Assessment Template](../00-Templates/01_Risk_Assessment_Template.md)
+> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template.md)
 
 ## 📊 **Implementation Priority | أولوية التنفيذ**
-> **Reference**: See [Implementation Priority Template](../00-Templates/04_Implementation_Priority_Template.md)
+> **Reference**: See [Implementation Priority Template](../00-Templates/04-implementation-priority-template.md)
 
 ## 🚪 **Quality Gates | بوابات الجودة**
-> **Reference**: See [Quality Gates Template](../00-Templates/03_Quality_Gates_Template.md)
+> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template.md)
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
-> **Reference**: See [Success Metrics Template](../00-Templates/02_Success_Criteria_Template.md)
+> **Reference**: See [Success Metrics Template](../00-Templates/02-success-criteria-template.md)
 
 ---
 ## [FILE-SPECIFIC CONTENT STARTS HERE]

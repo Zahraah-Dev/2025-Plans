@@ -37,7 +37,7 @@ Provide comprehensive migration guide for version upgrades, dependency updates, 
 
 ## ✅ **Success Criteria | معايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../00-Templates/06_Success_Criteria_Template.md) for standard criteria.
+> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template.md) for standard criteria.
 
 ### **Migration Guide Specific Criteria:**
 - [ ] Comprehensive migration procedures documented
@@ -49,7 +49,7 @@ Provide comprehensive migration guide for version upgrades, dependency updates, 
 
 ## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
 
-> **Reference**: See [Common Pitfalls Template](../../00-Templates/05_Common_Pitfalls_Template.md) for standard pitfalls.
+> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template.md) for standard pitfalls.
 
 ### **Migration Guide Specific Pitfalls:**
 - **Avoid**: No migration documentation
@@ -75,7 +75,7 @@ Provide comprehensive migration guide for version upgrades, dependency updates, 
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
 
 ### **Migration Guide Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -95,7 +95,7 @@ Provide comprehensive migration guide for version upgrades, dependency updates, 
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
-> **Reference**: See [Quality Gates Template](../../00-Templates/03_Quality_Gates_Template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../../00-Templates/03-quality-gates-template.md) for standard quality criteria.
 
 ### **Migration Guide Specific Quality Gates:**
 - [ ] Migration scripts tested in staging environment
@@ -107,7 +107,7 @@ Provide comprehensive migration guide for version upgrades, dependency updates, 
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
 
 ### **Migration Guide Specific Metrics:**
 - **Migration Success Rate**: 99%+ successful migrations, <1% rollback rate

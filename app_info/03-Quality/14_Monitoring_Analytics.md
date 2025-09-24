@@ -33,7 +33,7 @@ Implement Monitoring & Analytics for robust, maintainable Flutter e-commerce app
 
 ## ✅ **Success Criteria | معايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../00-Templates/06_Success_Criteria_Template.md) for standard criteria.
+> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template.md) for standard criteria.
 
 ### **Monitoring & Analytics Specific Criteria:**
 - [ ] Crashlytics properly configured
@@ -45,7 +45,7 @@ Implement Monitoring & Analytics for robust, maintainable Flutter e-commerce app
 
 ## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
 
-> **Reference**: See [Common Pitfalls Template](../../00-Templates/05_Common_Pitfalls_Template.md) for standard pitfalls.
+> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template.md) for standard pitfalls.
 
 ### **Monitoring & Analytics Specific Pitfalls:**
 - **Avoid**: No crash reporting
@@ -62,7 +62,7 @@ Implement Monitoring & Analytics for robust, maintainable Flutter e-commerce app
 
 ## 🚨 **Risk Assessment | تقييم المخاطر**
 
-> **Reference**: See [Risk Assessment Template](../../00-Templates/01_Risk_Assessment_Template.md) for standard risk categories.
+> **Reference**: See [Risk Assessment Template](../../00-Templates/01-risk-assessment-template.md) for standard risk categories.
 
 ### **Monitoring & Analytics Specific Risks:**
 | Risk | Impact | Probability | Mitigation Strategy |
@@ -74,7 +74,7 @@ Implement Monitoring & Analytics for robust, maintainable Flutter e-commerce app
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
 
 ### **Monitoring & Analytics Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -94,7 +94,7 @@ Implement Monitoring & Analytics for robust, maintainable Flutter e-commerce app
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
-> **Reference**: See [Quality Gates Template](../../00-Templates/03_Quality_Gates_Template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../../00-Templates/03-quality-gates-template.md) for standard quality criteria.
 
 ### **Monitoring & Analytics Specific Quality Gates:**
 - [ ] Analytics platform working correctly
@@ -106,7 +106,7 @@ Implement Monitoring & Analytics for robust, maintainable Flutter e-commerce app
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
 
 ### **Monitoring & Analytics Specific Metrics:**
 - **Analytics Coverage**: 100% user action tracking, 95% conversion tracking

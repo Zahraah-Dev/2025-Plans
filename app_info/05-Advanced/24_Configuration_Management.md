@@ -55,7 +55,7 @@ Implement advanced configuration management system for environment-specific sett
 
 ## 🚨 **Risk Assessment | تقييم المخاطر**
 
-> **Reference**: See [Risk Assessment Template](../00-Templates/01_Risk_Assessment_Template.md) for standard risk categories.
+> **Reference**: See [Risk Assessment Template](../00-Templates/01-risk-assessment-template.md) for standard risk categories.
 
 ### **Configuration Management Specific Risks:**
 | Risk | Impact | Probability | Mitigation Strategy |
@@ -69,7 +69,7 @@ Implement advanced configuration management system for environment-specific sett
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
 
 ### **Configuration Management Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -89,7 +89,7 @@ Implement advanced configuration management system for environment-specific sett
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
-> **Reference**: See [Quality Gates Template](../00-Templates/03_Quality_Gates_Template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../00-Templates/03-quality-gates-template.md) for standard quality criteria.
 
 ### **Configuration Management Specific Quality Gates:**
 - [ ] Configuration management system working
@@ -101,7 +101,7 @@ Implement advanced configuration management system for environment-specific sett
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
 
 ### **Configuration Management Specific Metrics:**
 - **Configuration Accuracy**: 100% correct configurations, zero configuration errors

@@ -37,7 +37,7 @@ Provide comprehensive troubleshooting guide for common issues, debugging techniq
 
 ## ✅ **Success Criteria | معايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../00-Templates/06_Success_Criteria_Template.md) for standard criteria.
+> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template.md) for standard criteria.
 
 ### **Troubleshooting Specific Criteria:**
 - [ ] Comprehensive issue documentation
@@ -49,7 +49,7 @@ Provide comprehensive troubleshooting guide for common issues, debugging techniq
 
 ## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
 
-> **Reference**: See [Common Pitfalls Template](../../00-Templates/05_Common_Pitfalls_Template.md) for standard pitfalls.
+> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template.md) for standard pitfalls.
 
 ### **Troubleshooting Specific Pitfalls:**
 - **Avoid**: No documentation of common issues
@@ -75,7 +75,7 @@ Provide comprehensive troubleshooting guide for common issues, debugging techniq
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
 
 ### **Troubleshooting Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -95,7 +95,7 @@ Provide comprehensive troubleshooting guide for common issues, debugging techniq
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
-> **Reference**: See [Quality Gates Template](../../00-Templates/03_Quality_Gates_Template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../../00-Templates/03-quality-gates-template.md) for standard quality criteria.
 
 ### **Troubleshooting Specific Quality Gates:**
 - [ ] Troubleshooting guides comprehensive and up-to-date
@@ -107,7 +107,7 @@ Provide comprehensive troubleshooting guide for common issues, debugging techniq
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
 
 ### **Troubleshooting Specific Metrics:**
 - **Issue Resolution**: 95%+ successful issue resolution, <2h average resolution time

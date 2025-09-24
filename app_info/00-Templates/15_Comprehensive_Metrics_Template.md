@@ -16,7 +16,7 @@ This template provides comprehensive operational and business metrics for all pr
 ### **In Each File:**
 ```markdown
 ## 📈 **Success Metrics | مؤشرات النجاح**
-> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
 
 ### **File-Specific Metrics:**
 [Keep only file-specific metrics here if any]

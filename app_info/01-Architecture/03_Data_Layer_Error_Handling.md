@@ -37,7 +37,7 @@ Implement robust data layer with comprehensive error handling, secure data manag
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
 
 ### **Data Layer & Error Handling Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -57,7 +57,7 @@ Implement robust data layer with comprehensive error handling, secure data manag
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
 
 ### **Data Layer & Error Handling Specific Metrics:**
 - **Error Handling**: 100% Result pattern usage, zero exceptions to UI

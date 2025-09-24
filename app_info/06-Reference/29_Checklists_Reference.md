@@ -37,7 +37,7 @@ Provide comprehensive checklists and quick reference guides for all aspects of F
 
 ## ✅ **Success Criteria | معايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../00-Templates/06_Success_Criteria_Template.md) for standard criteria.
+> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template.md) for standard criteria.
 
 ### **Checklists & Quick Reference Specific Criteria:**
 - [ ] All checklists comprehensive and up-to-date
@@ -49,7 +49,7 @@ Provide comprehensive checklists and quick reference guides for all aspects of F
 
 ## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
 
-> **Reference**: See [Common Pitfalls Template](../../00-Templates/05_Common_Pitfalls_Template.md) for standard pitfalls.
+> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template.md) for standard pitfalls.
 
 ### **Checklists & Quick Reference Specific Pitfalls:**
 - **Avoid**: Outdated checklists
@@ -74,7 +74,7 @@ Provide comprehensive checklists and quick reference guides for all aspects of F
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
 
 ### **Checklists & Quick Reference Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -94,7 +94,7 @@ Provide comprehensive checklists and quick reference guides for all aspects of F
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
-> **Reference**: See [Quality Gates Template](../../00-Templates/03_Quality_Gates_Template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../../00-Templates/03-quality-gates-template.md) for standard quality criteria.
 
 ### **Checklists Reference Specific Quality Gates:**
 - [ ] All checklists validated and tested
@@ -106,7 +106,7 @@ Provide comprehensive checklists and quick reference guides for all aspects of F
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
 
 ### **Checklists Reference Specific Metrics:**
 - **Checklist Usage**: 90%+ team adoption, 95% checklist completion rate

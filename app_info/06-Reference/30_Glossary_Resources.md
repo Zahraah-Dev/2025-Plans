@@ -37,7 +37,7 @@ Provide comprehensive glossary of technical terms, definitions, and useful resou
 
 ## ✅ **Success Criteria | معايير النجاح**
 
-> **Reference**: See [Success Criteria Template](../../00-Templates/06_Success_Criteria_Template.md) for standard criteria.
+> **Reference**: See [Success Criteria Template](../../00-Templates/06-success-criteria-template.md) for standard criteria.
 
 ### **Glossary & Resources Specific Criteria:**
 - [ ] Comprehensive glossary created
@@ -49,7 +49,7 @@ Provide comprehensive glossary of technical terms, definitions, and useful resou
 
 ## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
 
-> **Reference**: See [Common Pitfalls Template](../../00-Templates/05_Common_Pitfalls_Template.md) for standard pitfalls.
+> **Reference**: See [Common Pitfalls Template](../../00-Templates/05-common-pitfalls-template.md) for standard pitfalls.
 
 ### **Glossary & Resources Specific Pitfalls:**
 - **Avoid**: Outdated definitions
@@ -66,7 +66,7 @@ Provide comprehensive glossary of technical terms, definitions, and useful resou
 
 ## 🚨 **Risk Assessment | تقييم المخاطر**
 
-> **Reference**: See [Risk Assessment Template](../../00-Templates/01_Risk_Assessment_Template.md) for standard risk categories.
+> **Reference**: See [Risk Assessment Template](../../00-Templates/01-risk-assessment-template.md) for standard risk categories.
 
 ### **Glossary & Resources Specific Risks:**
 | Risk | Impact | Probability | Mitigation Strategy |
@@ -78,7 +78,7 @@ Provide comprehensive glossary of technical terms, definitions, and useful resou
 
 ## 🎯 **Specific Priorities | الأولويات المحددة**
 
-> **Framework**: See [Generic Priority Framework](../../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
 
 ### **Glossary & Resources Specific Priorities:**
 #### **Phase 1: Foundation | المرحلة الأولى: الأساس**
@@ -98,7 +98,7 @@ Provide comprehensive glossary of technical terms, definitions, and useful resou
 
 ## 🚪 **Quality Gates | بوابات الجودة**
 
-> **Reference**: See [Quality Gates Template](../../00-Templates/03_Quality_Gates_Template.md) for standard quality criteria.
+> **Reference**: See [Quality Gates Template](../../00-Templates/03-quality-gates-template.md) for standard quality criteria.
 
 ### **Glossary & Resources Specific Quality Gates:**
 - [ ] All documentation links working and accessible
@@ -110,7 +110,7 @@ Provide comprehensive glossary of technical terms, definitions, and useful resou
 
 ## 📈 **Success Metrics | مؤشرات النجاح**
 
-> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15_Comprehensive_Metrics_Template.md) for topic-specific metrics.
+> **Reference**: See [Comprehensive Metrics Template](../../00-Templates/15-comprehensive-metrics-template.md) for topic-specific metrics.
 
 ### **Glossary Resources Specific Metrics:**
 - **Resource Usage**: 90%+ team adoption, 95% resource utilization

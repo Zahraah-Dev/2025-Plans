@@ -16,7 +16,7 @@ This template provides the structure for file-specific priorities. Each file sho
 ### **Header Section:**
 ```markdown
 ## 🎯 **Specific Priorities | الأولويات المحددة**
-> **Framework**: See [Generic Priority Framework](../../00-Templates/13_Generic_Priority_Framework.md) for priority levels and criteria.
+> **Framework**: See [Generic Priority Framework](../../00-Templates/13-generic-priority-framework.md) for priority levels and criteria.
 ```
 
 ### **File-Specific Priorities Section:**
