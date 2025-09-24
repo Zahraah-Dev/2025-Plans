@@ -66,39 +66,125 @@ function addCopyCodeButtons() {
 }
 
 function generateTableOfContents() {
-    // Generate table of contents from headings
-    const content = document.querySelector('.content');
+    // Generate table of contents from headings for sidebar
+    const content = document.querySelector('#main-content');
     if (!content) return;
     
-    const headings = content.querySelectorAll('h2, h3, h4');
+    const headings = content.querySelectorAll('h2, h3, h4, h5, h6');
     if (headings.length === 0) return;
     
-    const toc = document.createElement('div');
-    toc.className = 'table-of-contents';
-    toc.innerHTML = '<h3>Table of Contents</h3><ul></ul>';
+    const tocNav = document.querySelector('#toc-nav');
+    if (!tocNav) return;
     
-    const tocList = toc.querySelector('ul');
+    // Clear existing TOC
+    tocNav.innerHTML = '';
+    
+    let currentLevel = 0;
+    let currentList = tocNav;
+    const listStack = [tocNav];
     
     headings.forEach((heading, index) => {
+        const level = parseInt(heading.tagName.substring(1));
         const id = `heading-${index}`;
         heading.id = id;
         
+        // Create list item
         const li = document.createElement('li');
         li.className = `toc-${heading.tagName.toLowerCase()}`;
         
+        // Create link
         const a = document.createElement('a');
         a.href = `#${id}`;
-        a.textContent = heading.textContent;
+        a.textContent = heading.textContent.trim();
+        a.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetElement = document.getElementById(id);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                // Update active state
+                updateActiveTocLink(a);
+            }
+        });
         
         li.appendChild(a);
-        tocList.appendChild(li);
+        
+        // Handle nesting
+        if (level > currentLevel) {
+            // Create new nested list
+            const newList = document.createElement('ul');
+            newList.className = 'toc-nested';
+            li.appendChild(newList);
+            listStack.push(newList);
+            currentList = newList;
+            currentLevel = level;
+        } else if (level < currentLevel) {
+            // Go back up the stack
+            while (level < currentLevel && listStack.length > 1) {
+                listStack.pop();
+                currentList = listStack[listStack.length - 1];
+                currentLevel--;
+            }
+        }
+        
+        currentList.appendChild(li);
     });
     
-    // Insert TOC after the first heading
-    const firstHeading = content.querySelector('h1, h2');
-    if (firstHeading) {
-        firstHeading.parentNode.insertBefore(toc, firstHeading.nextSibling);
+    // Add scroll spy functionality
+    addScrollSpy();
+}
+
+function updateActiveTocLink(activeLink) {
+    // Remove active class from all TOC links
+    const allTocLinks = document.querySelectorAll('#toc-nav a');
+    allTocLinks.forEach(link => link.classList.remove('active'));
+    
+    // Add active class to clicked link
+    activeLink.classList.add('active');
+}
+
+function addScrollSpy() {
+    // Simple scroll spy to highlight current section
+    const headings = document.querySelectorAll('#main-content h2, #main-content h3, #main-content h4, #main-content h5, #main-content h6');
+    const tocLinks = document.querySelectorAll('#toc-nav a');
+    
+    if (headings.length === 0 || tocLinks.length === 0) return;
+    
+    function updateActiveSection() {
+        let current = '';
+        const scrollPosition = window.scrollY + 100;
+        
+        headings.forEach(heading => {
+            const headingTop = heading.offsetTop;
+            if (scrollPosition >= headingTop) {
+                current = heading.id;
+            }
+        });
+        
+        tocLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
     }
+    
+    // Throttled scroll event
+    let ticking = false;
+    function onScroll() {
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                updateActiveSection();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }
+    
+    window.addEventListener('scroll', onScroll);
+    updateActiveSection(); // Initial call
 }
 
 function initializeSearch() {
@@ -195,30 +281,9 @@ style.textContent = `
         font-size: 12px;
     }
     
-    .table-of-contents {
-        background: var(--bg-light);
-        padding: 1rem;
-        border-radius: 8px;
-        margin: 1rem 0;
-        border-left: 4px solid var(--accent-color);
-    }
-    
-    .table-of-contents ul {
-        list-style: none;
-        padding: 0;
-    }
-    
-    .table-of-contents li {
-        margin: 0.5rem 0;
-    }
-    
-    .table-of-contents a {
-        color: var(--primary-color);
-        text-decoration: none;
-    }
-    
-    .table-of-contents a:hover {
-        text-decoration: underline;
+    .toc-nested {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
     }
     
     .search-input {
