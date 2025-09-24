@@ -82,7 +82,7 @@ This template provides the standard priority framework used across all project f
 
 ## 📚 **Related Templates | القوالب ذات الصلة**
 
-- [Implementation Priority Template](02_Implementation_Priority_Template.md)
+- [File-Specific Priority Template](14_File_Specific_Priority_Template.md)
 - [Risk Assessment Template](01_Risk_Assessment_Template.md)
 - [Success Criteria Template](06_Success_Criteria_Template.md)
 - [Quality Gates Template](03_Quality_Gates_Template.md)

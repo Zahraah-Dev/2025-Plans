@@ -64,7 +64,6 @@ Implement robust state management and dependency injection for predictable, test
 
 ## ⚠️ **Common Pitfalls & Best Practices | الأخطاء الشائعة وأفضل الممارسات**
 
-> **Reference**: See [Best Practices | أفضل الممارسات](Best_Practices.md) for comprehensive best practices and common pitfalls.
 
 ### **State Management & DI Specific Pitfalls:**
 - **Avoid**: Mixed state management patterns in same project
@@ -413,10 +412,10 @@ void main() {
 - [Best Practices | أفضل الممارسات](#best-practices--أفضل-الممارسات)
 
 ### **Shared Architecture Resources | موارد المعمارية المشتركة**
-- [Quality Standards | معايير الجودة](Quality_Standards.md)
-- [Testing Strategy | استراتيجية الاختبار](Testing_Strategy.md)
-- [Troubleshooting Guide | دليل استكشاف الأخطاء](Troubleshooting_Guide.md)
-- [Best Practices | أفضل الممارسات](Best_Practices.md)
-- [Success Criteria | معايير النجاح](Success_Criteria.md)
+- [Architecture Overview | نظرة عامة على المعمارية](01_Architecture_Overview.md)
+- [Domain Layer | طبقة المجال](04_Domain_Layer.md)
+- [Data Layer Error Handling | معالجة أخطاء طبقة البيانات](03_Data_Layer_Error_Handling.md)
+- [Presentation Layer | طبقة العرض](05_Presentation_Layer.md)
+- [Design System | نظام التصميم](06_Design_System.md)
 
 ---

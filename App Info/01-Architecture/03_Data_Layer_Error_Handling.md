@@ -365,10 +365,10 @@ class NetworkInfoImpl implements NetworkInfo {
 - [Architecture Overview | نظرة عامة على المعمارية](01_Architecture_Overview.md)
 
 ### **Shared Architecture Resources | موارد المعمارية المشتركة**
-- [Quality Standards | معايير الجودة](Quality_Standards.md)
-- [Testing Strategy | استراتيجية الاختبار](Testing_Strategy.md)
-- [Troubleshooting Guide | دليل استكشاف الأخطاء](Troubleshooting_Guide.md)
-- [Best Practices | أفضل الممارسات](Best_Practices.md)
-- [Success Criteria | معايير النجاح](Success_Criteria.md)
+- [Architecture Overview | نظرة عامة على المعمارية](01_Architecture_Overview.md)
+- [State Management & DI | إدارة الحالة وحقن التبعية](02_State_Management_DI.md)
+- [Domain Layer | طبقة المجال](04_Domain_Layer.md)
+- [Presentation Layer | طبقة العرض](05_Presentation_Layer.md)
+- [Design System | نظام التصميم](06_Design_System.md)
 
 ---

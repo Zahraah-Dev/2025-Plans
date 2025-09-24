@@ -112,7 +112,6 @@ This template provides the structure for file-specific priorities. Each file sho
 ## 🔗 **Related Templates | القوالب ذات الصلة**
 
 - [Generic Priority Framework](13_Generic_Priority_Framework.md)
-- [Implementation Priority Template](02_Implementation_Priority_Template.md)
 - [Risk Assessment Template](01_Risk_Assessment_Template.md)
 - [Success Criteria Template](06_Success_Criteria_Template.md)
 

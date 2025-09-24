@@ -292,9 +292,6 @@ graph TD
 
 ## ✅ **Quality Standards & Success Criteria | معايير الجودة ومعايير النجاح**
 
-> **Reference**: See [Quality Standards | معايير الجودة](Quality_Standards.md) for comprehensive quality requirements.
-
-> **Reference**: See [Success Criteria | معايير النجاح](Success_Criteria.md) for detailed success metrics and validation criteria.
 
 ### **Architecture-Specific Quality Requirements:**
 - **Clean Architecture**: Proper layer separation and dependency direction
@@ -320,11 +317,82 @@ graph TD
 [Next: State Management & DI | التالي: إدارة الحالة وحقن التبعية →](02_State_Management_DI.md)
 [🏠 Home | الرئيسية](../../index.html)
 
-### **Shared Architecture Resources | موارد المعمارية المشتركة**
-- [Quality Standards | معايير الجودة](Quality_Standards.md)
-- [Testing Strategy | استراتيجية الاختبار](Testing_Strategy.md)
-- [Troubleshooting Guide | دليل استكشاف الأخطاء](Troubleshooting_Guide.md)
-- [Best Practices | أفضل الممارسات](Best_Practices.md)
-- [Success Criteria | معايير النجاح](Success_Criteria.md)
+## 🚪 **Quality Gates | بوابات الجودة**
+
+> **Reference**: See [Quality Gates Template](../../00-Templates/03_Quality_Gates_Template.md) for standard quality criteria.
+
+### **Architecture-Specific Quality Gates:**
+- [ ] Clean Architecture principles implemented correctly
+- [ ] Proper separation of concerns between layers
+- [ ] Dependency injection configured properly
+- [ ] Error handling implemented with Result pattern
+- [ ] State management follows best practices
+- [ ] UI components follow design system standards
+- [ ] RTL support implemented for Arabic markets
+- [ ] Accessibility standards met (WCAG 2.1 AA)
+- [ ] Performance benchmarks achieved
+- [ ] Security best practices implemented
+
+## 🧪 **Architecture Testing Strategy | استراتيجية اختبار المعمارية**
+
+### **Testing Pyramid | هرم الاختبار**
+```
+    🔺 E2E Tests (10%)
+   🔺🔺 Integration Tests (20%)
+  🔺🔺🔺 Unit Tests (70%)
+```
+
+### **Testing Principles | مبادئ الاختبار**
+- **Test Early**: Write tests during development, not after
+- **Test Often**: Run tests frequently during development
+- **Test Everything**: Cover all critical paths and edge cases
+- **Test Realistic**: Use real data and scenarios when possible
+- **Test Maintainable**: Keep tests simple and easy to update
+
+## 🏗️ **Architecture Best Practices | أفضل ممارسات المعمارية**
+
+### **Core Principles | المبادئ الأساسية**
+1. **Separation of Concerns** - Each layer has a single responsibility
+2. **Dependency Inversion** - Depend on abstractions, not concretions
+3. **Single Responsibility** - Each class/module has one reason to change
+4. **Open/Closed Principle** - Open for extension, closed for modification
+5. **DRY (Don't Repeat Yourself)** - Avoid code duplication
+
+## ✅ **Architecture Success Criteria | معايير نجاح المعمارية**
+
+### **Definition of Success | تعريف النجاح**
+Success is achieved when the architecture meets all technical, functional, and quality requirements while providing an excellent developer and user experience.
+
+### **Success Metrics Categories | فئات مقاييس النجاح**
+1. **Technical Excellence** - Code quality, performance, maintainability
+2. **Functional Completeness** - All features working as expected
+3. **Quality Assurance** - Testing, security, accessibility
+4. **User Experience** - Performance, usability, satisfaction
+5. **Developer Experience** - Documentation, tooling, productivity
+
+## 🔧 **Architecture Troubleshooting | استكشاف أخطاء المعمارية**
+
+### **Debugging Strategy | استراتيجية التصحيح**
+1. **Identify the Problem** - Understand what's not working
+2. **Reproduce the Issue** - Create consistent steps to reproduce
+3. **Isolate the Cause** - Narrow down to specific component/layer
+4. **Apply Solution** - Implement fix and verify
+5. **Document Solution** - Update documentation for future reference
+
+## ⚠️ **Common Pitfalls | الأخطاء الشائعة**
+
+> **Reference**: See [Common Pitfalls Template](../../00-Templates/05_Common_Pitfalls_Template.md) for standard pitfalls.
+
+### **Architecture-Specific Pitfalls:**
+- **Avoid**: Violating Clean Architecture principles
+- **Avoid**: Tight coupling between layers
+- **Avoid**: Missing dependency injection
+- **Avoid**: Inconsistent error handling
+- **Avoid**: Poor state management patterns
+- **Avoid**: Ignoring RTL requirements
+- **Avoid**: Missing accessibility features
+- **Avoid**: Performance anti-patterns
+- **Avoid**: Security vulnerabilities
+- **Avoid**: Incomplete documentation
 
 ---

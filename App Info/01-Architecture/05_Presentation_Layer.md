@@ -30,9 +30,6 @@ Implement clean presentation layer with proper navigation, state management, and
 
 ## ✅ **Quality Standards & Success Criteria | معايير الجودة ومعايير النجاح**
 
-> **Reference**: See [Quality Standards | معايير الجودة](Quality_Standards.md) for comprehensive quality requirements.
-
-> **Reference**: See [Success Criteria | معايير النجاح](Success_Criteria.md) for detailed success metrics and validation criteria.
 
 ### **Presentation Layer Specific Requirements:**
 - **Routing**: All routes properly configured with GoRouter
@@ -44,7 +41,6 @@ Implement clean presentation layer with proper navigation, state management, and
 
 ## ⚠️ **Common Pitfalls & Best Practices | الأخطاء الشائعة وأفضل الممارسات**
 
-> **Reference**: See [Best Practices | أفضل الممارسات](Best_Practices.md) for comprehensive best practices and common pitfalls.
 
 ### **Presentation Layer Specific Pitfalls:**
 - **Avoid**: Business logic in UI components
@@ -351,16 +347,11 @@ class RTLProductCard extends StatelessWidget {
 - [Navigation & Routing | التنقل والتوجيه](#-navigation--routing--التنقل-والتوجيه)
 - [Accessibility & RTL | إمكانية الوصول والنص من اليمين لليسار](#-accessibility--rtl--إمكانية-الوصول-والنص-من-اليمين-ليسار)
 
-### **Related Files | الملفات ذات الصلة**
-- [Domain Layer | طبقة المجال](04_Domain_Layer.md)
-- [Design System | نظام التصميم](06_Design_System.md)
+### **Related Architecture Files | ملفات المعمارية ذات الصلة**
+- [Architecture Overview | نظرة عامة على المعمارية](01_Architecture_Overview.md)
 - [State Management & DI | إدارة الحالة وحقن التبعية](02_State_Management_DI.md)
-
-### **Shared Architecture Resources | موارد المعمارية المشتركة**
-- [Quality Standards | معايير الجودة](Quality_Standards.md)
-- [Testing Strategy | استراتيجية الاختبار](Testing_Strategy.md)
-- [Troubleshooting Guide | دليل استكشاف الأخطاء](Troubleshooting_Guide.md)
-- [Best Practices | أفضل الممارسات](Best_Practices.md)
-- [Success Criteria | معايير النجاح](Success_Criteria.md)
+- [Domain Layer | طبقة المجال](04_Domain_Layer.md)
+- [Data Layer Error Handling | معالجة أخطاء طبقة البيانات](03_Data_Layer_Error_Handling.md)
+- [Design System | نظام التصميم](06_Design_System.md)
 
 ---

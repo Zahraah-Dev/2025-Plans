@@ -35,9 +35,6 @@ Implement clean domain layer with business logic, use cases, and entities follow
 
 ## ✅ **Quality Standards & Success Criteria | معايير الجودة ومعايير النجاح**
 
-> **Reference**: See [Quality Standards | معايير الجودة](Quality_Standards.md) for comprehensive quality requirements.
-
-> **Reference**: See [Success Criteria | معايير النجاح](Success_Criteria.md) for detailed success metrics and validation criteria.
 
 ### **Domain Layer Specific Requirements:**
 - **Business Logic**: All business logic in domain layer
@@ -351,16 +348,11 @@ class AddToCartUseCase {
 - [Repository Interfaces | واجهات المستودعات](#-repository-interfaces--واجهات-المستودعات)
 - [Use Cases Templates | قوالب حالات الاستخدام](#-use-cases-templates--قوالب-حالات-الاستخدام)
 
-### **Related Files | الملفات ذات الصلة**
+### **Related Architecture Files | ملفات المعمارية ذات الصلة**
+- [Architecture Overview | نظرة عامة على المعمارية](01_Architecture_Overview.md)
+- [State Management & DI | إدارة الحالة وحقن التبعية](02_State_Management_DI.md)
 - [Data Layer Error Handling | معالجة أخطاء طبقة البيانات](03_Data_Layer_Error_Handling.md)
 - [Presentation Layer | طبقة العرض](05_Presentation_Layer.md)
-- [Architecture Overview | نظرة عامة على المعمارية](01_Architecture_Overview.md)
-
-### **Shared Architecture Resources | موارد المعمارية المشتركة**
-- [Quality Standards | معايير الجودة](Quality_Standards.md)
-- [Testing Strategy | استراتيجية الاختبار](Testing_Strategy.md)
-- [Troubleshooting Guide | دليل استكشاف الأخطاء](Troubleshooting_Guide.md)
-- [Best Practices | أفضل الممارسات](Best_Practices.md)
-- [Success Criteria | معايير النجاح](Success_Criteria.md)
+- [Design System | نظام التصميم](06_Design_System.md)
 
 ---

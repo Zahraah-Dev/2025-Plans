@@ -133,7 +133,6 @@ This template provides comprehensive operational and business metrics for all pr
 
 ## 🔗 **Related Templates | القوالب ذات الصلة**
 
-- [Success Metrics Template](04_Success_Metrics_Template.md)
 - [Quality Gates Template](03_Quality_Gates_Template.md)
 - [Success Criteria Template](06_Success_Criteria_Template.md)
 - [Generic Priority Framework](13_Generic_Priority_Framework.md)
