@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- SEO -->
+    {% seo %}
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="{{ '/' | relative_url }}" class="nav-brand">
+                <h2>2025 Plans - Flutter E-commerce</h2>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/app_info/' | relative_url }}">App Info</a></li>
+                <li><a href="{{ '/app_info/00-templates/' | relative_url }}">Templates</a></li>
+                <li><a href="{{ '/app_info/01-architecture/' | relative_url }}">Architecture</a></li>
+                <li><a href="{{ '/app_info/02-implementation/' | relative_url }}">Implementation</a></li>
+                <li><a href="{{ '/app_info/03-quality/' | relative_url }}">Quality</a></li>
+                <li><a href="{{ '/app_info/04-operations/' | relative_url }}">Operations</a></li>
+                <li><a href="{{ '/app_info/05-advanced/' | relative_url }}">Advanced</a></li>
+                <li><a href="{{ '/app_info/06-reference/' | relative_url }}">Reference</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            {% if page.title %}
+            <header class="page-header">
+                <h1 class="page-title">{{ page.title }}</h1>
+                {% if page.description %}
+                <p class="page-description">{{ page.description }}</p>
+                {% endif %}
+            </header>
+            {% endif %}
+            
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 ZahraahIT. Made with ❤️ for the Flutter community.</p>
+            <p>Comprehensive Flutter e-commerce development project with 30+ implementation guides.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

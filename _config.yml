@@ -1,0 +1,95 @@
+# GitHub Pages Configuration
+title: "2025 Plans - Flutter E-commerce Development"
+description: "Comprehensive Flutter e-commerce development project with 30+ implementation guides and specialized AI tools for technical planning and content management."
+author: "Majed Qubati"
+email: "dev@zahraah.com"
+
+# Site settings
+baseurl: "/2025-Plans"  # Change this to your repository name
+url: "https://Zahraah-Dev.github.io"  # Change this to your GitHub username
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  app_info:
+    output: true
+    permalink: /:collection/:name/
+    sort_by: title
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "app_info"
+    values:
+      layout: "default"
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "App Info"
+    url: "/app_info/"
+  - title: "Templates"
+    url: "/app_info/00-templates/"
+  - title: "Architecture"
+    url: "/app_info/01-architecture/"
+  - title: "Implementation"
+    url: "/app_info/02-implementation/"
+  - title: "Quality"
+    url: "/app_info/03-quality/"
+  - title: "Operations"
+    url: "/app_info/04-operations/"
+  - title: "Advanced"
+    url: "/app_info/05-advanced/"
+  - title: "Reference"
+    url: "/app_info/06-reference/"
+
+# Exclude files
+exclude:
+  - README.md
+  - "App Info/README.md"
+  - "AI_Agent_Tools/"
+  - "Analytics/"
+  - "Database/"
+  - "Firebase/"
+  - "APIs/"
+  - "*.zip"
+  - "*.xlsx"
+  - "*.docx"
+  - ".cursorrules"
+  - "index.html"
+
+# Include files
+include:
+  - "_pages"
+  - "_layouts"
+  - "_includes"
+  - "_sass"
+  - "assets"
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
