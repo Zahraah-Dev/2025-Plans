@@ -1,6 +1,6 @@
 // 2025 Plans - Flutter E-commerce Documentation JavaScript
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Initialize the documentation site
     initializeDocumentation();
 });
@@ -8,16 +8,16 @@ document.addEventListener('DOMContentLoaded', function() {
 function initializeDocumentation() {
     // Add smooth scrolling for anchor links
     addSmoothScrolling();
-    
+
     // Add copy code functionality
     addCopyCodeButtons();
-    
+
     // Add table of contents generation
     generateTableOfContents();
-    
+
     // Add search functionality
     initializeSearch();
-    
+
     // Add mobile menu toggle
     initializeMobileMenu();
 }
@@ -26,11 +26,11 @@ function addSmoothScrolling() {
     // Add smooth scrolling to all anchor links
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
     anchorLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
-            
+
             if (targetElement) {
                 targetElement.scrollIntoView({
                     behavior: 'smooth',
@@ -50,7 +50,7 @@ function addCopyCodeButtons() {
             const copyButton = document.createElement('button');
             copyButton.className = 'copy-button';
             copyButton.textContent = 'Copy';
-            copyButton.addEventListener('click', function() {
+            copyButton.addEventListener('click', function () {
                 navigator.clipboard.writeText(block.textContent).then(() => {
                     copyButton.textContent = 'Copied!';
                     setTimeout(() => {
@@ -58,7 +58,7 @@ function addCopyCodeButtons() {
                     }, 2000);
                 });
             });
-            
+
             pre.style.position = 'relative';
             pre.appendChild(copyButton);
         }
@@ -69,34 +69,34 @@ function generateTableOfContents() {
     // Generate table of contents from headings for sidebar
     const content = document.querySelector('#main-content');
     if (!content) return;
-    
+
     const headings = content.querySelectorAll('h2, h3, h4, h5, h6');
     if (headings.length === 0) return;
-    
+
     const tocNav = document.querySelector('#toc-nav');
     if (!tocNav) return;
-    
+
     // Clear existing TOC
     tocNav.innerHTML = '';
-    
+
     let currentLevel = 0;
     let currentList = tocNav;
     const listStack = [tocNav];
-    
+
     headings.forEach((heading, index) => {
         const level = parseInt(heading.tagName.substring(1));
         const id = `heading-${index}`;
         heading.id = id;
-        
+
         // Create list item
         const li = document.createElement('li');
         li.className = `toc-${heading.tagName.toLowerCase()}`;
-        
+
         // Create link
         const a = document.createElement('a');
         a.href = `#${id}`;
         a.textContent = heading.textContent.trim();
-        a.addEventListener('click', function(e) {
+        a.addEventListener('click', function (e) {
             e.preventDefault();
             const targetElement = document.getElementById(id);
             if (targetElement) {
@@ -108,9 +108,9 @@ function generateTableOfContents() {
                 updateActiveTocLink(a);
             }
         });
-        
+
         li.appendChild(a);
-        
+
         // Handle nesting
         if (level > currentLevel) {
             // Create new nested list
@@ -128,10 +128,10 @@ function generateTableOfContents() {
                 currentLevel--;
             }
         }
-        
+
         currentList.appendChild(li);
     });
-    
+
     // Add scroll spy functionality
     addScrollSpy();
 }
@@ -140,7 +140,7 @@ function updateActiveTocLink(activeLink) {
     // Remove active class from all TOC links
     const allTocLinks = document.querySelectorAll('#toc-nav a');
     allTocLinks.forEach(link => link.classList.remove('active'));
-    
+
     // Add active class to clicked link
     activeLink.classList.add('active');
 }
@@ -149,20 +149,20 @@ function addScrollSpy() {
     // Simple scroll spy to highlight current section
     const headings = document.querySelectorAll('#main-content h2, #main-content h3, #main-content h4, #main-content h5, #main-content h6');
     const tocLinks = document.querySelectorAll('#toc-nav a');
-    
+
     if (headings.length === 0 || tocLinks.length === 0) return;
-    
+
     function updateActiveSection() {
         let current = '';
         const scrollPosition = window.scrollY + 100;
-        
+
         headings.forEach(heading => {
             const headingTop = heading.offsetTop;
             if (scrollPosition >= headingTop) {
                 current = heading.id;
             }
         });
-        
+
         tocLinks.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href') === `#${current}`) {
@@ -170,7 +170,7 @@ function addScrollSpy() {
             }
         });
     }
-    
+
     // Throttled scroll event
     let ticking = false;
     function onScroll() {
@@ -182,7 +182,7 @@ function addScrollSpy() {
             ticking = true;
         }
     }
-    
+
     window.addEventListener('scroll', onScroll);
     updateActiveSection(); // Initial call
 }
@@ -193,31 +193,31 @@ function initializeSearch() {
     searchInput.type = 'text';
     searchInput.placeholder = 'Search documentation...';
     searchInput.className = 'search-input';
-    
+
     const searchResults = document.createElement('div');
     searchResults.className = 'search-results';
-    
+
     // Add search to navigation
     const nav = document.querySelector('.nav-container');
     if (nav) {
         nav.appendChild(searchInput);
         nav.appendChild(searchResults);
     }
-    
-    searchInput.addEventListener('input', function() {
+
+    searchInput.addEventListener('input', function () {
         const query = this.value.toLowerCase();
         if (query.length < 2) {
             searchResults.innerHTML = '';
             return;
         }
-        
+
         // Simple search through content
         const content = document.querySelector('.content');
         if (!content) return;
-        
+
         const headings = content.querySelectorAll('h2, h3, h4, p');
         const results = [];
-        
+
         headings.forEach(heading => {
             if (heading.textContent.toLowerCase().includes(query)) {
                 results.push({
@@ -226,7 +226,7 @@ function initializeSearch() {
                 });
             }
         });
-        
+
         displaySearchResults(results, searchResults);
     });
 }
@@ -236,13 +236,13 @@ function displaySearchResults(results, container) {
         container.innerHTML = '<p>No results found</p>';
         return;
     }
-    
+
     const html = results.slice(0, 5).map(result => {
         return `<div class="search-result">
             <a href="#${result.element.id || '#'}">${result.text}</a>
         </div>`;
     }).join('');
-    
+
     container.innerHTML = html;
 }
 
@@ -250,17 +250,17 @@ function initializeMobileMenu() {
     // Add mobile menu toggle
     const nav = document.querySelector('.nav-menu');
     if (!nav) return;
-    
+
     const toggleButton = document.createElement('button');
     toggleButton.className = 'mobile-menu-toggle';
     toggleButton.innerHTML = '☰';
-    
+
     const navContainer = document.querySelector('.nav-container');
     if (navContainer) {
         navContainer.insertBefore(toggleButton, nav);
     }
-    
-    toggleButton.addEventListener('click', function() {
+
+    toggleButton.addEventListener('click', function () {
         nav.classList.toggle('mobile-open');
     });
 }

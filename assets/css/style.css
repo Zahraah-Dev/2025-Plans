@@ -393,7 +393,7 @@ body {
         grid-template-columns: 250px 1fr;
         gap: 1.5rem;
     }
-    
+
     .sidebar {
         padding: 1rem;
     }
@@ -440,11 +440,11 @@ body {
     .sidebar {
         padding: 0.8rem;
     }
-    
+
     .sidebar-content h3 {
         font-size: 1rem;
     }
-    
+
     .toc-nav a {
         font-size: 0.8rem;
         padding: 0.2rem 0.4rem;
