@@ -63,8 +63,6 @@ navigation:
 
 # Exclude files
 exclude:
-  - README.md
-  - "app_info/README.md"
   - "AI_Agent_Tools/"
   - "Analytics/"
   - "Database/"
